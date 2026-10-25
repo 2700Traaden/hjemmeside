@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>#2700 TRÅDEN — Brønshøj Memes</title>
+<link rel="canonical" href="https://2700traaden.dk/broenshoej-memes/">
+<meta property="og:title" content="#2700 TRÅDEN — Brønshøj Memes">
+<meta property="og:description" content="Dagens meme fra Brønshøj og tidligere memes, samlet ét sted.">
+<meta property="og:image" content="../assets/skyline-hoved.png">
+<meta property="og:type" content="website">
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "c0b1eff42167407cafc38ed174ccc7c7"}'></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/site.css">
+<script src="../assets/menu.js"></script>
+<style>
+.memes-page{padding:0 0 60px;max-width:900px}
+.memes-page .page-title{margin:0 0 20px}
+.memes-page .lede{font-size:18px;color:var(--green);margin:0 0 34px;line-height:1.55}
+
+.feed-section{margin:0 0 48px}
+.feed-section .section-sub{font-size:22px;font-weight:400;color:var(--orange);margin:0 0 18px;text-align:center}
+
+.feed-columns{display:grid;grid-template-columns:1fr 1fr;gap:0;align-items:start;position:relative;min-width:0}
+.feed-columns .feed-section{min-width:0}
+.feed-columns::before{content:"";position:absolute;left:50%;top:8px;bottom:24px;width:1px;background:var(--line)}
+.feed-columns .feed-section:first-child{padding-right:28px}
+.feed-columns .feed-section:last-child{padding-left:28px}
+@media(max-width:850px){
+  .feed-columns{grid-template-columns:1fr;gap:0}
+  .feed-columns::before{display:none}
+  .feed-columns .feed-section:first-child{padding-right:0}
+  .feed-columns .feed-section:last-child{padding-left:0}
+}
+.oprustning-teaser{text-align:center}
+.oprustning-imgs{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:0 0 14px}
+.oprustning-imgs img{width:100%;height:100px;object-fit:cover;border-radius:0;border:1px solid var(--line);display:block}
+.oprustning-caption{font-size:14px;color:var(--ink);line-height:1.5;margin:0 0 10px}
+.oprustning-link{display:inline-block;color:var(--orange);text-decoration:none}
+@media(max-width:520px){
+  .oprustning-imgs img{height:80px}
+}
+
+.featured-slot{display:flex;flex-direction:column;align-items:center;margin:0 0 24px;min-height:60px}
+.featured-slot .fake-article-featured{display:block;text-decoration:none;border:1px solid var(--line);border-radius:0;padding:10px;background:#fffaf3;cursor:pointer;max-width:360px;width:100%;position:relative}
+.featured-slot .fake-article-featured img{display:block;width:100%;height:auto;border-radius:0}
+.featured-slot .arch-date{display:block;font-family:'Caveat',cursive;font-size:19px;font-weight:700;color:var(--green);text-align:center;margin-top:8px}
+.fake-caption{font-size:14px;line-height:1.45;color:var(--ink);margin:8px 0 0;max-width:360px}
+
+.polaroid-featured{position:relative}
+.meme-embed{width:328px}
+.meme-embed .waiting{color:var(--green);font-size:15px;line-height:1.6;text-align:center;padding:50px 16px;width:328px}
+.meme-embed .waiting strong{color:var(--orange)}
+
+.multi-badge{position:absolute;bottom:6px;right:6px;background:rgba(0,0,0,.65);color:#fff;font-size:11px;padding:2px 6px;border-radius:0}
+
+.lightbox{display:none;position:fixed;inset:0;background:rgba(30,25,15,.82);z-index:50;align-items:center;justify-content:center;padding:24px;cursor:zoom-out}
+.lightbox.open{display:flex}
+.lightbox img{max-width:min(90vw,520px);max-height:90vh;width:auto;border-radius:0;box-shadow:0 10px 30px rgba(0,0,0,.4)}
+.lightbox-close{position:absolute;top:18px;right:24px;color:#fff;font-size:32px;line-height:1;background:none;border:0;cursor:pointer}
+.lightbox-nav{position:absolute;top:0;left:0;right:0;bottom:0;display:flex;align-items:center;justify-content:space-between;padding:0 16px;pointer-events:none}
+.lightbox-arrow{background:rgba(0,0,0,.6);color:#fff;border:2px solid rgba(255,255,255,.85);border-radius:50%;width:50px;height:50px;font-size:28px;line-height:1;cursor:pointer;pointer-events:auto}
+.lightbox-counter{position:absolute;bottom:22px;left:50%;transform:translateX(-50%);color:#fff;font-size:14px;background:rgba(0,0,0,.6);padding:5px 14px;border-radius:0;pointer-events:none}
+
+.carousel-wrap{position:relative}
+.carousel-track{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:6px;scrollbar-width:none}
+.carousel-track::-webkit-scrollbar{display:none}
+.carousel-track .carousel-empty{flex:0 0 auto;color:var(--green);font-size:14px;line-height:1.5;border:1px dashed var(--line);border-radius:0;padding:20px;text-align:center;background:#fffaf3;width:100%}
+.carousel-item{flex:0 0 130px;scroll-snap-align:start;cursor:pointer;background:#fff;border:1px solid #e3d9c4;border-radius:0;padding:6px;text-align:center;transition:transform .15s ease}
+.carousel-item:hover{transform:translateY(-3px)}
+.carousel-item img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:0;display:block}
+.carousel-item .arch-date{display:block;font-family:'Caveat',cursive;font-size:15px;font-weight:700;color:var(--ink);margin-top:5px}
+.carousel-item.is-active{border-color:var(--orange);box-shadow:0 0 0 2px var(--orange)}
+.carousel-btn{position:absolute;top:44%;transform:translateY(-50%);width:30px;height:30px;border-radius:50%;border:1px solid var(--line);background:#fff;color:var(--orange);font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2}
+.carousel-btn.prev{left:-14px}
+.carousel-btn.next{right:-14px}
+
+@media(max-width:850px){
+  .memes-page{padding:0 0 40px}
+  .memes-page .lede{font-size:16px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="masthead">
+  <div class="banner-split">
+    <div class="banner-left"><img src="../assets/logo-text.png" alt="#2700 TRÅDEN — Dit lokale overblik"></div>
+    <div class="banner-right">
+      <img class="skyline-icons" src="../assets/skyline-hoved.png" alt="Skyline: Husum, Brønshøj, Bellahøj, Tingbjerg">
+    </div>
+  </div>
+</header>
+
+<nav class="nav">
+  <a href="../">OVER<wbr>BLIK</a>
+  <a href="../faelleskalender/">FÆLLES<wbr>KALENDER</a>
+  <a href="./" class="active">BRØNSHØJ MEMES</a>
+  <a href="../om/">A' HVA' FOR EN TRÅD?</a>
+</nav>
+
+<div class="simple-layout">
+<div class="simple-content">
+  <div class="page-title">
+    <h1>Brønshøj Memes</h1>
+  </div>
+  <div class="memes-page">
+
+  <!--
+    SÅDAN TILFØJER DU ET NYT MEME:
+    Send Instagram-linket til Claude. Claude tilføjer det til memes-data.js,
+    og det bliver automatisk til det nyeste meme øverst, mens det
+    tidligere meme rykker ned i rullebåndet.
+
+    SÅDAN TILFØJER DU EN FAKE NEWS-ARTIKEL:
+    Send billedet (og evt. en kort tekst) til Claude, så sættes den ind
+    øverst i "Ægte fake news", og den forrige rykker ned i rullebåndet.
+  -->
+
+  <section class="feed-section" id="oprustning-section">
+    <h2 class="section-sub">Åndssvag Oprustning</h2>
+    <div id="memes-featured" class="featured-slot">
+      <p class="waiting">Henter dagens meme…</p>
+    </div>
+    <div class="carousel-wrap">
+      <button class="carousel-btn prev" onclick="scrollCarousel('memes-carousel',-1)" aria-label="Forrige">‹</button>
+      <div class="carousel-track" id="memes-carousel">
+        <div class="carousel-empty">Ingen tidligere memes endnu.</div>
+      </div>
+      <button class="carousel-btn next" onclick="scrollCarousel('memes-carousel',1)" aria-label="Næste">›</button>
+    </div>
+  </section>
+
+  <section class="feed-section" id="fakenews-section">
+    <h2 class="section-sub">Ægte fake news</h2>
+    <div id="fakenews-featured" class="featured-slot">
+      <div class="fakenews-empty">Ingen artikler endnu — send mig billederne, så sætter jeg dem ind her.</div>
+    </div>
+    <div class="carousel-wrap">
+      <button class="carousel-btn prev" onclick="scrollCarousel('fakenews-carousel',-1)" aria-label="Forrige">‹</button>
+      <div class="carousel-track" id="fakenews-carousel">
+        <div class="carousel-empty">Ingen tidligere artikler endnu.</div>
+      </div>
+      <button class="carousel-btn next" onclick="scrollCarousel('fakenews-carousel',1)" aria-label="Næste">›</button>
+    </div>
+  </section>
+
+  </div>
+</div>
+<aside class="ads">
+  <div class="ad-slot">
+    <a class="adlabel" href="mailto:kontakt@2700tråden.dk">Din annonce her? kontakt@2700tråden.dk</a>
+    <a class="ad greenad ad-social ad-badge" href="https://www.instagram.com/bronshoj_memes/" target="_blank" rel="noopener">
+      <img class="ad-graphic" src="../assets/ads/ad-broenshoej-memes.jpg" alt="Brønshøj Memes på Instagram">
+      <h3 class="sr-only">Brønshøj Memes på Instagram</h3>
+    </a>
+  </div>
+  <div class="ad-slot">
+    <a class="adlabel" href="mailto:kontakt@2700tråden.dk">Din annonce her? kontakt@2700tråden.dk</a>
+    <a class="ad orangead ad-social ad-badge" href="https://www.instagram.com/2700traaden/" target="_blank" rel="noopener">
+      <img class="ad-graphic" src="../assets/ads/ad-2700traaden-instagram.jpg" alt="2700-Tråden på Instagram">
+      <h3 class="sr-only">2700-Tråden på Instagram</h3>
+    </a>
+  </div>
+  <div class="ad-slot">
+    <a class="adlabel" href="mailto:kontakt@2700tråden.dk">Din annonce her? kontakt@2700tråden.dk</a>
+    <a class="ad ad-social" href="https://www.instagram.com/prikkenoveriet_com/" target="_blank" rel="noopener">
+      <img class="ad-graphic" src="../assets/ads/ad-prikkenoveriet.jpg" alt="Kalenderlys fra prikkenoveriet_com: sidste chance til B2B-bestilling">
+      <h3 class="sr-only">Kalenderlys fra prikkenoveriet_com</h3>
+    </a>
+  </div>
+  <div class="ad-slot">
+    <a class="adlabel" href="mailto:kontakt@2700tråden.dk">Din annonce her? kontakt@2700tråden.dk</a>
+    <a class="ad ad-social" href="https://www.instagram.com/spisehuset_i_den_gamle_skole/" target="_blank" rel="noopener">
+      <img class="ad-graphic" src="../assets/ads/ad-spisehuset.jpg" alt="Dining Week på Spisehuset: sidste chance, 3 retter for kun 250 kr.">
+      <h3 class="sr-only">Dining Week på Spisehuset</h3>
+    </a>
+  </div>
+  <div class="ad-slot">
+    <a class="adlabel" href="mailto:kontakt@2700tråden.dk">Din annonce her? kontakt@2700tråden.dk</a>
+    <a class="ad ad-social" href="https://www.instagram.com/kongeboern/" target="_blank" rel="noopener">
+      <img class="ad-graphic" src="../assets/ads/ad-koengeboern.jpg" alt="Køngebørn: gode tilbud hele efterårsferien">
+      <h3 class="sr-only">Køngebørn: gode tilbud hele efterårsferien</h3>
+    </a>
+  </div>
+</aside>
+</div>
+
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <button class="lightbox-close" onclick="closeLightbox()" aria-label="Luk">×</button>
+  <img id="lightbox-img" src="" alt="">
+  <div id="lightbox-nav" class="lightbox-nav">
+    <button class="lightbox-arrow" onclick="lightboxStep(-1,event)" aria-label="Forrige">‹</button>
+    <span id="lightbox-counter" class="lightbox-counter"></span>
+    <button class="lightbox-arrow" onclick="lightboxStep(1,event)" aria-label="Næste">›</button>
+  </div>
+</div>
+
+<footer><svg viewBox="0 0 120 124" width="84" height="87" role="img" aria-label="2700 Zappa" style="display:block;margin:0 auto 10px" fill="none" stroke-linecap="round" stroke-linejoin="round"><g stroke="#D1803F" stroke-width="2.2"><path d="M44 34 C40 28 48 24 44 16"/><path d="M58 34 C54 28 62 24 58 12"/><path d="M72 34 C68 28 76 24 72 16"/></g><g stroke="#4D4C32" stroke-width="2.6"><path d="M28 46 V88 Q28 102 42 102 H74 Q88 102 88 88 V46" fill="#fff"/><path d="M88 56 H98 Q110 56 110 70 Q110 84 98 84 H88"/><ellipse cx="58" cy="46" rx="30" ry="7" fill="#fff"/><ellipse cx="58" cy="46.5" rx="25" ry="4.6" fill="#54341e" stroke="none"/></g><text x="58" y="75" text-anchor="middle" font-family="inherit" font-weight="700" font-size="17" fill="#D1803F" stroke="none">2700</text><text x="58" y="93" text-anchor="middle" font-family="inherit" font-weight="700" font-size="17" fill="#4D4C32" stroke="none">Zappa</text></svg>Flere Forbindelser og Mere Fællesskab</footer>
+
+</div>
+
+<script src="memes-data.js"></script>
+<script src="fakenews-data.js"></script>
+<script>
+/* ---------- FAKE NEWS: seneste + rullebånd med byt-funktion ---------- */
+var fnList = (typeof FAKENEWS !== "undefined") ? FAKENEWS.slice().reverse() : [];
+var fnActiveIdx = 0;
+
+function renderFakenewsFeatured(idx){
+  fnActiveIdx = idx;
+  var item = fnList[idx];
+  var el = document.getElementById("fakenews-featured");
+  if (!item){ return; }
+  var imgs = item.images || [item.image];
+  var altEsc = item.alt.replace(/'/g,"&#39;");
+  var imgsJson = JSON.stringify(imgs).replace(/'/g,"&#39;").replace(/"/g,'&quot;');
+  el.innerHTML =
+    '<div class="fake-article-featured" onclick=\'openLightbox(' + imgsJson.replace(/'/g,"\\'") + ',"' + altEsc + '")\'>' +
+      '<img src="' + imgs[0] + '" alt="' + item.alt + '">' +
+      (imgs.length>1?'<span class="multi-badge">1 / ' + imgs.length + '</span>':'') +
+    '</div>' +
+    (item.caption?'<p class="fake-caption">' + item.caption + '</p>':'') +
+    '<span class="arch-date">' + item.date + '</span>';
+  renderFakenewsCarousel();
+}
+
+function renderFakenewsCarousel(){
+  var track = document.getElementById("fakenews-carousel");
+  var others = fnList.map(function(item,i){return {item:item,i:i};}).filter(function(o){return o.i!==fnActiveIdx;});
+  if (!others.length){
+    track.innerHTML = '<div class="carousel-empty">Ingen tidligere artikler endnu.</div>';
+    return;
+  }
+  track.innerHTML = others.map(function(o){
+    var imgs = o.item.images || [o.item.image];
+    return '<div class="carousel-item" onclick="renderFakenewsFeatured(' + o.i + ')">' +
+      '<img src="' + imgs[0] + '" alt="' + o.item.alt + '">' +
+      '<span class="arch-date">' + o.item.date + '</span>' +
+      '</div>';
+  }).join("");
+}
+
+if (fnList.length){
+  renderFakenewsFeatured(0);
+} else {
+  document.getElementById("fakenews-carousel").innerHTML = '<div class="carousel-empty">Ingen tidligere artikler endnu.</div>';
+}
+
+/* ---------- MEMES: seneste + rullebånd med byt-funktion ---------- */
+var memeList = (typeof MEMES !== "undefined") ? MEMES.slice().reverse() : [];
+var memeActiveIdx = 0;
+
+function renderMemesFeatured(idx){
+  memeActiveIdx = idx;
+  var item = memeList[idx];
+  var el = document.getElementById("memes-featured");
+  if (!item){ return; }
+  if (item.images){
+    var altEsc = (item.alt||"").replace(/'/g,"&#39;");
+    var imgsJson = JSON.stringify(item.images).replace(/'/g,"&#39;").replace(/"/g,'&quot;');
+    el.innerHTML = '<div class="fake-article-featured" onclick=\'openLightbox(' + imgsJson.replace(/'/g,"\\'") + ',"' + altEsc + '")\'>' +
+      '<img src="' + item.images[0] + '" alt="' + (item.alt||"") + '">' +
+      (item.images.length>1?'<span class="multi-badge">1 / ' + item.images.length + '</span>':'') +
+      '</div>' +
+      '<span class="arch-date">' + item.date + '</span>';
+  } else {
+    el.innerHTML = '<div class="polaroid-featured"><div class="meme-embed">' +
+      '<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="' + item.url + '" data-instgrm-version="14" style="width:100%;max-width:328px;margin:0 auto;background:#FFF;border-radius:0;border:1px solid #dbdbdb;"></blockquote>' +
+      '</div></div>' +
+      '<span class="arch-date">' + item.date + '</span>';
+    if (window.instgrm && window.instgrm.Embeds){
+      window.instgrm.Embeds.process();
+    }
+  }
+  renderMemesCarousel();
+}
+
+function renderMemesCarousel(){
+  var track = document.getElementById("memes-carousel");
+  var others = memeList.map(function(item,i){return {item:item,i:i};}).filter(function(o){return o.i!==memeActiveIdx;});
+  if (!others.length){
+    track.innerHTML = '<div class="carousel-empty">Ingen tidligere memes endnu.</div>';
+    return;
+  }
+  track.innerHTML = others.map(function(o){
+    var thumb;
+    if (o.item.images){
+      thumb = '<img src="' + o.item.images[0] + '" alt="' + (o.item.alt||"") + '" style="width:100%;aspect-ratio:1;object-fit:cover;border-radius:0;display:block">';
+    } else {
+      var igThumb = o.item.url.replace(/\/?$/, "/") + "media/?size=l";
+      thumb = '<img src="' + igThumb + '" alt="Instagram-meme" loading="lazy" ' +
+        'style="width:100%;aspect-ratio:1;object-fit:cover;border-radius:0;display:block;background:#f3ece0" ' +
+        'onerror="this.replaceWith(Object.assign(document.createElement(\'span\'),{className:\'thumb-ph\',textContent:\'🐝\',style:\'width:100%;aspect-ratio:1;background:#f3ece0;border-radius:0;display:flex;align-items:center;justify-content:center;color:#c9bb9c;font-size:22px\'}))">';
+    }
+    return '<div class="carousel-item" onclick="renderMemesFeatured(' + o.i + ')">' +
+      thumb +
+      '<span class="arch-date">' + o.item.date + '</span>' +
+      '</div>';
+  }).join("");
+}
+
+if (memeList.length){
+  renderMemesFeatured(0);
+  var s = document.createElement("script");
+  s.async = true;
+  s.src = "//www.instagram.com/embed.js";
+  document.body.appendChild(s);
+} else {
+  document.getElementById("memes-carousel").innerHTML = '<div class="carousel-empty">Ingen tidligere memes endnu.</div>';
+}
+
+/* ---------- Lightbox (fake news fuld-visning) ---------- */
+var lightboxImgs = [];
+var lightboxIdx = 0;
+function openLightbox(imgs, alt){
+  lightboxImgs = imgs;
+  lightboxIdx = 0;
+  showLightboxImg(alt);
+  document.getElementById("lightbox").classList.add("open");
+}
+function showLightboxImg(alt){
+  document.getElementById("lightbox-img").src = lightboxImgs[lightboxIdx];
+  document.getElementById("lightbox-img").alt = alt || "";
+  var nav = document.getElementById("lightbox-nav");
+  nav.style.display = lightboxImgs.length > 1 ? "flex" : "none";
+  document.getElementById("lightbox-counter").textContent = (lightboxIdx+1) + " / " + lightboxImgs.length;
+}
+function lightboxStep(dir, ev){
+  ev.stopPropagation();
+  lightboxIdx = (lightboxIdx + dir + lightboxImgs.length) % lightboxImgs.length;
+  showLightboxImg(document.getElementById("lightbox-img").alt);
+}
+function closeLightbox(){
+  document.getElementById("lightbox").classList.remove("open");
+}
+
+function scrollCarousel(id, dir){
+  var track = document.getElementById(id);
+  track.scrollBy({left: dir * 160, behavior: "smooth"});
+}
+</script>
+</body>
+</html>

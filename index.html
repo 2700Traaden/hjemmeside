@@ -1,0 +1,987 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>#2700 TRÅDEN — Overblik</title>
+<link rel="canonical" href="https://2700traaden.dk/">
+<meta property="og:title" content="#2700 TRÅDEN — Dit lokale overblik">
+<meta property="og:description" content="Det seneste lokale nyt fra Brønshøj-Husum: Lokaludvalget, sporten, og hvad der sker i 2700 denne uge.">
+<meta property="og:image" content="assets/skyline-hoved.png">
+<meta property="og:type" content="website">
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "c0b1eff42167407cafc38ed174ccc7c7"}'></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+<style>.rail{position:fixed;left:0;top:0;bottom:0;width:88px;background:var(--cream);border-right:1px solid var(--line);padding:16px 10px;display:flex;flex-direction:column;gap:10px;z-index:20}
+.ri{display:flex;align-items:center;gap:16px;padding:11px 12px;border-radius:10px;color:var(--green);text-decoration:none;white-space:nowrap;font-size:15px}
+.ri svg{width:40px;height:56px;flex:none}.thr{fill:none;stroke-linecap:round;stroke-linejoin:round;overflow:visible}
+.ri{position:relative}.rail{overflow:hidden;transition:width .18s ease,box-shadow .18s ease}.rail:hover,.rail:focus-within{width:270px;box-shadow:4px 0 18px rgba(0,0,0,.08)}.rail .ri span{opacity:0;transition:opacity .12s;font-size:15px}.rail:hover .ri span,.rail:focus-within .ri span{opacity:1;transition-delay:.06s}
+.spool{display:flex;justify-content:center;padding:0 0 6px;flex:none}.spool svg{display:block}.tabbar .spool{align-items:center;padding:0}.tabbar .spool svg{width:30px;height:37px}.thread{z-index:3;position:absolute;left:0;top:0;width:100%;height:100%;pointer-events:none;overflow:visible;color:#D9972B}.ri svg{position:relative;z-index:1;color:#D9972B}.ri.on svg{color:#C4631F}.ri:hover{background:#F6E8D8}.ri.on{color:var(--orange);font-weight:700}
+.shell{margin-left:88px;display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:0;max-width:none;padding:20px 0 20px 0}
+.mast{grid-column:1/-1;display:flex;align-items:flex-end;gap:24px;border-bottom:1px solid var(--line);padding:0 28px 10px 28px;margin-bottom:20px}.mast .ml{height:115px;width:auto;position:relative;top:-38px}.mast .ms{height:190px;width:auto;margin:0 auto;max-width:calc(100% - 340px);object-fit:contain}
+.feedcol .page-title{padding:13px 0 16px;border-bottom:1px solid var(--line);margin-bottom:20px;max-width:none}.feedcol .page-title h1{font-size:45px;font-weight:400;color:var(--orange);margin:0;text-transform:uppercase;padding-left:6px}@media(max-width:800px){.feedcol .page-title{padding:8px 12px 10px;margin-bottom:12px}.feedcol .page-title h1{font-size:30px;padding:0}}.feedcol{container-type:inline-size;width:100%;padding:0 24px;border-right:1px solid var(--line)}.feedcol>*{max-width:560px;margin-left:auto!important;margin-right:auto!important}
+.adscol{position:sticky;top:20px;align-self:start;display:flex;flex-direction:column;gap:14px;padding:0 20px 0 24px}
+
+.fpost{background:#fff;border:1px solid var(--line);border-radius:6px;padding:12px 12px 14px;margin:0 0 22px}
+.fcap{padding:0 2px}
+.all>summary{padding:8px 2px}
+.tabbar{display:none}
+@media(max-width:800px){.rail{display:none}.shell{margin:0;display:block;padding:10px 0 80px}.mast{padding:6px 12px 6px;gap:10px}.mast .ml{height:56px;flex:none}.mast .ms{height:auto;width:auto;max-width:calc(100% - 120px);min-width:0;max-height:64px;object-fit:contain;object-position:right;flex:1 1 0;margin:0}.fpost{border-left:0;border-right:0;border-radius:0;margin-bottom:12px;padding:10px 0 12px}.fhead,.fcap,.all,.sdots{padding-left:12px;padding-right:12px}
+.tabbar{display:flex;position:fixed;left:0;right:0;bottom:0;background:var(--cream);border-top:1px solid var(--line);z-index:20;justify-content:space-around;padding:6px 0 10px}.tabbar .ri{flex-direction:column;align-items:center;flex:1 1 0;min-width:0;gap:2px;padding:4px 1px;font-size:11px}.tabbar .ri span{opacity:1;position:static;transform:none;background:none;color:inherit;padding:0;font-size:11px}}
+
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.arkivlink{margin:6px 0 18px;text-align:center}.arkivlink a{color:var(--orange);font-size:16px;text-decoration:none}
+.pagefoot{margin-left:88px}.pagefoot footer{border-top:1px solid var(--line);padding:24px 30px}
+/* Computer/tablet: et opslag (titel + slide + brødtekst) skal kunne være på skærmen på én gang.
+   Slide-bredden følger skærmens højde (ca. 220 px går til titel, prikker og tekst), max 560 px, min 320 px. */
+@media(min-width:801px){.fpost{--r:.8}.fpost.tre4{--r:.75}
+.fpost>.fhead,.fpost>.fwrap,.fpost>.sdots,.fpost>.fcap,.fpost>details.all{width:max(320px,min(100%,calc((100dvh - 220px)*var(--r))));margin-left:auto;margin-right:auto;box-sizing:border-box}}
+@media(max-width:800px){.feedcol{padding:0;border-right:0}.feedcol>*{max-width:none}.shell{display:flex!important;flex-direction:column}.mast{order:0}.adscol{display:none!important}.feedcol{order:2;margin-top:10px}.ann-mobil{margin:6px 12px 22px}.mast .ml{top:0!important}.fpost .fhead{padding:0 12px!important}.fname b{font-size:19px}.fname{gap:10px}html,body{max-width:100%;overflow-x:hidden}.pagefoot{margin:0;padding-bottom:70px}.shell{padding-bottom:0!important}}
+
+.test{border:1px dashed var(--orange);color:var(--orange);font-size:13px;padding:8px 10px;margin:0 0 18px}
+.fpost{position:relative;background:transparent;border:0;border-radius:0;padding:0 0 26px;margin:0 0 26px}
+.fpost::after{content:"";display:block;width:calc(100cqw - 40px);max-width:none;height:1px;background:var(--line);margin:26px 0 0;position:relative;left:50%;transform:translateX(-50%)}
+.fhead{display:flex;align-items:center;gap:10px;margin:0 0 10px;padding:0}
+.av{display:none;width:44px;height:44px;border-radius:0;object-fit:contain;border:0;flex:none;background:transparent}
+.fname{display:flex;flex-direction:row;justify-content:space-between;align-items:baseline;gap:16px;line-height:1.25;min-width:0;width:100%}
+.fname b{font-size:23px;color:var(--orange);font-weight:400}
+.fname span{font-size:13px;color:var(--green)}
+.fwrap{position:relative}
+.strip{display:flex;gap:0;overflow-x:auto;scroll-snap-type:x mandatory;scroll-snap-stop:always;-webkit-overflow-scrolling:touch;scrollbar-width:none;overscroll-behavior-x:contain;padding:0 0 2px}
+.strip::-webkit-scrollbar{display:none}
+.strip .card{flex:0 0 100%;scroll-snap-align:start;cursor:pointer;border:1px solid #E6D6C0}
+.scount{display:none;position:absolute;top:10px;right:10px;background:rgba(30,26,22,.62);color:#fff;font-size:12px;padding:3px 9px;border-radius:12px;pointer-events:none}
+.sa{position:absolute;top:50%;margin-top:-22px;width:38px;height:44px;border:0;background:rgba(255,255,255,.86);color:var(--ink);font-size:26px;cursor:pointer;box-shadow:0 1px 4px rgba(0,0,0,.25);display:none}
+.sa.l{left:6px}.sa.r{right:6px}.sa:disabled{display:none!important}
+@media(hover:hover) and (min-width:700px){.sa{display:block}}
+.sdots{display:flex;justify-content:center;gap:6px;margin:9px 0 2px;flex-wrap:wrap}
+.sdots span{width:7px;height:7px;border-radius:50%;background:#DCC8B0}
+.sdots span.on{background:var(--orange)}
+.fcap{font-size:15px;line-height:1.45;color:var(--orange);margin:12px 0 8px}.fcap b{color:var(--green)}
+.all{margin-top:6px}
+.all>summary{list-style:none;cursor:pointer;color:var(--green);font-size:16px;padding:8px 0}
+.all>summary::-webkit-details-marker{display:none}
+.all[open]>summary{margin-bottom:4px}
+
+/* kort */
+.card.k-img{background:#fff}.card.k-img img{display:block;width:100%;height:100%;object-fit:cover}
+.card{aspect-ratio:4/5;container-type:inline-size;background:#F8EFE3;color:#3E3A35;position:relative;overflow:hidden;text-size-adjust:100%;-webkit-text-size-adjust:100%;font-family:'DejaVu Sans',Arial,sans-serif;text-align:left}
+.ci{position:absolute;inset:0;padding:5cqw 7cqw 0;display:flex;flex-direction:column}
+.ctop{display:flex;justify-content:space-between;font-size:3cqw;letter-spacing:.08em;color:#9A8A78;font-weight:700;height:4.5cqw;flex:none}
+.cb{flex:1;min-height:0;overflow:hidden;position:relative;font-size:calc(var(--fs,5)*1cqw);line-height:1.36;padding-top:3.5cqw}
+.cfoot{flex:none;height:10cqw;display:flex;align-items:center;gap:3cqw;font-size:2.8cqw;color:#9A8A78}
+.cfoot i{flex:1;height:.55cqw;background:#DC5713;display:block}
+.card .cb p,.card .cb li{font-size:inherit;line-height:inherit;color:inherit;margin:0 0 .55em;text-align:inherit;font-weight:inherit}
+.ct{font-weight:700;color:#10542F;line-height:1.14;font-size:1.42em;margin:0 0 .55em}
+.kick{font-size:.62em;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:#DC5713;margin:0 0 .5em}
+.pill{display:inline-block;background:#EFE3D3;color:#7d6c5a;font-weight:700;font-size:.62em;padding:.45em .8em;letter-spacing:.04em;margin:.3em 0 .5em;line-height:1.3}
+.pill.o{background:#F6DCC8;color:#C0642B}
+.card .cb p.note{font-size:.88em;color:#8f806f}
+.card .cb p.src{font-size:.62em;color:#9A8A78;margin-top:.4em}
+.ev{margin:0 0 .8em}.ev b{display:block;color:#10542F;line-height:1.2}.ev span{display:block;font-size:.76em;color:#7d6c5a;line-height:1.3;margin-top:.1em}
+.k-list .ct{margin-bottom:.7em}
+.k-cover .sign{display:block;width:96%;height:auto;margin:0 auto 3cqw}
+.k-cover .cdate{text-align:right;font-size:.6em;color:#9A8A78;letter-spacing:.06em;margin:0 0 .3em}
+.k-cover .ct{font-size:1.8em}
+.card.k-cover .cb p.bp{color:#10542F}
+.k-cover .swipe{color:#DC5713;font-weight:700;font-size:.82em;margin-top:.6em}
+.k-photo img{display:block;width:100%;max-height:72cqw;object-fit:cover;border:1px solid #E6D6C0}
+.card .cb p.cap{font-size:.75em;color:#7d6c5a;margin-top:.6em}
+.bub{position:relative;border:.5cqw dashed #3E3A35;border-radius:5cqw;background:#FFFBF4;padding:3.5cqw 4.5cqw 3cqw;margin:0 0 .9em}
+.bub::after{content:"";position:absolute;left:9cqw;bottom:-3.1cqw;width:5cqw;height:5cqw;background:#F8EFE3;border-right:.5cqw dashed #3E3A35;border-bottom:.5cqw dashed #3E3A35;transform:rotate(45deg) skew(10deg,10deg)}
+.card .cb p.psst{font-style:oblique;color:#DC5713;opacity:.8;font-size:1.25em;line-height:1.1;margin:0 0 .25em;text-align:center}
+.card .cb p.lead{text-align:center}
+.bub ol{margin:.3em 0 0;padding-left:1.6em;font-size:.9em;line-height:1.38}
+.bub b{color:#DC5713}
+.card .cb p.kh{text-align:center;font-size:.8em;opacity:.8;margin:.5em 0 0}
+.k-bubble .ct{font-size:1.25em;text-align:center;text-transform:uppercase;letter-spacing:-.01em;transform:rotate(-1.5deg);margin:.2em 0 .6em}
+.k-bubble .bub{margin-top:.2em}
+
+/* fuldskaerm */
+#viewer{position:fixed;inset:0;z-index:1000;background:rgba(30,26,22,.94);display:none;flex-direction:column;align-items:center;justify-content:center;touch-action:pan-y}
+#viewer.on{display:flex}
+#viewer .holder{width:min(100vw,calc((100dvh - 140px)*var(--r,.8)),720px);position:relative}
+#viewer .stage{width:100%;position:relative}
+#viewer .stage .card{width:100%}
+#viewer button{font:inherit}
+.vx{position:absolute;top:10px;right:12px;width:46px;height:46px;border:0;background:rgba(255,255,255,.14);color:#fff;font-size:30px;line-height:1;cursor:pointer;border-radius:50%}
+.va{position:absolute;top:50%;margin-top:-26px;width:48px;height:52px;border:0;background:rgba(255,255,255,.14);color:#fff;font-size:30px;cursor:pointer}
+.va.l{left:0}.va.r{right:0}@media(min-width:701px){.va{width:56px;height:56px;margin-top:-28px;border-radius:50%;background:#fff;color:#4D4C32;box-shadow:0 2px 10px rgba(0,0,0,.5);font-size:32px}.va.l{left:-76px}.va.r{right:-76px}}.va:disabled{opacity:.25;cursor:default}
+.vdots{display:flex;gap:7px;margin-top:16px;flex-wrap:wrap;justify-content:center;max-width:94vw}
+.vdots span{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.3)}
+.vdots span.on{background:#DC5713}
+.vhint{color:rgba(255,255,255,.55);font:13px 'DejaVu Sans',Arial,sans-serif;margin-top:10px}
+@media(max-width:700px){.va{width:40px;background:rgba(0,0,0,.25)}.vhint{display:none}.fthumb{width:38px}}
+body.vlock{overflow:hidden}
+</style>
+</head>
+<body>
+<nav class="rail" aria-label="Menu"><a class="ri on" data-k="home" href="./" aria-current="page"><svg viewBox="0 0 40 56" width="40" height="56" aria-hidden="true"></svg><span>Overblik</span></a><a class="ri" data-k="cal" href="faelleskalender/"><svg viewBox="0 0 40 56" width="40" height="56" aria-hidden="true"></svg><span>Fælleskalender</span></a><a class="ri" data-k="guides" href="guides/"><svg viewBox="0 0 40 56" width="40" height="56" aria-hidden="true"></svg><span>2700 Guiden</span></a><a class="ri" data-k="kunst" href="kunst/"><svg viewBox="0 0 40 56" width="40" height="56" aria-hidden="true"></svg><span>Lokal kunst</span></a><a class="ri" data-k="tilbud" href="tilbud/"><svg viewBox="0 0 40 56" width="40" height="56" aria-hidden="true"></svg><span>Tilbud 2700</span></a><a class="ri" data-k="meme" href="broenshoej-memes/"><svg viewBox="0 0 40 56" width="40" height="56" aria-hidden="true"></svg><span>Brønshøj Memes</span></a><a class="ri" data-k="arkiv" href="arkiv/"><svg viewBox="0 0 40 56" width="40" height="56" aria-hidden="true"></svg><span>Arkiv</span></a><a class="ri" data-k="info" href="om/"><svg viewBox="0 0 40 56" width="40" height="56" aria-hidden="true"></svg><span>A' hva' for en tråd?</span></a></nav>
+<div class="shell"><header class="mast"><img class="ml" src="assets/logo-text.png" alt="#2700 TRÅDEN — Dit lokale overblik"><img class="ms" src="assets/skyline-hoved.png" alt="Skyline: Husum, Brønshøj, Bellahøj, Tingbjerg"></header>
+<main class="feedcol"><div class="page-title"><h1>Overblik</h1></div>
+
+  <section class="fpost" id="ugen1025" data-total="6">
+    <div class="fhead"><img class="av" src="assets/segment-todougen.jpg" alt=""><div class="fname"><b>Guide til din uge</b><span>25. oktober 2026</span></div></div>
+    <div class="fwrap"><div class="strip" tabindex="0" aria-label="Kort: Hvad skal du i ugen?"><div class="card k-img" aria-label="Slide 1 af 6: Hvad skal du i ugen?"><img src="assets/slides/ugen1025/01.webp" alt="Hvad skal du i ugen? – slide 1 af 6" width="1080" height="1350"></div><div class="card k-img" aria-label="Slide 2 af 6: Hvad skal du i ugen?"><img src="assets/slides/ugen1025/02.webp" alt="Hvad skal du i ugen? – slide 2 af 6" width="1080" height="1350" loading="lazy"></div><div class="card k-img" aria-label="Slide 3 af 6: Hvad skal du i ugen?"><img src="assets/slides/ugen1025/03.webp" alt="Hvad skal du i ugen? – slide 3 af 6" width="1080" height="1350" loading="lazy"></div><div class="card k-img" aria-label="Slide 4 af 6: Hvad skal du i ugen?"><img src="assets/slides/ugen1025/04.webp" alt="Hvad skal du i ugen? – slide 4 af 6" width="1080" height="1350" loading="lazy"></div><div class="card k-img" aria-label="Slide 5 af 6: Hvad skal du i ugen?"><img src="assets/slides/ugen1025/05.webp" alt="Hvad skal du i ugen? – slide 5 af 6" width="1080" height="1350" loading="lazy"></div><div class="card k-img" aria-label="Slide 6 af 6: Hvad skal du i ugen?"><img src="assets/slides/ugen1025/06.webp" alt="Hvad skal du i ugen? – slide 6 af 6" width="1080" height="1350" loading="lazy"></div></div><button type="button" class="sa l" aria-label="Forrige">‹</button><button type="button" class="sa r" aria-label="Næste">›</button><span class="scount"></span></div>
+    <div class="sdots"></div>
+    <p class="fcap"><b>Hvad skal du i ugen?</b> Der sker meget i 2700 i denne uge, så vi har samlet det i seks overblik: tre ting for de voksne, tre for børn, fællesspisning, musik, krea og sport.</p>
+    <details class="all"><summary>Læs videre – alle 4 historier med kilder</summary><div class="alle">
+<details class="story" id="ugen1025-mandag"><summary>Mandag 26. oktober</summary>
+<div class="story-body">
+<p><strong>Strikkecafé i Bellahøj Kirke</strong><br/>Bellahøj Kirke · Kl. 13.00–15.00 · Gratis<br/>Strik med over en kop kaffe og god snak – alle er velkomne.<br/><a href="https://sogn.dk/bellahoej-utterslev/kalender/event/3027543?cHash=3a8e27240a5e78d6e7f668cf287219d9" target="_blank">Læs mere</a></p>
+<p><strong>Repair Café Brønshøj</strong><br/>Bevægelsen ved BRØK, Brønshøj Kulturhus · Kl. 16.00–19.00 (kom senest 18.30) · Gratis, ingen tilmelding<br/>Tag det ødelagte tøj, legetøj eller elektronik med, og få hjælp af frivillige til at reparere det.<br/><a href="https://broek.kk.dk/kalender/repair-cafe-broenshoej" target="_blank">Læs mere</a></p>
+<p><strong>Forfatterspirernes Skriveklub (11–18 år)</strong><br/>Husum Bibliotek · Kl. 16.30–18.30 · Gratis<br/>Skriveklub for unge med digter og børnebogsforfatter Jeppe Madsen. Man må gerne møde op og prøve en enkelt gang.<br/><a href="https://kulturogfritidn.kk.dk/det-sker/forfatterspirernes-skriveklub-paa-husum-bibliotek" target="_blank">Læs mere</a></p>
+<p><strong>Dansk snakkeklub</strong><br/>Caféen, Tingbjerg Bibliotek &amp; Kulturhus · Kl. 16.30–18.00<br/>Øv dit danske i uformelt selskab.<br/><a href="https://tingbjerg-bydel.dk/assets/dokumenter/Beboerbladet-Tingbjerg-oktober-2026.pdf" target="_blank">Se kalenderen</a></p>
+<p><strong>Frederik Smal: Common Silent Places – sidste dage</strong><br/>Brønshøj Vandtårn · Man. 17.00–20.00, tir. 17.00–19.00, ons. 17.00–20.00 · Gratis<br/>Stille stregtegninger mellem vandtårnets betonsøjler. Udstillingen slutter onsdag.<br/><a href="https://broek.kk.dk/kalender/frederik-smal-common-silent-places" target="_blank">Læs mere</a></p>
+<p><strong>Helge Baun Sørensen fortæller om Brønshøj Kirkegård</strong><br/>Brønshøj Sognehus · Kl. 19.00<br/>Gamle Brønshøj fortalt gennem kendte folk på kirkegården – bl.a. Finn Ziegler, Jørgen Ryg og Husums fiskehandlere Egon og Annelise.<br/><a href="https://sogn.dk/broenshoej/kalender/event/3349539?cHash=75540b08ee5c6f2578c80e872653cad2" target="_blank">Læs mere</a></p></div>
+</details>
+<details class="story" id="ugen1025-tirsdag"><summary>Tirsdag 27. oktober</summary>
+<div class="story-body">
+<p><strong>Cykeltur med cykelfællesskabet</strong><br/>BRØK, Brønshøj Kulturhus · Kl. 10.00–12.00 · Gratis, husk cykelhjelm<br/>Seniorer cykler en tur sammen i små hold med kaffepause.<br/><a href="https://broek.kk.dk/kalender/cykeltur-med-cykelfaellesskabet" target="_blank">Læs mere</a></p>
+<p><strong>MiniBiblioteket (0–6 år)</strong><br/>Børnebiblioteket, Tingbjerg Bibliotek &amp; Kulturhus · Kl. 10.00–10.30<br/>En lille stund i børnebiblioteket for de mindste og deres voksne.<br/><a href="https://tingbjerg-bydel.dk/assets/dokumenter/Beboerbladet-Tingbjerg-oktober-2026.pdf" target="_blank">Se kalenderen</a></p>
+<p><strong>Rytmik i Rytterskolen (4–18 mdr.)</strong><br/>Rytterskolen · Kl. 10.30 · 70 kr. for en voksen med barn, billet på forhånd<br/>Sang, dans, rasleæg og faldskærm for de helt små.<br/><a href="https://broek.kk.dk/kalender/rytmik-i-rytterskolen" target="_blank">Læs mere</a></p>
+<p><strong>Igne:Oya – sy- og håndarbejdsværksted</strong><br/>Salen, Tingbjerg Bibliotek &amp; Kulturhus · Kl. 16.00–19.00<br/>Kom og sy og lav håndarbejde sammen med andre.<br/><a href="https://tingbjerg-bydel.dk/assets/dokumenter/Beboerbladet-Tingbjerg-oktober-2026.pdf" target="_blank">Se kalenderen</a></p>
+<p><strong>Halloween i kirken</strong><br/>Tingbjerg Kirke · Kl. 17.00–ca. 18.30<br/>Græskarskæring og krea, let måltid kl. 17.30 og en lille børnegudstjeneste kl. 18. Kom gerne udklædt som spøgelse, trold eller heks.<br/><a href="https://sogn.dk/tingbjerg/kalender/event/3347531?cHash=791ef5f58a9c5dd9c5c5ecf816ab1dc0" target="_blank">Læs mere</a></p>
+<p><strong>Lektiehjælp og studiecafé</strong><br/>Mødelokale 2, Tingbjerg Bibliotek &amp; Kulturhus · Kl. 17.00–19.00<br/>Få hjælp til lektierne eller ro til at læse.<br/><a href="https://tingbjerg-bydel.dk/assets/dokumenter/Beboerbladet-Tingbjerg-oktober-2026.pdf" target="_blank">Se kalenderen</a></p>
+<p><strong>Fællesspisning hos Café Mors Varme Hænder</strong><br/>Caféen, Tingbjerg Bibliotek &amp; Kulturhus · Kl. 17.00–19.00 · Voksne 65 kr., børn under 12 år 35 kr.<br/>Månedens fællesspisning for naboer på tværs – i oktober med somalisk mad. Billet via morsvarmehaender.dk.<br/><a href="https://kulturogfritidn.kk.dk/det-sker/faellesspisning" target="_blank">Læs mere</a></p>
+<p><strong>Tysk snakkeklub</strong><br/>BRØK, Brønshøj Kulturhus · Kl. 18.00–19.15 · Gratis<br/>Øv dit tysk i uformelt selskab – alle niveauer er velkomne.<br/><a href="https://broek.kk.dk/kalender/tysk-snakkeklub-0" target="_blank">Læs mere</a></p>
+<p><strong>Fædre og Sønner</strong><br/>Salen, Tingbjerg Bibliotek &amp; Kulturhus · Kl. 18.30–20.30 · Gratis<br/>C:NTACT-forestilling, hvor en gruppe mænd fortæller personligt om at være minoritetsetniske mænd, fædre og sønner. Bagefter kan publikum stille spørgsmål.<br/><a href="https://kulturogfritidn.kk.dk/det-sker/faedre-og-soenner" target="_blank">Læs mere</a></p>
+<p><strong>Tegn fugle med Signe Parkins</strong><br/>Brønshøj Bibliotek · Kl. 19.00–21.00 · 50 kr. inkl. materialer, billet på Billetto<br/>Tegneworkshop for voksne: Lær at tegne rødstjert, solsort og halemejse direkte med fineliner – uden blyant og viskelæder.<br/><a href="https://kulturogfritidn.kk.dk/det-sker/tegn-fugle-med-signe-parkins-tegneworkshop-for-voksne" target="_blank">Læs mere</a></p>
+<p><strong>Strikkecafé med Brønshøj Strikkeklub</strong><br/>BRØK, Brønshøj Kulturhus · Kl. 19.00–21.00 · Gratis<br/>Åben strikkeklub for både begyndere og øvede – kom bare forbi.<br/><a href="https://broek.kk.dk/kalender/strikkecafe-med-broenshoej-strikkeklub" target="_blank">Læs mere</a></p>
+<p><strong>Fransk snakkeklub</strong><br/>BRØK, Brønshøj Kulturhus · Kl. 19.15–20.15 · Gratis<br/>Øv dit franske i uformelt selskab – alle niveauer er velkomne.<br/><a href="https://broek.kk.dk/kalender/fransk-snakkeklub" target="_blank">Læs mere</a></p></div>
+</details>
+<details class="story" id="ugen1025-onsdag"><summary>Onsdag 28. oktober</summary>
+<div class="story-body">
+<p><strong>Morgensang</strong><br/>Brønshøj Bibliotek · Kl. 09.00–09.20 · Gratis<br/>Start dagen med fire sange fra Højskolesangbogen med sangvært og pianist.<br/><a href="https://kulturogfritidn.kk.dk/det-sker/morgensang" target="_blank">Læs mere</a></p>
+<p><strong>KirkeYoga</strong><br/>Tingbjerg Kirke · Kl. 10.00<br/>Rolig og meditativ yoga i kirkerummet.<br/><a href="https://sogn.dk/tingbjerg/kalender/event/3063669?cHash=39b8d70b51a19a3d8042c36bd73cf40b" target="_blank">Læs mere</a></p>
+<p><strong>Åbent værksted</strong><br/>Skaberværelset, Tingbjerg Bibliotek &amp; Kulturhus · Kl. 15.00–19.00 · Gratis<br/>Prøv 3D-printer og laserskærer, eller få feedback på dit eget projekt – for både begyndere og øvede.<br/><a href="https://kulturogfritidn.kk.dk/det-sker/aabent-vaerksted" target="_blank">Læs mere</a></p>
+<p><strong>Højskolesang</strong><br/>Husumvold Kirke · Kl. 16.00<br/>Fællessang fra Højskolesangbogen med organisterne Helgi Breiner og Andreas Bergholt. Du må selv foreslå sange – og man behøver ikke kunne synge.<br/><a href="https://sogn.dk/husumvold/kalender/event/3279936?cHash=191e3647b53c8f7609fef21cd1b13c43" target="_blank">Læs mere</a></p>
+<p><strong>Dokumentarfilm: Mr. Nobody mod Putin</strong><br/>Husum Bibliotek · Kl. 18.30–21.00 · Gratis, billet på Billetto<br/>En russisk lærer smugler optagelser ud af propagandaen i sin skole. Bagefter fortæller Mille Rode fra Dansk PEN om ytringsfrihed i Rusland.<br/><a href="https://kulturogfritidn.kk.dk/det-sker/dokumentarfilm-mr-nobody-mod-putin-med-oplaeg-ved-mille-rode-generalsekretaer-i-dansk-pen" target="_blank">Læs mere</a></p>
+<p><strong>Paradise Jazz: Dino Slow Flow</strong><br/>BRØK, Brønshøj Kulturhus · Kl. 20.00–22.00 · 175 kr.<br/>Saxofonist Jakob Dinesens prisvindende Slow Flow – årets jazzalbum ved DMA Jazz 2025 – med jazz, pop og afro.<br/><a href="https://broek.kk.dk/kalender/paradise-jazz-dino-slow-flow" target="_blank">Læs mere</a></p></div>
+</details>
+<details class="story" id="ugen1025-torsdag"><summary>Torsdag 29. oktober</summary>
+<div class="story-body">
+<p><strong>KirkeYoga i Bellahøj Kirke</strong><br/>Bellahøj Kirke · Kl. 08.30 og 10.00 · Tilmelding<br/>Yoga og nærvær i kirkerummet.<br/><a href="https://sogn.dk/bellahoej-utterslev/kalender/event/2988200?cHash=6c11682249022c40e1b9b9aa4c4ec280" target="_blank">Læs mere</a></p>
+<p><strong>MiniBiblioteket (0–6 år)</strong><br/>Børnebiblioteket, Tingbjerg Bibliotek &amp; Kulturhus · Kl. 10.00–10.30<br/>En lille stund i børnebiblioteket for de mindste og deres voksne.<br/><a href="https://tingbjerg-bydel.dk/assets/dokumenter/Beboerbladet-Tingbjerg-oktober-2026.pdf" target="_blank">Se kalenderen</a></p>
+<p><strong>Strik &amp; Lyt</strong><br/>Husum Bibliotek · Kl. 10.00–11.00 · Gratis, ingen tilmelding<br/>Tag strikketøjet med, mens en frivillig læser højt fra romaner og noveller.<br/><a href="https://kulturogfritidn.kk.dk/det-sker/strik-lyt" target="_blank">Læs mere</a></p>
+<p><strong>Mad til alle</strong><br/>Tingbjerg Kirke · Kl. 11.00 (morgensang kl. 10.40) · Gratis<br/>Hjemmelavet mad af overskudsvarer – kom og spis med.<br/><a href="https://sogn.dk/tingbjerg/kalender/event/2977593?cHash=dfd9a7714dcbb6122a42bcca61549c51" target="_blank">Læs mere</a></p>
+<p><strong>Babycafé</strong><br/>Eilersminde, Ruten 14, 4. sal · Kl. 11.00–13.00<br/>For forældre med børn på 0–1 år. Ugens tema: fædre på barsel.<br/><a href="https://tingbjerg-bydel.dk/assets/dokumenter/Beboerbladet-Tingbjerg-oktober-2026.pdf" target="_blank">Se kalenderen</a></p>
+<p><strong>Leg og boldspil (6–12 år)</strong><br/>Salen, Tingbjerg Bibliotek &amp; Kulturhus · Kl. 15.30–16.30<br/>Leg og boldspil for børn.<br/><a href="https://tingbjerg-bydel.dk/assets/dokumenter/Beboerbladet-Tingbjerg-oktober-2026.pdf" target="_blank">Se kalenderen</a></p>
+<p><strong>Skakklub</strong><br/>Caféen, Tingbjerg Bibliotek &amp; Kulturhus · Kl. 16.30–18.30<br/>Kom og spil skak – klubben mødes i lige uger.<br/><a href="https://tingbjerg-bydel.dk/assets/dokumenter/Beboerbladet-Tingbjerg-oktober-2026.pdf" target="_blank">Se kalenderen</a></p>
+<p><strong>FOLK &amp; MAD – fællesspisning i Husum</strong><br/>EnergiCenter Voldparken · Kl. 17.30–19.30 · 38 kr.<br/>Et godt måltid – som regel grønt – lavet af en kok og lokale unge. Kom og spis med naboerne.<br/><a href="https://www.kultunaut.dk/perl/arrmore/type-nynaut?ArrNr=20211812" target="_blank">Læs mere</a></p>
+<p><strong>Lokaludvalgsmøde – Brønshøj-Husum</strong><br/>Brønshøj – adressen er ikke offentliggjort endnu · Kl. 18.30–22.00 · Åbent for alle<br/>Lokaludvalget behandler høringssvar, puljepenge og egne projekter i bydelen.<br/><a href="https://broenshoej-husumlokaludvalg.kk.dk/ordinaert-moede-i-broenshoej-husum-lokaludvalg-1" target="_blank">Læs mere</a></p>
+<p><strong>Bella Notte med intimkoncert</strong><br/>Bellahøj Kirke · Kl. 19.00 (koncert kl. 20.15)<br/>Stille aftengudstjeneste med guidet meditation og musik – med allehelgen, afsked og sorg som tema. Til sidst intimkoncert med Merete Ørting Lahey.<br/><a href="https://sogn.dk/bellahoej-utterslev/kalender/event/3323108?cHash=208e3cf6399139f14e1e9f7e4e6432a2" target="_blank">Læs mere</a></p>
+<p><strong>Filmklub</strong><br/>Salen, Tingbjerg Bibliotek &amp; Kulturhus · Kl. 19.00–21.00<br/>Filmklubben mødes sidste torsdag i måneden.<br/><a href="https://tingbjerg-bydel.dk/assets/dokumenter/Beboerbladet-Tingbjerg-oktober-2026.pdf" target="_blank">Se kalenderen</a></p>
+<p><strong>Calum Builder: (Re)Constructed Organ &amp; Voices</strong><br/>Brønshøj Vandtårn · Kl. 19.30–21.30 · 80 kr. i døren<br/>Koncert på et orgel bygget af genbrugte kirkepiber fra Nordjylland – med tre sangere i vandtårnets akustik.<br/><a href="https://broek.kk.dk/kalender/calum-builder-reconstructed-organ-voices" target="_blank">Læs mere</a></p></div>
+</details>
+<p class="closing">Har vi overset noget, der sker i 2700? Smid det i kommentarerne — så hjælper I med at gøre Fælleskalenderen bedre.</p>
+</div></details>
+  </section>
+
+  <section class="fpost" id="guide1024" data-total="7">
+    <div class="fhead"><img class="av" src="assets/segment-guide.jpg" alt=""><div class="fname"><b>#2700 GUIDEN: 5 ting til Halloween i 2700</b><span>24. oktober 2026</span></div></div>
+    <div class="fwrap"><div class="strip" tabindex="0" aria-label="Kort: 5 ting til Halloween i 2700"><div class="card k-img" aria-label="Slide 1 af 7: 5 ting til Halloween i 2700"><img src="assets/slides/guide1024/01.webp" alt="5 ting til Halloween i 2700 – slide 1 af 7" width="1080" height="1350"></div><div class="card k-img" aria-label="Slide 2 af 7: 5 ting til Halloween i 2700"><img src="assets/slides/guide1024/02.webp" alt="5 ting til Halloween i 2700 – slide 2 af 7" width="1080" height="1350" loading="lazy"></div><div class="card k-img" aria-label="Slide 3 af 7: 5 ting til Halloween i 2700"><img src="assets/slides/guide1024/03.webp" alt="5 ting til Halloween i 2700 – slide 3 af 7" width="1080" height="1350" loading="lazy"></div><div class="card k-img" aria-label="Slide 4 af 7: 5 ting til Halloween i 2700"><img src="assets/slides/guide1024/04.webp" alt="5 ting til Halloween i 2700 – slide 4 af 7" width="1080" height="1350" loading="lazy"></div><div class="card k-img" aria-label="Slide 5 af 7: 5 ting til Halloween i 2700"><img src="assets/slides/guide1024/05.webp" alt="5 ting til Halloween i 2700 – slide 5 af 7" width="1080" height="1350" loading="lazy"></div><div class="card k-img" aria-label="Slide 6 af 7: 5 ting til Halloween i 2700"><img src="assets/slides/guide1024/06.webp" alt="5 ting til Halloween i 2700 – slide 6 af 7" width="1080" height="1350" loading="lazy"></div><div class="card k-img" aria-label="Slide 7 af 7: 5 ting til Halloween i 2700"><img src="assets/slides/guide1024/07.webp" alt="5 ting til Halloween i 2700 – slide 7 af 7" width="1080" height="1350" loading="lazy"></div></div><button type="button" class="sa l" aria-label="Forrige">‹</button><button type="button" class="sa r" aria-label="Næste">›</button><span class="scount"></span></div>
+    <div class="sdots"></div>
+    <p class="fcap"><b>5 ting til Halloween i 2700</b> Fester, film, kranier og uhyggemenu. Her er, hvad der sker til Halloween i Brønshøj og Tingbjerg fra 27. til 31. oktober – og det meste er gratis.</p>
+    <details class="all"><summary>Læs videre – alle 5 historier med kilder</summary><div class="alle">
+<details class="story" id="guide1024-halloween-kirken"><summary>Halloween i kirken</summary>
+<div class="story-body"><p><strong>Tirsdag 27. oktober kl. 17 · Tingbjerg Kirke</strong></p>
+<p>Kreahjørne med græskarskæring, et let måltid for børnene og til sidst lystænding og en lille gudstjeneste i børnehøjde. Kom gerne udklædt. Pris ikke oplyst.</p></div>
+</details>
+<details class="story" id="guide1024-brok"><summary>Halloween ved BRØK</summary>
+<div class="story-body"><p><strong>Fredag 30. oktober kl. 16–19 · BRØK, Brønshøjvej 3, og Rytterskolen, Brønshøj Torv</strong></p>
+<p>Ansigtsmaling kl. 16–17, Gyserruten i Rytterskolen kl. 16.30–19 (fra 10 år) og kamparena med minotaur bag BRØK kl. 17–19. Gratis – kom udklædt.</p></div>
+</details>
+<details class="story" id="guide1024-kranier"><summary>Kranier før Halloween</summary>
+<div class="story-body"><p><strong>Lørdag 31. oktober kl. 10–12 · Edderkoppelegepladsen, Pilesvinget 80</strong></p>
+<p>En biolog tager kranier med fra mosens og skovens dyr, og børnene finder ud af, hvilket dyr de har tilhørt. Slet ikke uhyggeligt. For børnehave- og skolebørn med deres voksne. Gratis, ingen tilmelding.</p></div>
+</details>
+<details class="story" id="guide1024-bio"><summary>Halloween-bio</summary>
+<div class="story-body"><p><strong>Lørdag 31. oktober kl. 10.30–11.30 · Brønshøj Bibliotek, 1. sal</strong></p>
+<p>Halloween-film for børn på 3–9 år i bibliotekets arrangementslokale. På programmet er bl.a. Rita og Krokodille. Gratis adgang.</p></div>
+</details>
+<details class="story" id="guide1024-menu"><summary>Halloween-menu</summary>
+<div class="story-body"><p><strong>Lørdag 31. oktober, aften · Spisehuset i Den Gamle Skole, BRØK, Brønshøjvej 3</strong></p>
+<p>Sort pasta med kødsovs og blodrød panna cotta til dessert for 115 kr. pr. person. Kun som aftensmad, bestilles ved bordet. Book bord på 93 94 10 19.</p></div>
+</details>
+<p class="closing">Mangler dit arrangement? Skriv til os, så kommer det med næste gang.<br/><br/>Fotos: Brønshøj Bibliotek og Spisehuset i Den Gamle Skole.</p>
+</div></details>
+  </section>
+
+  <section class="fpost" id="udland1021" data-total="3">
+    <div class="fhead"><img class="av" src="assets/segment-udland.jpg" alt=""><div class="fname"><b>Det rene københavneri</b><span>23. oktober 2026</span></div></div>
+    <div class="fwrap"><div class="strip" tabindex="0" aria-label="Kort: Det rene københavneri"><div class="card k-img" aria-label="Slide 1 af 3: Det rene københavneri"><img src="assets/slides/udland1021/01.webp" alt="Det rene københavneri – slide 1 af 3" width="1080" height="1350"></div><div class="card k-img" aria-label="Slide 2 af 3: Det rene københavneri"><img src="assets/slides/udland1021/02.webp" alt="Det rene københavneri – slide 2 af 3" width="1080" height="1350" loading="lazy"></div><div class="card k-img" aria-label="Slide 3 af 3: Det rene københavneri"><img src="assets/slides/udland1021/03.webp" alt="Det rene københavneri – slide 3 af 3" width="1080" height="1350" loading="lazy"></div></div><button type="button" class="sa l" aria-label="Forrige">‹</button><button type="button" class="sa r" aria-label="Næste">›</button><span class="scount"></span></div>
+    <div class="sdots"></div>
+    <p class="fcap"><b>Det rene københavneri</b> Hakkebøf-debatten når statsministeren, Indre By lukker for nye hoteller, og en rengøringsmedarbejder sad låst inde i tre døgn.</p>
+    <details class="all"><summary>Læs videre – alle 3 historier med kilder</summary><div class="alle">
+<details class="story" id="udland1021-hakkebof"><summary>Hakkebøffen nåede helt op til statsministeren</summary>
+<div class="story-body">
+<p>Berlingske skrev søndag, at ældre på københavnske plejehjem har fået nej til en hakkebøf på deres fødselsdag med henvisning til CO2-regnskabet. Mandag skrev statsminister Mette Frederiksen (S) på Facebook, at det er forkert, at ældre på plejehjem ikke kan få det kød, de vil have, "som der er forslag om i København". Sundheds- og omsorgsborgmester Jens-Kristian Lütken (V) takkede for opbakningen og vil have plejehjemmene helt fritaget for kommunens klimakrav til maden. Overborgmester Sisse Marie Welling (SF) svarer, at der ikke er noget forslag om at fjerne kød fra menuen, og at det er Lütkens ansvar at gøre det klart for plejehjemmene, at de gerne må servere det.</p>
+<p>Næste runde kommer på tirsdag, hvor Økonomiudvalget efter planen sender kommunens nye mad- og måltidsstrategi i offentlig høring fra 30. oktober til 30. november. I udkastet står det nu tydeligere, at ernæring, smag, fællesskab og medbestemmelse kommer først for dem, der får al deres mad fra kommunen. Da strategien var i Sundheds- og Omsorgsudvalget i august, stemte SF, Enhedslisten og De Radikale for at holde plejehjemmene med i den. S, V, K og LA stemte imod.</p>
+<a href="https://www.tv2kosmopol.dk/koebenhavn/overborgmester-gar-i-flaesket-pa-mette-frederiksen-9794c" target="_blank">Læs mere hos TV 2 Kosmopol</a><br/>
+<a href="https://www.kk.dk/dagsordener-og-referater/%C3%98konomiudvalget/m%C3%B8de-27102026/dagsorden/punkt-20" target="_blank">Læs mere hos Københavns Kommune</a></div>
+</details>
+<details class="story" id="udland1021-hoteller"><summary>Stop for nye hoteller i det gamle København</summary>
+<div class="story-body">
+<p>I middelalderbyen, Gammelholm, Nyhavn, dele af Frederiksstaden og Nansensgade-kvarteret må der ikke komme flere hoteller, og de eksisterende må ikke udvide. Det er indholdet af et forslag fra EL, SF, S og K, som Borgerrepræsentationen vedtog i april. På mandag skal Klima-, Miljø- og Teknikudvalget sende de konkrete planer i otte ugers høring. Planerne kan i øvrigt kun styre, hvor mange kvadratmeter der bruges til hotel, ikke hvor mange værelser der er.</p>
+<p>Forbuddet har huller: Hotelbåde i Nyhavn og langs Havnegade er stadig mulige, fordi vandet ikke er med. D'Angleterre og 1 Hotel i Krystalgade beholder deres lokalplaner, og et hotel i Niels Juels Gade nåede at få byggetilladelse i september. Indre By Lokaludvalg vil have hele Indre By med, så hotellerne ikke bare rykker et par gader længere ud. Planen ventes vedtaget endeligt i andet kvartal 2027.</p>
+<a href="https://www.kk.dk/dagsordener-og-referater/Klima-%2C%20Milj%C3%B8-%20og%20Teknikudvalget/m%C3%B8de-26102026/dagsorden/punkt-5" target="_blank">Læs mere hos Københavns Kommune</a></div>
+</details>
+<details class="story" id="udland1021-kaelder"><summary>Låst inde i tre døgn i Landsrettens gamle kælder</summary>
+<div class="story-body">
+<p>En rengøringsmedarbejder sad i september fanget i tre døgn i en kældercelle under Østre Landsrets gamle bygninger i Bredgade. Døren smækkede i bag hende, celledøre kan ikke åbnes indefra, og hun havde ikke sin telefon med. Landsretten flyttede til Nordhavn i 2022, og bygningerne står tomme, når byretten ikke bruger dem. Derfor opdagede ingen hende. Københavns Byret har bekræftet episoden over for Ekstra Bladet, men vil ikke sige mere.</p>
+<a href="https://www.tv2kosmopol.dk/koebenhavn/rengoringsmedarbejder-last-inde-i-kaeldercelle-i-tre-dogn-ved-en-fejl-13d9c" target="_blank">Læs mere hos TV 2 Kosmopol</a></div>
+</details>
+</div></details>
+  </section>
+
+  <section class="fpost" id="todoweekend1021" data-total="5">
+    <div class="fhead"><img class="av" src="assets/segment-todoweekend.jpg" alt=""><div class="fname"><b>Guide til din weekend</b><span>21. oktober 2026</span></div></div>
+    <div class="fwrap"><div class="strip" tabindex="0" aria-label="Kort: Hvad sker der i 2700 i denne weekend?"><div class="card k-img" aria-label="Slide 1 af 5: Hvad sker der i 2700 i denne weekend?"><img src="assets/slides/todoweekend1021/01.webp" alt="Hvad sker der i 2700 i denne weekend? – slide 1 af 5" width="1080" height="1350"></div><div class="card k-img" aria-label="Slide 2 af 5: Hvad sker der i 2700 i denne weekend?"><img src="assets/slides/todoweekend1021/02.webp" alt="Hvad sker der i 2700 i denne weekend? – slide 2 af 5" width="1080" height="1350" loading="lazy"></div><div class="card k-img" aria-label="Slide 3 af 5: Hvad sker der i 2700 i denne weekend?"><img src="assets/slides/todoweekend1021/03.webp" alt="Hvad sker der i 2700 i denne weekend? – slide 3 af 5" width="1080" height="1350" loading="lazy"></div><div class="card k-img" aria-label="Slide 4 af 5: Hvad sker der i 2700 i denne weekend?"><img src="assets/slides/todoweekend1021/04.webp" alt="Hvad sker der i 2700 i denne weekend? – slide 4 af 5" width="1080" height="1350" loading="lazy"></div><div class="card k-img" aria-label="Slide 5 af 5: Hvad sker der i 2700 i denne weekend?"><img src="assets/slides/todoweekend1021/05.webp" alt="Hvad sker der i 2700 i denne weekend? – slide 5 af 5" width="1080" height="1350" loading="lazy"></div></div><button type="button" class="sa l" aria-label="Forrige">‹</button><button type="button" class="sa r" aria-label="Næste">›</button><span class="scount"></span></div>
+    <div class="sdots"></div>
+    <p class="fcap"><b>Hvad sker der i 2700 i denne weekend?</b> Skal du se Frederik Smals stille tegninger i vandtårnet eller høre Murakami-jazz i BRØK? Skal børnene gætte dyr med Emil Sanderhoff? Eller hvad med gratis korkoncert i Brønshøj Kirke og Beatles-sange søndag?</p>
+    <details class="all"><summary>Se hele programmet med links</summary><div class="alle">
+<details class="story" id="todoweekend1021-hele-weekenden"><summary>Hele weekenden</summary>
+<div class="story-body">
+<p><strong>Frederik Smal: Common Silent Places</strong><br/>Brønshøj Vandtårn · Fredag 17.00–20.00, lørdag og søndag 12.00–17.00 · Gratis<br/>Frederik Smal har hængt små, enkle stregtegninger op mellem vandtårnets betonsøjler. De handler om erindring, ømhed og tilhørsforhold – om steder, der kun findes inde i os. Der er ingen fast rute og næsten ingen tekst, så man går rundt i det runde rum og møder værkerne ét ad gangen, mens lyset og lyden i tårnet bliver en del af oplevelsen.<br/><a href="https://broek.kk.dk/kalender/frederik-smal-common-silent-places" target="_blank">Læs mere</a></p></div>
+</details>
+<details class="story" id="todoweekend1021-fredag"><summary>Fredag 23. oktober</summary>
+<div class="story-body">
+<p><strong>Barselscafé i Rytterskolen: Babymassage</strong><br/>Rytterskolen · Kl. 10.00–12.00 · Gratis, kræver tilmelding<br/>En særudgave af barselscaféen, hvor I lærer babymassage. Massagen kan berolige, styrke babyens kropsbevidsthed og hjælpe dig til at aflæse dit barns signaler. Værten er Anne-Mette, der er uddannet doula og yogalærer.<br/><a href="https://broek.kk.dk/kalender/barselscafe-i-rytterskolen-babymassage" target="_blank">Læs mere</a></p>
+<p><strong>Højskolesang</strong><br/>Tingbjerg Kirke · Kl. 14.00 · Kaffe og kage 10 kr.<br/>Fællessang fra Højskolesangbogen i Tingbjerg Kirke. Dagens gæst er tidligere sognepræst Lis Bisgaard, og der er kaffe og kage til en tier.<br/><a href="https://www.kultunaut.dk/perl/arrmore/type-nynaut?ArrNr=20170505" target="_blank">Læs mere</a></p>
+<p><strong>Visens Venner Brønshøj: Glemmer du, så husker jeg</strong><br/>BRØK, Brønshøj Kulturhus · Kl. 19.00–21.00 (spisning fra 18.00) · 80 kr., medlemmer 50 kr.<br/>En aften med de viser, der har fulgt os gennem livet – nogle lærte vi som børn, andre kom til senere. Visens Venner synger et håndplukket udvalg med Yvonne Sundby som visevært, og alle er velkomne. Dørene åbner kl. 18 til spisning: medbring selv mad, drikke og service.<br/><a href="https://broek.kk.dk/kalender/visens-venner-broenshoej-glemmer-du-saa-husker-jeg" target="_blank">Læs mere</a></p></div>
+</details>
+<details class="story" id="todoweekend1021-loerdag"><summary>Lørdag 24. oktober</summary>
+<div class="story-body">
+<p><strong>Hoppeloppen – selvbetjent legestue (1–5 år)</strong><br/>BRØK, Brønshøj Kulturhus (Bevægelsen) · Kl. 09.00–17.00 · Gratis, ingen tilmelding<br/>En lille indendørs legestue med redskaber, som børnene kan bygge deres egen balancebane af. Den ligger i Bevægelsen, huset ved siden af hovedbygningen. Den er selvbetjent, så man rydder selv op efter sig, og den er kun for 1–5-årige – ikke de store søskende.<br/><a href="https://broek.kk.dk/kalender/hoppeloppen-selvbetjent-legestue-for-1-5-aar" target="_blank">Læs mere</a></p>
+<p><strong>FIX damer – Kastrup</strong><br/>Pilesvinget/Brønshøj Kirkevej · Kl. 10.00<br/>FIX damer tager imod Kastrup Boldklub på hjemmebane. Kom og hep på holdet på Pilesvinget.<br/><a href="https://www.dbukoebenhavn.dk/resultater/hold/216040_496307/kampprogram" target="_blank">Læs mere</a></p>
+<p><strong>Gæt et dyr (5–9 år)</strong><br/>BRØK, Brønshøj Kulturhus · Kl. 11.00–11.45 · 55 kr.<br/>Naturvejleder og tv-eventyrer Emil Sanderhoff og spillemand Jonas Hellerstedt laver den klassiske leg om til en musikalsk dyrequiz, hvor publikum er med. Når dyret er gættet, bliver der spillet og danset til en sang om det. Scenen bliver til et lille zoologisk museum med både døde og levende dyr, som børnene kan se nærmere på bagefter.<br/><a href="https://broek.kk.dk/kalender/gaet-et-dyr" target="_blank">Læs mere</a></p>
+<p><strong>Planterelief-workshop med Adam Fenton</strong><br/>BRØKs Keramikværksted, Brønshøjvej 17B · Kl. 11.00–17.00 · 575 kr.<br/>Tag en plante eller et plantemotiv med, der betyder noget for dig. Du ridser og graver motivet ud i en ramme med ler, og det bliver støbt i gips som et relief, du tager med hjem. Undervejs fortæller kunstneren Adam Fenton om sin serie af gipsrelieffer med planter fra venners hjem.<br/><a href="https://broek.kk.dk/kalender/planterelief-workshop-med-adam-fenton" target="_blank">Læs mere</a></p>
+<p><strong>Studiekreds: The Good Place</strong><br/>Tingbjerg Kirke · Kl. 11.00–15.00 · Tilmelding til Thomas Ammitzbøll-Bach på 29 43 36 97<br/>Netflix-serien The Good Place handler om livet efter døden, om at være et godt menneske og om filosoffernes tanker om etik – og den er meget sjov. I ser første sæson over to lørdage (24/10 og 21/11) og snakker om den over et let måltid og kaffe.<br/><a href="https://www.kultunaut.dk/perl/arrmore/type-nynaut?ArrNr=20327589" target="_blank">Læs mere</a></p>
+<p><strong>FIX herrer – PI Fodbold</strong><br/>Pilesvinget/Brønshøj Kirkevej · Kl. 12.00<br/>FIX herrer slog Olympiakos København 3-2 sidste lørdag og skal nu prøve at følge op hjemme mod PI Fodbold i Serie 2.<br/><a href="https://www.dbukoebenhavn.dk/resultater/hold/21307_496313/kampprogram" target="_blank">Læs mere</a></p>
+<p><strong>IF Stadion – Team Sydhavsøerne 2</strong><br/>EnergiCenter Voldparken Hallen, Åkandevej 31 · Kl. 14.30<br/>Håndbold i Husum: IF Stadions herrer tager imod Team Sydhavsøerne 2 i 2. division.<br/><a href="https://danskhaandbold.dk/kampe/2550091" target="_blank">Læs mere</a></p>
+<p><strong>Koncert med universitetskoret Lille MUKO</strong><br/>Brønshøj Kirke · Kl. 15.00 · Gratis<br/>Lille MUKO synger Frank Martins messe for dobbeltkor – et værk, der lå i komponistens skuffe i årtier, før det blev opført første gang i 1963. Koncerten åbner med John Taveners kirkemusik og slutter med tre efterårssange af Matti Borg.<br/><a href="https://www.bronshojkirke.dk/b/koncert-lille-muko-55214168" target="_blank">Læs mere</a></p>
+<p><strong>Mette Holm + Makiko Hirabayashi's Murakami Trio</strong><br/>BRØK, Brønshøj Kulturhus · Kl. 20.00–22.00 · 180 kr.<br/>I Murakamis novelle 'Charlie Parker Plays Bossa Nova' spiller saxofonisten bossanova – noget, han aldrig nåede i virkeligheden. Makiko Hirabayashi (klaver), Jan Harbech (sax) og Morten Ankarfeldt (bas) spiller musikken, mens Murakamis danske oversætter Mette Holm læser op og fortæller.<br/><a href="https://broek.kk.dk/kalender/mette-holm-makiko-hirabayashis-murakami-trio" target="_blank">Læs mere</a></p></div>
+</details>
+<details class="story" id="todoweekend1021-soendag"><summary>Søndag 25. oktober</summary>
+<div class="story-body">
+<p><strong>Husumvold Søndag: Gud og danskerne – er troen på vej tilbage?</strong><br/>Husumvold Kirke · Kl. 11.15–12.45 (gudstjeneste 10.00) · Gratis<br/>Er en ny generation på vej mod kirken? Forsker Jacob Holst Mouritzen tager udgangspunkt i Bibelselskabets store trosanalyse fra 2026 og fortæller om danskernes tro og tvivl – og om, hvad der ligger bag snakken om en religiøs vækkelse blandt unge. For både troende, tvivlere og nysgerrige.<br/><a href="https://sogn.dk/husumvold/kalender/event/3301661?cHash=4e63743b2dcaa3a9195855203b1c152d" target="_blank">Læs mere</a></p>
+<p><strong>Gratis omvisning i Carlstad-udstillingen</strong><br/>Rytterskolen · Kl. 13.00–15.00 · Gratis, kræver tilmelding<br/>I næsten to år havde den svenske hær sin hovedlejr, Carlstad, i Brønshøj og Utterslev. Udstillingen på Rytterskolens 1. sal fortæller historien med 300 små figurer i 18 scener – frem til stormen på København i februar 1659. Omviser er Tom Petersen, der har boet i Brønshøj i 40 år.<br/><a href="https://broek.kk.dk/kalender/gratis-omvisning-i-carlstad-udstillingen-1" target="_blank">Læs mere</a></p>
+<p><strong>Music House Brønshøj: The 3eatles spiller The Beatles</strong><br/>BRØK, Brønshøj Kulturhus · Kl. 14.00–16.00 · 120 kr.<br/>Coverbandet The 3eatles spiller Beatles fra de tidlige rock'n'roll-numre til de store ballader – fra Love Me Do til Let It Be. Der er lagt op til fællessang og en svingom.<br/><a href="https://broek.kk.dk/kalender/music-house-broenshoej-the-3eatles-spiller-the-beatles" target="_blank">Læs mere</a></p></div>
+</details>
+<p class="closing">Har vi overset noget, der sker i 2700? Smid det i kommentarerne — så hjælper I med at gøre Fælleskalenderen bedre. </p>
+</div></details>
+  </section>
+
+  <section class="fpost" id="ostfronten1021" data-total="7">
+    <div class="fhead"><img class="av" src="assets/segment-ostfronten.jpg" alt=""><div class="fname"><b>Fra djøf&#x27;sk til dansk – 2700-nyt fra Rådhuset</b><span>21. oktober 2026</span></div></div>
+    <div class="fwrap"><div class="strip" tabindex="0" aria-label="Kort: Fra djøf&#x27;sk til dansk – 2700-nyt fra Rådhuset"><div class="card k-img" aria-label="Slide 1 af 7: Fra djøf&#x27;sk til dansk – 2700-nyt fra Rådhuset"><img src="assets/slides/ostfronten1021/01.webp" alt="Fra djøf&#x27;sk til dansk – 2700-nyt fra Rådhuset – slide 1 af 7" width="1080" height="1350"></div><div class="card k-img" aria-label="Slide 2 af 7: Fra djøf&#x27;sk til dansk – 2700-nyt fra Rådhuset"><img src="assets/slides/ostfronten1021/02.webp" alt="Fra djøf&#x27;sk til dansk – 2700-nyt fra Rådhuset – slide 2 af 7" width="1080" height="1350" loading="lazy"></div><div class="card k-img" aria-label="Slide 3 af 7: Fra djøf&#x27;sk til dansk – 2700-nyt fra Rådhuset"><img src="assets/slides/ostfronten1021/03.webp" alt="Fra djøf&#x27;sk til dansk – 2700-nyt fra Rådhuset – slide 3 af 7" width="1080" height="1350" loading="lazy"></div><div class="card k-img" aria-label="Slide 4 af 7: Fra djøf&#x27;sk til dansk – 2700-nyt fra Rådhuset"><img src="assets/slides/ostfronten1021/04.webp" alt="Fra djøf&#x27;sk til dansk – 2700-nyt fra Rådhuset – slide 4 af 7" width="1080" height="1350" loading="lazy"></div><div class="card k-img" aria-label="Slide 5 af 7: Fra djøf&#x27;sk til dansk – 2700-nyt fra Rådhuset"><img src="assets/slides/ostfronten1021/05.webp" alt="Fra djøf&#x27;sk til dansk – 2700-nyt fra Rådhuset – slide 5 af 7" width="1080" height="1350" loading="lazy"></div><div class="card k-img" aria-label="Slide 6 af 7: Fra djøf&#x27;sk til dansk – 2700-nyt fra Rådhuset"><img src="assets/slides/ostfronten1021/06.webp" alt="Fra djøf&#x27;sk til dansk – 2700-nyt fra Rådhuset – slide 6 af 7" width="1080" height="1350" loading="lazy"></div><div class="card k-img" aria-label="Slide 7 af 7: Fra djøf&#x27;sk til dansk – 2700-nyt fra Rådhuset"><img src="assets/slides/ostfronten1021/07.webp" alt="Fra djøf&#x27;sk til dansk – 2700-nyt fra Rådhuset – slide 7 af 7" width="1080" height="1350" loading="lazy"></div></div><button type="button" class="sa l" aria-label="Forrige">‹</button><button type="button" class="sa r" aria-label="Næste">›</button><span class="scount"></span></div>
+    <div class="sdots"></div>
+    <p class="fcap"><b>Fra djøf&#x27;sk til dansk – 2700-nyt fra Rådhuset</b> Penge til at planlægge Tingbjerg Stadion, hegn og lys i Husumparken, 20 høringssvar uden ændringer og toiletter i Bellahøj, der hjælper budgettet</p>
+    <details class="all"><summary>Læs videre – alle 7 historier med kilder</summary><div class="alle">
+<p style="margin:0 0 12px">Vi har kigget på, hvad der er sket på Rådhuset siden sidste onsdag, og hvad der er på vej i den kommende uge.</p>
+<details class="story" id="ostfronten1021-stadion"><summary>Planer for Tingbjerg Stadion</summary>
+<div class="story-body"><p><strong>Status: Vedtaget med budget 2027. Kultur-, Fritids- og Borgerserviceudvalget godkender fordelingen af pengene torsdag 22. oktober.</strong></p>
+<p>Der er afsat 2.585.000 kr. til at planlægge en opgradering af Tingbjerg Stadion. Pengene går til planlægningen. Selve ombygningen er ikke betalt, og det står ikke i sagen, hvornår eller hvordan den skal betales.</p>
+<p>I kommunens tabel hedder posten "Planlægningsbevilling til opgradering af Tingbjerg Stadion (Scenarie 2)".</p>
+<a href="https://www.kk.dk/dagsordener-og-referater/Kultur-%2C%20Fritids-%20og%20Borgerserviceudvalget/m%C3%B8de-22102026/dagsorden/punkt-2" target="_blank">Læs sagen</a> · <a href="https://www.kk.dk/sites/default/files/agenda/0fe5a0e0-aea3-4f87-bdb4-37c593621b32/99b2c2ac-57c7-4ac9-bcca-fd0ad76a0ec6-bilag-2.pdf" target="_blank">Læs bilaget</a></div>
+</details>
+<details class="story" id="ostfronten1021-husumparken"><summary>Husumparken får hegn og lys</summary>
+<div class="story-body"><p><strong>Status: Vedtaget med budget 2027. Udvalget godkender fordelingen torsdag 22. oktober.</strong></p>
+<p>Husumparken får 647.000 kr. til et større areal, nyt hegn og lys til sport. Ifølge kommunens tabel er der også penge til projektet i 2026.</p>
+<p>Her er pengene til at lave noget, ikke kun til at planlægge det.</p>
+<a href="https://www.kk.dk/dagsordener-og-referater/Kultur-%2C%20Fritids-%20og%20Borgerserviceudvalget/m%C3%B8de-22102026/dagsorden/punkt-2" target="_blank">Læs sagen</a> · <a href="https://www.kk.dk/sites/default/files/agenda/0fe5a0e0-aea3-4f87-bdb4-37c593621b32/99b2c2ac-57c7-4ac9-bcca-fd0ad76a0ec6-bilag-2.pdf" target="_blank">Læs bilaget</a></div>
+</details>
+<details class="story" id="ostfronten1021-handleplan"><summary>Plan for Tingbjerg og Husum Nord: 20 høringssvar, 0 ændringer</summary>
+<div class="story-body"><p><strong>Status: I proces. Børne- og Ungdomsudvalget giver sit svar onsdag 21. oktober. Derefter Klima-, Miljø- og Teknikudvalget 23. november, Økonomiudvalget 8. december og Borgerrepræsentationen 17. december.</strong></p>
+<p>Kommunens handleplan for udsatte byområder 2027–2028 gælder bl.a. Tingbjerg/Utterslevhuse og Husum Nord. Der kom 20 høringssvar, heraf 9 om børne- og ungeområdet, bl.a. fra Brønshøj-Husum Lokaludvalg.</p>
+<p>Forvaltningen har svaret i en hvidbog og vurderer, at høringssvarene ikke giver anledning til ændringer i planen. Børne- og Ungdomsudvalget lægger op til at støtte planen, men vil have mere inddragelse af børn og unge.</p>
+<a href="https://www.kk.dk/dagsordener-og-referater/B%C3%B8rne-%20og%20Ungdomsudvalget/m%C3%B8de-21102026/dagsorden/punkt-13" target="_blank">Læs sagen</a></div>
+</details>
+<details class="story" id="ostfronten1021-30timer"><summary>30 timers pasning i hver fjerde institution</summary>
+<div class="story-body"><p><strong>Status: I proces. Børne- og Ungdomsudvalget drøfter modellen onsdag 21. oktober og beslutter model og institutioner 18. november.</strong></p>
+<p>Med budget 2027 skal hver fjerde daginstitution i kommunen tilbyde en plads på 30 timer om ugen med lavere forældrebetaling. Institutionen får stadig penge som til en fuldtidsplads. Der er afsat 4,2 mio. kr. om året i 2027–2030. Alle forældre i de deltagende institutioner kan vælge ordningen uden at dokumentere et behov.</p>
+<p>Ubrugte timer kan ikke overføres til andre dage eller uger, og ferie og sygdom giver ikke ret til erstatningstimer. Kommunen tæller ikke minutter og kontrollerer ikke centralt, hvor længe børnene er der. Institutionerne skal spredes over hele byen. Det er ikke afgjort, om nogen af dem ligger i 2700.</p>
+<a href="https://www.kk.dk/dagsordener-og-referater/B%C3%B8rne-%20og%20Ungdomsudvalget/m%C3%B8de-21102026/dagsorden/punkt-3" target="_blank">Læs sagen</a></div>
+</details>
+<details class="story" id="ostfronten1021-toiletter"><summary>Toiletter i Bellahøj rykkes til 2027</summary>
+<div class="story-body"><p><strong>Status: I proces. Kultur-, Fritids- og Borgerserviceudvalget behandler sagen torsdag 22. oktober, Økonomiudvalget 27. oktober og Borgerrepræsentationen 5. november.</strong></p>
+<p>En forbedring af toiletterne i et kultur- og fritidsanlæg i Bellahøj er forsinket og flyttes fra 2026 til 2027. Bilaget siger ikke, hvilket anlæg det er.</p>
+<p>Ifølge sagen planlægger forvaltningen bevidst flere anlægsprojekter, end der er penge til i år, fordi den regner med, at nogle bliver forsinket. Det kaldes en overdisponering. Forvaltningens ramme er 55,6 mio. kr., og overdisponeringen er nu nedskrevet fra 49,2 mio. kr. til 24,6 mio. kr. Forsinkelserne beskrives som naturlige tidsforskydninger, ikke som prioriteringer.</p>
+<a href="https://www.kk.dk/dagsordener-og-referater/Kultur-%2C%20Fritids-%20og%20Borgerserviceudvalget/m%C3%B8de-22102026/dagsorden/punkt-11" target="_blank">Læs sagen</a> · <a href="https://www.kk.dk/sites/default/files/agenda/0fe5a0e0-aea3-4f87-bdb4-37c593621b32/8b2bb120-11b0-4b85-b3ac-71b0d17bd05e-bilag-1.pdf" target="_blank">Læs bilaget</a></div>
+</details>
+<details class="story" id="ostfronten1021-pladspris"><summary>2,7 mio. kr. flyttes til pladsprisen</summary>
+<div class="story-body"><p><strong>Status: I proces. Børne- og Ungdomsudvalget onsdag 21. oktober, derefter Økonomiudvalget og Borgerrepræsentationen.</strong></p>
+<p>2,7 mio. kr. fra budget 2026 var afsat til at genindføre længere åbent om eftermiddagen og weekendåbent i daginstitutioner. Forvaltningen fandt ingen klar efterspørgsel og foreslår i stedet at fordele pengene på alle almene daginstitutioner.</p>
+<p>4 af de 10 institutioner med udvidet åbningstid ligger i område Nord. Sagen siger ikke hvilke bydele.</p>
+<a href="https://www.kk.dk/dagsordener-og-referater/B%C3%B8rne-%20og%20Ungdomsudvalget/m%C3%B8de-21102026/dagsorden/punkt-5" target="_blank">Læs sagen</a></div>
+</details>
+<details class="story" id="ostfronten1021-folger"><summary>Vi følger: Natfodbold og fritidsjob i Tingbjerg</summary>
+<div class="story-body"><p>Referatet om natfodbold i Tingbjerg og fritidsjob i Tingbjerg-Husum fra udvalgsmødet 19. oktober er ikke offentliggjort endnu.</p>
+<a href="https://www.kk.dk/dagsordener-og-referater/Besk%C3%A6ftigelses-%2C%20Integrations-%20og%20Erhvervsudvalget/m%C3%B8de-19102026/dagsorden/punkt-2" target="_blank">Læs dagsordenen</a></div>
+</details>
+<p class="closing">Vi holder øje med Rådhuset, så du ikke behøver.</p>
+</div></details>
+  </section>
+
+  <section class="fpost" id="lu1019" data-total="6">
+    <div class="fhead"><img class="av" src="assets/segment-lokaludvalget.jpg" alt=""><div class="fname"><b>Clickbait fra Lokaludvalget</b><span>19. oktober 2026</span></div></div>
+    <div class="fwrap"><div class="strip" tabindex="0" aria-label="Kort: Clickbait fra Lokaludvalget"><div class="card k-img" aria-label="Slide 1 af 6: Clickbait fra Lokaludvalget"><img src="assets/slides/lu1019/01.webp" alt="Clickbait fra Lokaludvalget – slide 1 af 6" width="1080" height="1350"></div><div class="card k-img" aria-label="Slide 2 af 6: Clickbait fra Lokaludvalget"><img src="assets/slides/lu1019/02.webp" alt="Clickbait fra Lokaludvalget – slide 2 af 6" width="1080" height="1350" loading="lazy"></div><div class="card k-img" aria-label="Slide 3 af 6: Clickbait fra Lokaludvalget"><img src="assets/slides/lu1019/03.webp" alt="Clickbait fra Lokaludvalget – slide 3 af 6" width="1080" height="1350" loading="lazy"></div><div class="card k-img" aria-label="Slide 4 af 6: Clickbait fra Lokaludvalget"><img src="assets/slides/lu1019/04.webp" alt="Clickbait fra Lokaludvalget – slide 4 af 6" width="1080" height="1350" loading="lazy"></div><div class="card k-img" aria-label="Slide 5 af 6: Clickbait fra Lokaludvalget"><img src="assets/slides/lu1019/05.webp" alt="Clickbait fra Lokaludvalget – slide 5 af 6" width="1080" height="1350" loading="lazy"></div><div class="card k-img" aria-label="Slide 6 af 6: Clickbait fra Lokaludvalget"><img src="assets/slides/lu1019/06.webp" alt="Clickbait fra Lokaludvalget – slide 6 af 6" width="1080" height="1350" loading="lazy"></div></div><button type="button" class="sa l" aria-label="Forrige">‹</button><button type="button" class="sa r" aria-label="Næste">›</button><span class="scount"></span></div>
+    <div class="sdots"></div>
+    <p class="fcap"><b>Clickbait fra Lokaludvalget</b> Seks bud på Husums nye vartegn, 10.000 kr. til årets Bydelspris, Kulturtræf i Sognehuset – og snart taler hele 2700?</p>
+    <details class="all"><summary>Læs videre – alle 5 historier med kilder</summary><div class="alle">
+<details class="story" id="lu1019-skulptur"><summary>UGENS DRAMA – Skulptur-drama: 6 bud på vartegn</summary>
+<div class="story-body"><p><strong>Det skete der faktisk:</strong> Lokaludvalgets kunstgruppe vil have hjælp til at vælge en ny skulptur, der kan blive et vartegn for Husum. Den skal høre til den kommende kultur- og naturakse. En kunstkonsulent viser seks forslag på et borgermøde i Husum Boldklub i november. Input kan også sendes på mail.</p>
+<p>Status: INPUT SØGES · Tørhed: 2 af 5 citronmåner</p>
+<a href="https://broenshoej-husumlokaludvalg.kk.dk/nyheder/et-nyt-vartegn-for-husum-hvilken-skulptur-skal-det-vaere" target="_blank">Læs mere</a></div>
+</details>
+<details class="story" id="lu1019-bydelspris"><summary>UGENS TAL – Pris-feber: 10.000 kr. på spil</summary>
+<div class="story-body"><p><strong>Det skete der faktisk:</strong> Så mange kroner følger med årets Bydelspris fra Lokaludvalget. Prisen gives til en, der har gjort noget særligt for Brønshøj-Husum. Hvem der får den, afsløres ved Kulturtræf tirsdag aften i Brønshøj Sognehus.</p>
+<p>Status: AFSLØRES · Tørhed: 1 af 5 citronmåner</p>
+<a href="https://broenshoej-husumlokaludvalg.kk.dk/nyheder/afsloering-og-fejring-hvem-faar-aarets-bydelspris" target="_blank">Læs mere</a></div>
+</details>
+<details class="story" id="lu1019-kulturtraef"><summary>UGENS VÆR MED – Kultur-topmøde i Sognehuset!</summary>
+<div class="story-body"><p><strong>Det skete der faktisk:</strong> Lokaludvalget holder Kulturtræf i Brønshøj Sognehus tirsdag aften med Sognehuset som vært. Emnerne er, hvordan kulturtilbud kan nå bredere ud, og hvordan der kan skabes flere tilbud til børn og unge. Der bliver også tid til at synge og spise sammen. Tilmelding hos Brønshøj Kirke.</p>
+<p>Status: TILMELDING · Tørhed: 2 af 5 citronmåner</p>
+<a href="https://broenshoej-husumlokaludvalg.kk.dk/nyheder/kulturtraef-2026" target="_blank">Læs mere</a></div>
+</details>
+<details class="story" id="lu1019-2700taler"><summary>UGENS SKÆVE – Snart taler hele 2700?</summary>
+<div class="story-body"><p><strong>Det skete der faktisk:</strong> Lokaludvalget planlægger en digital platform med navnet 2700Taler, hvor borgere, foreninger og andre kan komme med kommentarer og input til den nye bydelsplan. Den ventes lanceret i starten af november, hvis lokaludvalget godkender den.</p>
+<p>Status: KUN EN PLAN · Tørhed: 3 af 5 citronmåner</p>
+<a href="https://www.kk.dk/dagsordener-og-referater/Br%C3%B8nsh%C3%B8j-Husum%20Lokaludvalg/m%C3%B8de-24092026/referat/punkt-4" target="_blank">Læs mere</a></div>
+</details>
+<details class="story" id="lu1019-ogsaa"><summary>Også i denne uge</summary>
+<div class="story-body"><p>Kultur- og fritidsborgmester Christopher Røhl har svaret på lokaludvalgets ønske om et naturværksted med bemandet legeplads ved EnergiCenter Voldparken. Han er ikke afvisende, men vil først have behov og muligheder bredere afdækket. Svaret har ingen penge eller tidsplan.<br/>
+<a href="https://www.kk.dk/dagsordener-og-referater/Br%C3%B8nsh%C3%B8j-Husum%20Lokaludvalg/m%C3%B8de-24092026/referat/punkt-18" target="_blank">Læs mere</a></p>
+<p>Lokaludvalget har bevilget penge til et forløb, hvor elever på Nørre Gymnasium laver film på cirka ét minut om, hvad den kommende bydelsplan bør fokusere på set med unges øjne. Filmene vises i EnergiCenter Voldparken i december.<br/>
+<a href="https://www.kk.dk/dagsordener-og-referater/Br%C3%B8nsh%C3%B8j-Husum%20Lokaludvalg/m%C3%B8de-24092026/referat/punkt-8" target="_blank">Læs mere</a></p></div>
+</details>
+<p class="closing">Det var så sidste krumme af den citronmåne. Vi sætter vand over til en ny i næste uge.</p>
+</div></details>
+  </section>
+
+  <section class="fpost" id="lokalsporten1018" data-total="7">
+    <div class="fhead"><img class="av" src="assets/segment-sport.jpg" alt=""><div class="fname"><b>Lokalsporten Kort</b><span>18. oktober 2026</span></div></div>
+    <div class="fwrap"><div class="strip" tabindex="0" aria-label="Kort: Lokalsporten Kort – og helt upartisk"><div class="card k-img" aria-label="Slide 1 af 7: Lokalsporten Kort – og helt upartisk"><img src="assets/slides/lokalsporten1018/01.webp" alt="Lokalsporten Kort – og helt upartisk – slide 1 af 7" width="1080" height="1350"></div><div class="card k-img" aria-label="Slide 2 af 7: Lokalsporten Kort – og helt upartisk"><img src="assets/slides/lokalsporten1018/02.webp" alt="Lokalsporten Kort – og helt upartisk – slide 2 af 7" width="1080" height="1350" loading="lazy"></div><div class="card k-img" aria-label="Slide 3 af 7: Lokalsporten Kort – og helt upartisk"><img src="assets/slides/lokalsporten1018/03.webp" alt="Lokalsporten Kort – og helt upartisk – slide 3 af 7" width="1080" height="1350" loading="lazy"></div><div class="card k-img" aria-label="Slide 4 af 7: Lokalsporten Kort – og helt upartisk"><img src="assets/slides/lokalsporten1018/04.webp" alt="Lokalsporten Kort – og helt upartisk – slide 4 af 7" width="1080" height="1350" loading="lazy"></div><div class="card k-img" aria-label="Slide 5 af 7: Lokalsporten Kort – og helt upartisk"><img src="assets/slides/lokalsporten1018/05.webp" alt="Lokalsporten Kort – og helt upartisk – slide 5 af 7" width="1080" height="1350" loading="lazy"></div><div class="card k-img" aria-label="Slide 6 af 7: Lokalsporten Kort – og helt upartisk"><img src="assets/slides/lokalsporten1018/06.webp" alt="Lokalsporten Kort – og helt upartisk – slide 6 af 7" width="1080" height="1350" loading="lazy"></div><div class="card k-img" aria-label="Slide 7 af 7: Lokalsporten Kort – og helt upartisk"><img src="assets/slides/lokalsporten1018/07.webp" alt="Lokalsporten Kort – og helt upartisk – slide 7 af 7" width="1080" height="1350" loading="lazy"></div></div><button type="button" class="sa l" aria-label="Forrige">‹</button><button type="button" class="sa r" aria-label="Næste">›</button><span class="scount"></span></div>
+    <div class="sdots"></div>
+    <p class="fcap"><b>Lokalsporten Kort – og helt upartisk</b> Brønshøj slår Ringsted 4-1, Husum taber i Emdrupparken, og Fix mænd vinder efter tre nederlag</p>
+    <details class="all"><summary>Læs videre – alle 5 historier med kilder</summary><div class="alle">
+<p style="margin:0 0 12px">med Gunnar Lige om Lidt og Svend på Tværs</p>
+<details class="story" id="lokalsporten1018-brh"><summary>Brønshøj – Ringsted IF 4-1</summary>
+<div class="story-body"><p><strong>GUNNAR LIGE OM LIDT, Tingbjerg Idrætspark:</strong> Pierre Dahlin Larsen scorede to gange på fem minutter, i minut 24 og 29. Derefter blev det blot til fem minutters imiteret spænding omkring Ringsteds reducering, inden Emil Borella Jensen og Morten Voldby Olsen lavede ét hver. Brønshøj er nr. 2 i 3. division, ét point efter Holbæk. Foreløbig. Fredag kl. 19.00 gælder det Sundby på udebane.</p>
+<a href="https://www.bronshojboldklub.dk/kampvisning?poolrowid=508657&amp;matchid=309160" target="_blank">Se kampvisning</a><br/>
+<a href="https://direktesport.dk/video/live-sport/video-on-demand/47891d1d-ce5f-40fe-9b21-b4f9f2cec5ef" target="_blank">Se højdepunkterne hos DirekteSport</a></div>
+</details>
+<details class="story" id="lokalsporten1018-husum"><summary>KFUM – Husum 2-0</summary>
+<div class="story-body"><p><strong>SVEND PÅ TVÆRS, Emdrupparken:</strong> Husum ligger stadig nr. 2 i Serie 1. KFUM vandt 2-0 på egen bane. Lørdag kl. 12.00 gælder det Bispebjerg i Lersøparken.</p>
+<a href="https://www.husumboldklub.dk/kampvisning?poolid=496312&amp;matchid=654674" target="_blank">Se kampvisning</a></div>
+</details>
+<details class="story" id="lokalsporten1018-fix"><summary>Fix mænd – Olympiakos København 3-2</summary>
+<div class="story-body"><p><strong>GUNNAR LIGE OM LIDT, Pilesvinget:</strong> Fix slog Olympiakos og stoppede dermed en stime på tre nederlag, som vi først nu finder det relevant at nævne. Fix er nummer 8 i Serie 2 og tager imod PI Fodbold på Pilesvinget lørdag kl. 12.00.</p>
+<a href="https://www.dbukoebenhavn.dk/resultater/kamp/650834_496313/kampinfo" target="_blank">Se kampen hos DBU København</a></div>
+</details>
+<details class="story" id="lokalsporten1018-fixkvinder"><summary>Fix kvinder – Viking/RIK: 3 point til Fix</summary>
+<div class="story-body"><p><strong>GUNNAR LIGE OM LIDT, Pilesvinget:</strong> Det sejlede for Viking/RIK, da Fix kvinder lørdag vandt med cifrene UHT på Pilesvinget. Vi har set Fix vinde smukkere, men aldrig mere sikkert. Det blev i øvrigt til fuld plade på fan-dagen på Pilesvinget, hvor resten af dagens kampe også endte med rød sejr. De kulørte lokalblade melder om festlige billeder fra dagen, og herfra kan vi kun opfordre til, at man kigger forbi næste gang. Fix er nr. 7 med 8 point efter syv kampe og tager imod Kastrup på Pilesvinget lørdag kl. 10.00.</p>
+<a href="https://www.dbukoebenhavn.dk/resultater/pulje/496307/kampprogramFuld" target="_blank">Se kampprogrammet hos DBU København</a></div>
+</details>
+<details class="story" id="lokalsporten1018-stadion"><summary>IF Stadion – Team Sydhavsøerne 2, lørdag kl. 14.30</summary>
+<div class="story-body"><p><strong>GUNNAR LIGE OM LIDT, EnergiCenter Voldparken:</strong> Stadion var kampfri i efterårsferien og brugte efter sigende pausen på at træne Barcelona-højre med tripel-overgang. Om den kommer i spil mod Team Sydhavsøerne 2, får vi at se i Voldparken lørdag kl. 14.30, hvor Stadion skal bevise, at tabellen er ung, og at 0 point i 2 kampe blot er en numerisk detalje.</p>
+<a href="https://danskhaandbold.dk/kampe/2550091" target="_blank">Se kampen</a></div>
+</details>
+<p class="closing">Tallene er rigtige. Vurderingerne er helt upartiske.<br/><br/>Har vi overset dit hold? Så tip Tråden</p>
+</div></details>
+  </section>
+
+  <section class="fpost" id="leder1018" data-total="5">
+    <div class="fhead"><img class="av" src="assets/segment-leder.jpg" alt=""><div class="fname"><b>Leder</b><span>18. oktober 2026</span></div></div>
+    <div class="fwrap"><div class="strip" tabindex="0" aria-label="Kort: Leder #1: Vi leder stadig"><div class="card k-img" aria-label="Slide 1 af 5: Leder #1: Vi leder stadig"><img src="assets/slides/leder1018/01.webp" alt="Leder #1: Vi leder stadig – slide 1 af 5" width="1080" height="1350"></div><div class="card k-img" aria-label="Slide 2 af 5: Leder #1: Vi leder stadig"><img src="assets/slides/leder1018/02.webp" alt="Leder #1: Vi leder stadig – slide 2 af 5" width="1080" height="1350" loading="lazy"></div><div class="card k-img" aria-label="Slide 3 af 5: Leder #1: Vi leder stadig"><img src="assets/slides/leder1018/03.webp" alt="Leder #1: Vi leder stadig – slide 3 af 5" width="1080" height="1350" loading="lazy"></div><div class="card k-img" aria-label="Slide 4 af 5: Leder #1: Vi leder stadig"><img src="assets/slides/leder1018/04.webp" alt="Leder #1: Vi leder stadig – slide 4 af 5" width="1080" height="1350" loading="lazy"></div><div class="card k-img" aria-label="Slide 5 af 5: Leder #1: Vi leder stadig"><img src="assets/slides/leder1018/05.webp" alt="Leder #1: Vi leder stadig – slide 5 af 5" width="1080" height="1350" loading="lazy"></div></div><button type="button" class="sa l" aria-label="Forrige">‹</button><button type="button" class="sa r" aria-label="Næste">›</button><span class="scount"></span></div>
+    <div class="sdots"></div>
+    <p class="fcap"><b>Leder #1: Vi leder stadig</b> ”Vi” har i et halvt års tid ledt efter formatet – og vi leder fortsat. Her er lidt mere om, hvad 2700Tråden er, og hvorfor vi har brug for dig.</p>
+    <details class="all"><summary>Læs hele lederen</summary><div class="alle">
+<details class="story" id="leder1018-tekst" open=""><summary>Leder #1: Vi leder stadig</summary>
+<div class="story-body">
+<p>”Vi” er måske så meget sagt; det klinger bare mere tjekket. Men her er ”vi” altså – dit nye lokale overblik: 2700Tråden (måske med et hashtag foran – det diskuterer ”vi” stadig).</p>
+<p>Vi har i et halvt års tid ledt efter formatet – og vi leder fortsat. Måske har du set os lede? Vi har nemlig lagt vores daglige overblik ud på forskellige lokale Facebook-sider siden juni. Måske har du set os på Instagram under Brønshøj Memes og 2700traaden?</p>
+<p>Hvad vi leder efter, ved vi godt: flere forbindelser og mere fællesskab. Det går nemlig igen, når undersøgelser spørger, hvad vi ønsker os i 2700.</p>
+<p>Men hvilket fællesskab er det, hvem skal forbinde sig til hvor? Informationsstrømmen på sociale medier er overvældende, og strømmen fra de fysiske lokalaviser er udtørret.</p>
+<p>Det er her imellem, vi forestiller os at komme ind i billedet. Med bl.a.:</p>
+<ul><li><strong>Guides til bydelen</strong> – til efterårsferien, indkøb efter kl. 22, legepladser eller restauranter i Husum.</li><li><strong>Ugentlige overblik</strong>, der sorterer i dagsordener og referater fra rådhus, lokaludvalg og sportens verden, så du hurtigt er opdateret – med mulighed for videre læsning.</li><li><strong>Din nye fælleskalender</strong>, der viser de mange fede aktiviteter i 2700.</li></ul>
+<p>Og nu også med:</p>
+<ul><li><strong>En online kunsthal</strong>, hvor lokale kunstnere og kunsthåndværkere kan udstille og sælge deres værker.</li><li><strong>Ugens Tilbud</strong>, hvor lokale butikker kan skrive ind med deres tilbud, for at hjælpe os selv med at støtte de lokale butikker. Ellers forsvinder de.</li></ul>
+<p>Vi vil være Tråden, der binder det mundrette ”Bellahøj-Brønshøj-Husum-Tingbjerg-og-faktisk-også-et-lille-hjørne-af-Utterslev” endnu tættere sammen. Hvad end det er butik og kunde – eller kommune og borger.</p>
+<p>Men som du måske fornemmer, er vi ikke så meget et VI i virkeligheden. Og man kan ikke lave forbindelser og fællesskab alene.</p>
+<p>Så følg lige med, ik? På Facebook, Instagram eller hjemmesiden. Man må godt bare være med på en kigger. Vi skal nok fange dig. Dem, vi taler med, påstår nemlig, at vi har manglet i ellers så skønne 2700 Zappa.</p>
+<p>For at blive det helt store VI, vi drømmer om, har vi dog brug for din hjælp. Brug for, at du tipper os om de gode arrangementer, dine gode tilbud eller bare en god historie. Men vi har også brug for, at du følger os på sociale medier. Ellers bliver det umuligt at samle enderne … i de flere forbindelser og mere fællesskab.</p>
+<p><strong>Kh 2700Tråden</strong> – dit lokale overblik</p>
+<p>Fortsættelse følger …</p></div>
+</details>
+</div></details>
+  </section>
+
+  <section class="fpost" id="ugen1018" data-total="2">
+    <div class="fhead"><img class="av" src="assets/segment-todougen.jpg" alt=""><div class="fname"><b>Guide til din uge</b><span>18. oktober 2026</span></div></div>
+    <div class="fwrap"><div class="strip" tabindex="0" aria-label="Kort: Hvad skal du i ugen?"><div class="card k-img" aria-label="Slide 1 af 2: Hvad skal du i ugen?"><img src="assets/slides/ugen1018/01.webp" alt="Hvad skal du i ugen? – slide 1 af 2" width="1080" height="1350"></div><div class="card k-img" aria-label="Slide 2 af 2: Hvad skal du i ugen?"><img src="assets/slides/ugen1018/02.webp" alt="Hvad skal du i ugen? – slide 2 af 2" width="1080" height="1350" loading="lazy"></div></div><button type="button" class="sa l" aria-label="Forrige">‹</button><button type="button" class="sa r" aria-label="Næste">›</button><span class="scount"></span></div>
+    <div class="sdots"></div>
+    <p class="fcap"><b>Hvad skal du i ugen?</b> Efterårsferien er slut, og hverdagen i 2700 er fuld af fællesskab: cykel-pop-up og lydworkshop for børnene, og fuglekiggeri, kvantefysik, havfruer, jazz og kirkebio for de voksne.</p>
+    <details class="all"><summary>Læs videre – alle 4 historier med kilder</summary><div class="alle">
+<details class="story" id="ugen1018-mandag"><summary>Mandag 19. oktober</summary>
+<div class="story-body">
+<p><strong>Strikkecafé i Bellahøj Kirke</strong><br/>Bellahøj Kirke · Kl. 13.00–15.00 · Gratis<br/>Strik med over en kop kaffe og god snak – alle er velkomne.<br/><a href="https://sogn.dk/bellahoej-utterslev/kalender/event/3027544?cHash=574e840e278fa90b964f5850d9beecd3" target="_blank">Læs mere</a></p>
+<p><strong>Lektiecaféen Uglen</strong><br/>EnergiCenter Voldparken, 2. sal, lokale 204 · Kl. 16.00–17.50 · Gratis, ingen tilmelding<br/>Frivillige hjælper børn med lektierne – med saftevand og boller. Kom, når det passer jer.<br/><a href="https://www.kultunaut.dk/perl/arrmore/type-nynaut?ArrNr=20360360" target="_blank">Læs mere</a></p>
+<p><strong>Repair Café Tingbjerg</strong><br/>Tingbjerg Bibliotek &amp; Kulturhus, Skaberværelset · Kl. 16.30–18.30 · Gratis<br/>Tag tøj, småelektronik eller andre ødelagte ting med, og få hjælp af frivillige til at reparere dem.<br/><a href="https://bibliotek.kk.dk/tingbjerg-bibliotekkulturhus/arrangementer/hjaelp-og-radgivning/repair-cafe-tingbejrg" target="_blank">Læs mere</a></p>
+<p><strong>Repair Café: cykel pop-up</strong><br/>Tingbjerg Bibliotek &amp; Kulturhus · Kl. 16.30–18.30 · Gratis<br/>Repair Café fejrer 10 år: Tag store og små cykler med, få hjælp til at fikse dem, og mal din egen ringeklokke.<br/><a href="https://kulturogfritidn.kk.dk/det-sker/repair-cafe-cykel-pop-up" target="_blank">Læs mere</a></p>
+<p><strong>Forfatterspirernes Skriveklub (11–18 år)</strong><br/>Husum Bibliotek · Kl. 16.30–18.30 · Gratis<br/>Skriveklub for unge med digter og børnebogsforfatter Jeppe Madsen. Man må gerne møde op og prøve en enkelt gang.<br/><a href="https://kulturogfritidn.kk.dk/det-sker/forfatterspirernes-skriveklub-paa-husum-bibliotek" target="_blank">Læs mere</a></p>
+<p><strong>Dansk snakkeklub</strong><br/>Caféen, Tingbjerg Bibliotek &amp; Kulturhus · Kl. 16.30–18.00<br/>Øv dit danske i uformelt selskab.<br/><a href="https://tingbjerg-bydel.dk/assets/dokumenter/Beboerbladet-Tingbjerg-oktober-2026.pdf" target="_blank">Se kalenderen</a></p></div>
+</details>
+<details class="story" id="ugen1018-tirsdag"><summary>Tirsdag 20. oktober</summary>
+<div class="story-body">
+<p><strong>Cykeltur med cykelfællesskabet</strong><br/>BRØK, Brønshøj Kulturhus · Kl. 10.00–12.00 · Gratis, husk cykelhjelm<br/>Seniorer cykler en tur sammen i små hold med kaffepause.<br/><a href="https://broek.kk.dk/kalender/cykeltur-med-cykelfaellesskabet" target="_blank">Læs mere</a></p>
+<p><strong>MiniBiblioteket (0–6 år)</strong><br/>Børnebiblioteket, Tingbjerg Bibliotek &amp; Kulturhus · Kl. 10.00–10.30<br/>En lille stund i børnebiblioteket for de mindste og deres voksne.<br/><a href="https://tingbjerg-bydel.dk/assets/dokumenter/Beboerbladet-Tingbjerg-oktober-2026.pdf" target="_blank">Se kalenderen</a></p>
+<p><strong>Rytmik i Rytterskolen (4–18 mdr.)</strong><br/>Rytterskolen · Kl. 10.30 og 11.30 · 70 kr. for en voksen med barn, billet på forhånd<br/>Sang, dans, rasleæg og faldskærm med rytmikpædagog Pia Jønsson.<br/><a href="https://broek.kk.dk/kalender/rytmik-i-rytterskolen" target="_blank">Læs mere</a></p>
+<p><strong>Hvad kommodeskuffen indeholder</strong><br/>Brønshøj Sognehus · Kl. 14.00<br/>En hyggelig eftermiddag med sjove fortællinger fra ”kommodeskuffen”, fællessang og musik.<br/><a href="https://sogn.dk/broenshoej/kalender/event/3290836?cHash=21b6c0f084bf8ebc9332dfc3c84506a3" target="_blank">Læs mere</a></p>
+<p><strong>Igne:Oya – sy- og håndarbejdsværksted</strong><br/>Salen, Tingbjerg Bibliotek &amp; Kulturhus · Kl. 16.00–19.00<br/>Kom og sy og lav håndarbejde sammen med andre.<br/><a href="https://tingbjerg-bydel.dk/assets/dokumenter/Beboerbladet-Tingbjerg-oktober-2026.pdf" target="_blank">Se kalenderen</a></p>
+<p><strong>Foredrag: Tingbjerg Kirkes arkitektoniske historie</strong><br/>Tingbjerg Kirke · Kl. 17.00 · Fri entré<br/>Arkitekt og kirkeværge Gunnar Friborg fortæller om kirkens arkitektur og historie.<br/><a href="https://sogn.dk/tingbjerg/kalender/event/3356342?cHash=2dbf1d0a2e2cf6f33aab729d36c95d92" target="_blank">Læs mere</a></p>
+<p><strong>Lektiehjælp og studiecafé</strong><br/>Mødelokale 2, Tingbjerg Bibliotek &amp; Kulturhus · Kl. 17.00–19.00<br/>Få hjælp til lektierne eller ro til at læse.<br/><a href="https://tingbjerg-bydel.dk/assets/dokumenter/Beboerbladet-Tingbjerg-oktober-2026.pdf" target="_blank">Se kalenderen</a></p>
+<p><strong>Tysk snakkeklub</strong><br/>BRØK, Brønshøj Kulturhus · Kl. 18.00–19.15 · Gratis<br/>Øv dit tysk i uformelt selskab – alle niveauer er velkomne.<br/><a href="https://broek.kk.dk/kalender/tysk-snakkeklub-0" target="_blank">Læs mere</a></p>
+<p><strong>Kulturtræf 2026</strong><br/>Brønshøj Sognehus · Kl. 18.00–21.00 · Gratis, tilmelding til abu@km.dk<br/>Lokaludvalget og Brønshøj Sognehus inviterer til snak om kulturlivet i 2700 – fx hvordan børn og unge får flere kulturtilbud. Der bliver også sunget og spist sammen.<br/><a href="https://broenshoej-husumlokaludvalg.kk.dk/kulturtraef-2026" target="_blank">Læs mere</a></p>
+<p><strong>Foredrag om demens</strong><br/>Husum Kirke · Kl. 19.00–21.00 · Ingen tilmelding<br/>Aftenforedrag med Line Lybecker. Der serveres lidt varm mad i pausen.<br/><a href="https://sogn.dk/husum/kalender/event/3326461?cHash=fd28023b68fe93be14d6a040d2bf37f8" target="_blank">Læs mere</a></p>
+<p><strong>Kvantecomputeren</strong><br/>Brønshøj Bibliotek · Kl. 19.00–21.00 · Fri entré, ingen tilmelding<br/>Professor Klaus Mølmer forklarer kvantefysikken og hvad kvantecomputere kan bruges til. Livestreamet fra Aarhus Universitet.<br/><a href="https://kulturogfritidn.kk.dk/det-sker/kvantecomputeren" target="_blank">Læs mere</a></p>
+<p><strong>Forfattermøde: Rasmus Daugbjerg</strong><br/>Tingbjerg Bibliotek &amp; Kulturhus · Kl. 19.00–20.30 · Gratis, tilmelding på Billetto<br/>Forfatteren fortæller om folketro, trolde og havfruer – og om sin nye roman om en havfrue, en fæstebonde og en spådom om Christian 4.<br/><a href="https://bibliotek.kk.dk/tingbjerg-bibliotekkulturhus/arrangementer/litteratur-og-lyrik/forfattemode-rasmus-daugbjerg" target="_blank">Læs mere</a></p>
+<p><strong>Strikkecafé med Brønshøj Strikkeklub</strong><br/>BRØK, Brønshøj Kulturhus · Kl. 19.00–21.00 · Gratis<br/>Åben strikkeklub for både begyndere og øvede – kom bare forbi.<br/><a href="https://broek.kk.dk/kalender/strikkecafe-med-broenshoej-strikkeklub" target="_blank">Læs mere</a></p>
+<p><strong>Fransk snakkeklub</strong><br/>BRØK, Brønshøj Kulturhus · Kl. 19.15–20.15 · Gratis<br/>Øv dit franske i uformelt selskab – alle niveauer er velkomne.<br/><a href="https://broek.kk.dk/kalender/fransk-snakkeklub" target="_blank">Læs mere</a></p>
+<p><strong>Music House Brønshøj: Haveforeningen</strong><br/>BRØK, Brønshøj Kulturhus · Kl. 20.00–22.00 · 120 kr.<br/>Blues og rock med mundharmonika, vaskebræt og masser af spilleglæde.<br/><a href="https://broek.kk.dk/kalender/music-house-broenshoej-haveforeningen" target="_blank">Læs mere</a></p></div>
+</details>
+<details class="story" id="ugen1018-onsdag"><summary>Onsdag 21. oktober</summary>
+<div class="story-body">
+<p><strong>Morgensang</strong><br/>Brønshøj Bibliotek · Kl. 09.00–09.20 · Gratis<br/>Start dagen med fire sange fra Højskolesangbogen med sangvært og pianist.<br/><a href="https://bibliotek.kk.dk/bronshoj-bibliotek/arrangementer/musik/morgensang/2026-10-21" target="_blank">Læs mere</a></p>
+<p><strong>KirkeYoga</strong><br/>Tingbjerg Kirke · Kl. 10.00 · Gratis, tilmelding – medbring måtte og tæppe<br/>Rolig og meditativ yoga i kirkerummet. Alle kan være med.<br/><a href="https://sogn.dk/tingbjerg/kalender/event/3063667?cHash=55a5dc4421db60e30098f13cca41fe63" target="_blank">Læs mere</a></p>
+<p><strong>Fælleslæsning</strong><br/>Husum Bibliotek, 1. sal · Kl. 11.00–12.30 · Gratis, ingen tilmelding<br/>Birgitte læser højt, og bagefter snakker vi om teksterne over kaffe og te.<br/><a href="https://bibliotek.kk.dk/husum-bibliotek/arrangementer/faellesskaber/faelleslaesning/2026-10-21" target="_blank">Læs mere</a></p>
+<p><strong>Åbent værksted</strong><br/>Tingbjerg Bibliotek &amp; Kulturhus, Skaberværelset · Kl. 15.00–19.00 · Gratis<br/>Prøv 3D-printer, laserskærer og træværktøj, eller tag dit eget projekt med.<br/><a href="https://bibliotek.kk.dk/tingbjerg-bibliotekkulturhus/arrangementer/vaerksteder-og-workshops/abent-vaerksted/2026-10-21" target="_blank">Læs mere</a></p>
+<p><strong>Se på fugle – med Morten D.D. Hansen</strong><br/>Brønshøj Bibliotek · Kl. 19.00–21.00 · 50 kr.<br/>Biolog og naturformidler Morten D.D. Hansen viser, hvordan du kommer i gang med fuglekiggeri – også midt i storbyen.<br/><a href="https://kulturogfritidn.kk.dk/det-sker/se-paa-fugle-med-morten-d-d-hansen" target="_blank">Læs mere</a></p>
+<p><strong>Paradise Jazz: Iris Bergcrantz</strong><br/>BRØK, Brønshøj Kulturhus · Kl. 20.00–22.00 · 175 kr.<br/>Den svenske sanger og komponist med kvartet – jazz med svensk folkemusik og pop i blodet.<br/><a href="https://broek.kk.dk/kalender/paradise-jazz-iris-bergcrantz" target="_blank">Læs mere</a></p></div>
+</details>
+<details class="story" id="ugen1018-torsdag"><summary>Torsdag 22. oktober</summary>
+<div class="story-body">
+<p><strong>Cykeltur med cykelfællesskabet</strong><br/>BRØK, Brønshøj Kulturhus · Kl. 10.00–12.00 · Gratis, husk cykelhjelm<br/>Seniorer cykler en tur sammen i små hold med kaffepause.<br/><a href="https://broek.kk.dk/kalender/cykeltur-med-cykelfaellesskabet" target="_blank">Læs mere</a></p>
+<p><strong>MiniBiblioteket (0–6 år)</strong><br/>Børnebiblioteket, Tingbjerg Bibliotek &amp; Kulturhus · Kl. 10.00–10.30<br/>En lille stund i børnebiblioteket for de mindste og deres voksne.<br/><a href="https://tingbjerg-bydel.dk/assets/dokumenter/Beboerbladet-Tingbjerg-oktober-2026.pdf" target="_blank">Se kalenderen</a></p>
+<p><strong>Babycafé</strong><br/>Eilersminde, Ruten 14, 4. sal · Kl. 11.00–13.00 · Gratis<br/>Mød andre forældre og sundhedsplejersker. Ugens tema: kontakt, samspil og udviklende øjeblikke.<br/><a href="https://tingbjerg-bydel.dk/assets/dokumenter/Beboerbladet-Tingbjerg-oktober-2026.pdf" target="_blank">Se kalenderen</a></p>
+<p><strong>Mad til alle</strong><br/>Tingbjerg Kirke · Kl. 11.00 (morgensang kl. 10.40) · Gratis<br/>Hjemmelavet mad af overskudsvarer – kom og spis med.<br/><a href="https://sogn.dk/tingbjerg/kalender/event/2977594?cHash=84801991625b652516b44b04f5f67c2e" target="_blank">Læs mere</a></p>
+<p><strong>Leg og boldspil (6–12 år)</strong><br/>Salen, Tingbjerg Bibliotek &amp; Kulturhus · Kl. 15.30–16.30<br/>Leg og boldspil for børn.<br/><a href="https://tingbjerg-bydel.dk/assets/dokumenter/Beboerbladet-Tingbjerg-oktober-2026.pdf" target="_blank">Se kalenderen</a></p>
+<p><strong>Lydkort – workshop for børn fra 6 år og deres familier</strong><br/>EnergiCenter Voldparken, Fysiklokalet · Kl. 16.00–18.00 · Bestil billet<br/>Hvordan lyder et hjem? Lyt, optag og leg med lyde, rytmer og stemmer, og lav jeres eget lydkort. Med Monster Teater og komponist Tin Soheili.<br/><a href="https://www.kultunaut.dk/perl/arrmore/type-nynaut?ArrNr=20435017" target="_blank">Læs mere</a></p>
+<p><strong>Læseforeningen – højtlæsning for voksne</strong><br/>Brønshøj Bibliotek · Kl. 16.30–18.00 · Gratis, ingen tilmelding<br/>Vi læser noveller, romaner og digte højt og snakker om dem. Kaffe og te på kanden.<br/><a href="https://bibliotek.kk.dk/bronshoj-bibliotek/arrangementer/litteratur-og-lyrik/laeseforeningen-hojtlaesning-voksne/2026-10-22" target="_blank">Læs mere</a></p>
+<p><strong>Fællessang i Sognehuset</strong><br/>Brønshøj Sognehus · Kl. 17.00–19.00 · Kaffe og kage 25 kr.<br/>Organist Mads Damlund er sangvært med temaet ”Sange om sang”. Efter pausen kan du selv foreslå sange.<br/><a href="https://sogn.dk/broenshoej/kalender/event/3330405?cHash=6eeeab4dc0ae106a3f715efb0bcd8d43" target="_blank">Læs mere</a></p>
+<p><strong>FOLK &amp; MAD – fællesspisning i Husum</strong><br/>EnergiCenter Voldparken · Kl. 17.30–19.30 · 38 kr.<br/>Et godt måltid – som regel grønt – lavet af en kok og lokale unge. Kom og spis med naboerne.<br/><a href="https://www.kultunaut.dk/perl/arrmore/type-nynaut?ArrNr=20211812" target="_blank">Læs mere</a></p>
+<p><strong>Kirkebio: Past Lives</strong><br/>Husumvold Kirke · Kl. 19.00<br/>Film om to barndomsvenner, der mødes igen mange år senere. Oplæg før filmen, snak bagefter og lidt snacks.<br/><a href="https://sogn.dk/husumvold/kalender/event/3329686?cHash=88ec571ccb7aa17637fa050ec9566cd1" target="_blank">Læs mere</a></p></div>
+</details>
+<p class="closing">Har vi overset noget, der sker i 2700? Smid det i kommentarerne — så hjælper I med at gøre Fælleskalenderen bedre.</p>
+</div></details>
+  </section>
+
+  <section class="fpost" id="udland1014" data-total="5">
+    <div class="fhead"><img class="av" src="assets/segment-udland.jpg" alt=""><div class="fname"><b>Det rene københavneri</b><span>14. oktober 2026</span></div></div>
+    <div class="fwrap"><div class="strip" tabindex="0" aria-label="Kort: Det rene københavneri"><div class="card k-img" aria-label="Slide 1 af 5: Det rene københavneri"><img src="assets/slides/udland1014/01.webp" alt="Det rene københavneri – slide 1 af 5" width="1080" height="1350"></div><div class="card k-img" aria-label="Slide 2 af 5: Det rene københavneri"><img src="assets/slides/udland1014/02.webp" alt="Det rene københavneri – slide 2 af 5" width="1080" height="1350" loading="lazy"></div><div class="card k-img" aria-label="Slide 3 af 5: Det rene københavneri"><img src="assets/slides/udland1014/03.webp" alt="Det rene københavneri – slide 3 af 5" width="1080" height="1350" loading="lazy"></div><div class="card k-img" aria-label="Slide 4 af 5: Det rene københavneri"><img src="assets/slides/udland1014/04.webp" alt="Det rene københavneri – slide 4 af 5" width="1080" height="1350" loading="lazy"></div><div class="card k-img" aria-label="Slide 5 af 5: Det rene københavneri"><img src="assets/slides/udland1014/05.webp" alt="Det rene københavneri – slide 5 af 5" width="1080" height="1350" loading="lazy"></div></div><button type="button" class="sa l" aria-label="Forrige">‹</button><button type="button" class="sa r" aria-label="Næste">›</button><span class="scount"></span></div>
+    <div class="sdots"></div>
+    <p class="fcap"><b>Det rene københavneri</b> Nyheder fra resten af byen: Siddique skal ikke politianmeldes, Parken vil måske sælge FCK, og Rigshospitalet sender overlæger hjem.</p>
+    <details class="all"><summary>Læs videre – alle 5 historier med kilder</summary><div class="alle">
+<details class="story" id="udland1014-siddique"><summary>Flertal: Siddique skal ikke politianmeldes</summary>
+<div class="story-body">
+<p>Borgerrepræsentationen stemte torsdag 8. oktober nej til at få kommunen til at undersøge, om Sikandar Siddique (Frie Grønne) skal politianmeldes – bl.a. for dokumentfalsk – og om hans vederlag kan kræves tilbage. Forslaget kom fra De Konservative, Venstre, Liberal Alliance og DF, der mener, at hans kandidatur byggede på en usandhed, fordi han ifølge myndighederne ikke havde bopæl i København. Socialdemokratiet stemte også for, men forslaget faldt med 32 stemmer mod 23.</p>
+<p>Enhedslisten og SF mener, at det er forvaltningen og ikke politikerne, der skal vurdere en politianmeldelse. Frie Grønne kalder forslaget målrettet mod én politisk modstander og påpeger, at afgørelserne handler om en administrativ vurdering af hans bopæl – ikke om snyd. Alternativet kalder bopælssnyd en alvorlig trussel mod demokratiet, men stemte imod af samme grund som EL og SF.</p>
+<a href="https://www.kk.dk/dagsordener-og-referater/Borgerrepr%C3%A6sentationen/m%C3%B8de-08102026/referat/punkt-15" target="_blank">Læs mere hos Københavns Kommune</a></div>
+</details>
+<details class="story" id="udland1014-fck"><summary>Parken klar til at sælge FCK</summary>
+<div class="story-body">
+<p>Parken Sport &amp; Entertainment bekræftede tirsdag 13. oktober, at selskabet undersøger et salg af FC København – helt eller delvist. Kvindeholdet og ejerandelen i svenske FC Rosengård er også med, og selskabet vil desuden se på Parken-ejendommene, altså stadion og kontortårnene. Bestyrelsen mener, at ”tidspunktet er det rette”.</p>
+<p>Meldingen kom, efter TV 2 Sport havde fortalt, at ejerne har hyret et firma, der rådgiver om salg af fodboldklubber. Lalandia er ikke til salg.</p>
+<a href="https://www.tipsbladet.dk/nyhed/superliga/parken-bekraefter-fc-koebenhavn-kan-blive-solgt" target="_blank">Læs mere hos Tipsbladet</a></div>
+</details>
+<details class="story" id="udland1014-modulpasning"><summary>30-timers pasning i daginstitutioner</summary>
+<div class="story-body">
+<p>Hver fjerde daginstitution i København skal være med i et forsøg, hvor forældre kan vælge en plads på 30 timer om ugen i stedet for fuld tid – og betale mindre. Institutionen beholder pengene til en fuld plads, og forældrene behøver ikke dokumentere, hvorfor de vil have den kortere uge. Forsøget er finansieret med 4,2 mio. kr. om året i 2027-2030.</p>
+<p>Børne- og Ungdomsudvalget drøfter modellen 21. oktober og beslutter 18. november, hvilke institutioner der kommer med. Hvor meget billigere det bliver, står ikke i sagen.</p>
+<a href="https://www.kk.dk/dagsordener-og-referater/B%C3%B8rne-%20og%20Ungdomsudvalget/m%C3%B8de-21102026/dagsorden/punkt-3" target="_blank">Læs mere hos Københavns Kommune</a></div>
+</details>
+<details class="story" id="udland1014-jernbanebyen"><summary>Jernbanebyen tilbage på sporet</summary>
+<div class="story-body">
+<p>Jernbanebyen – den nye bydel på det gamle baneterræn mellem Vesterbro og Kongens Enghave – har stået stille i næsten to år. Lokalplanen var sendt i høring i 2024, men lige før den endelige vedtagelse nedlagde Transportministeriet veto på vegne af Banedanmark. Banedanmark mente, at støjen fra deres arbejdspladser ved sporene var regnet for lavt.</p>
+<p>Nu er der en løsning: Banedanmarks arbejdspladser samles ét sted nord for Otto Busses Vej, og langs vejen kommer erhvervsbygninger og et parkeringshus på 17-25 meter, der skal skærme for støjen. Ingen bolig må tages i brug, før det er dokumenteret, at støjgrænserne holder. Torsdag 8. oktober sendte Borgerrepræsentationen planen i otte ugers høring.</p>
+<p>Planen giver plads til ca. 520.000 m² nybyggeri med mindst 25 pct. almene boliger, ca. 1.700 p-pladser, omkring 20.500 cykelpladser, en skole, tre fodboldbaner og en park. De Konservative og Venstre ville have flere p-pladser og Alternativet langt færre, men alle forslag blev stemt ned. Flere partier vil have aftalen om den nye skole på Vognværkstedet på plads, før planen vedtages endeligt i starten af 2027.</p>
+<a href="https://www.kk.dk/dagsordener-og-referater/Borgerrepr%C3%A6sentationen/m%C3%B8de-08102026/referat/punkt-5" target="_blank">Læs mere hos Københavns Kommune</a></div>
+</details>
+<details class="story" id="udland1014-rigshospitalet"><summary>Rigshospitalet sender overlæger hjem</summary>
+<div class="story-body">
+<p>Tre overlæger fra Rigshospitalets afdeling for transplantation og sygdomme i fordøjelsessystemet er sendt hjem og midlertidigt fritaget for tjeneste. De var ifølge Sundhedsmonitor med til at skrive under på et kritisk brev til ledelsen, der advarede om, at personalemangel kunne gå ud over patientsikkerheden, og som udtrykte mistillid til ledelsens håndtering. Rigshospitalet bekræfter, at sagen nu behandles som en personalesag, og de tre risikerer en advarsel, forflyttelse eller afsked. Afdelingen er den eneste i Danmark, der laver levertransplantationer.</p>
+<p>Rigshospitalet siger, at afdelingen stadig har den nødvendige kapacitet. Det har ikke beroliget alle: To læger fra Herlev Hospital frygter, at patienter med kræft i bugspytkirtlen kan miste adgang til de sværeste operationer, og Sundhedsstyrelsen har bedt Region Hovedstaden svare på, om hjemsendelsen giver problemer for behandlingerne.</p>
+<a href="https://www.tv2kosmopol.dk/koebenhavn/tre-overlaeger-risikerer-tjenstlig-sanktion-efter-bekymringsbrev-30dc5" target="_blank">Læs mere hos TV 2 Kosmopol</a><br/>
+<a href="https://onkologisktidsskrift.dk/behandlinger/17-pancreas/4137-laeger-frygter-for-kraeftpatienters-liv-efter-hjemsendelse-af-kirurger.html" target="_blank">Læs mere hos Onkologisk Tidsskrift</a></div>
+</details>
+<p class="closing">Det var Det rene københavneri for denne uge.</p>
+</div></details>
+  </section>
+
+  <section class="fpost" id="todoweekend1014" data-total="4">
+    <div class="fhead"><img class="av" src="assets/segment-todoweekend.jpg" alt=""><div class="fname"><b>Guide til din weekend</b><span>14. oktober 2026</span></div></div>
+    <div class="fwrap"><div class="strip" tabindex="0" aria-label="Kort: Hvad sker der i 2700 i denne weekend?"><div class="card k-img" aria-label="Slide 1 af 4: Hvad sker der i 2700 i denne weekend?"><img src="assets/slides/todoweekend1014/01.webp" alt="Hvad sker der i 2700 i denne weekend? – slide 1 af 4" width="1080" height="1350"></div><div class="card k-img" aria-label="Slide 2 af 4: Hvad sker der i 2700 i denne weekend?"><img src="assets/slides/todoweekend1014/02.webp" alt="Hvad sker der i 2700 i denne weekend? – slide 2 af 4" width="1080" height="1350" loading="lazy"></div><div class="card k-img" aria-label="Slide 3 af 4: Hvad sker der i 2700 i denne weekend?"><img src="assets/slides/todoweekend1014/03.webp" alt="Hvad sker der i 2700 i denne weekend? – slide 3 af 4" width="1080" height="1350" loading="lazy"></div><div class="card k-img" aria-label="Slide 4 af 4: Hvad sker der i 2700 i denne weekend?"><img src="assets/slides/todoweekend1014/04.webp" alt="Hvad sker der i 2700 i denne weekend? – slide 4 af 4" width="1080" height="1350" loading="lazy"></div></div><button type="button" class="sa l" aria-label="Forrige">‹</button><button type="button" class="sa r" aria-label="Næste">›</button><span class="scount"></span></div>
+    <div class="sdots"></div>
+    <p class="fcap"><b>Hvad sker der i 2700 i denne weekend?</b> Har I nået Trådens skattejagt, før den slutter søndag? Skal du ud og spise Dining Week-menu i BRØK eller på Bellahøjgaard? Skal børnene se PØLSE! eller Halfdans ABC? Eller hvad med Brønshøj mod Ringsted i Tingbjerg?</p>
+    <details class="all"><summary>Se hele programmet med links</summary><div class="alle">
+<details class="story" id="todoweekend1014-hele-weekenden"><summary>Hele weekenden</summary>
+<div class="story-body">
+<p><strong>Trådens efterårsferie-skattejagt – sidste weekend</strong><br/>Hele 2700 · Til og med søndag 18. oktober<br/>Løs opgaverne rundt i bydelene, leg på legepladserne, og få en gratis kop kakao på Spisehuset i Den Gamle Skole (BRØK). Hent hæftet på Spisehuset eller Energicenter Voldparken – eller print det selv. Aflever det i postkassen på Spisehuset eller i Cafe KAYs, og vær med i lodtrækningen om 3 gavekort à 100 kr. til Kongebørn.<br/><a href="https://2700traaden.dk/skattejagt/" target="_blank">Se skattejagten</a></p>
+<p><strong>Dining Week i BRØK</strong><br/>BRØK, Brønshøj Kulturhus · Dining Week i uge 42 – se tider ved booking · 250 kr. for 3 retter<br/>BRØK er med i Dining Week: tre retter til fast pris. Book bord via Dining Week.<br/><a href="https://diningweek.dk/restaurant/1591_10772-broek" target="_blank">Læs mere</a></p>
+<p><strong>Dining Week på Bellahøjgaard</strong><br/>Bellahøjgaard, Bellahøjvej 20 · Til og med søndag 18. oktober · 350 kr. for 5 retter (+ 29 kr. i gebyr)<br/>Fem retter med bl.a. jordskokkesuppe, kalvesteg og mørk chokolademousse – der er også en vegetarmenu. Vin- eller ølmenu for 425 kr.<br/><a href="https://bellahoej.dk/events/dining-week/" target="_blank">Læs mere</a></p></div>
+</details>
+<details class="story" id="todoweekend1014-fredag"><summary>Fredag 16. oktober</summary>
+<div class="story-body">
+<p><strong>FerieCamp i Tingbjerg – sidste dag</strong><br/>Tingbjerg Bibliotek &amp; Kulturhus · Kl. 10.00–15.00 · Gratis, ingen tilmelding<br/>Sidste dag i efterårsferiens camp for 6–12-årige: svømning, naturkrea, smykkeworkshop, breakdance, panna-fodbold – og ugen sluttes af med en FIFA-turnering.<br/><a href="https://brugbyen.kk.dk/det-sker/feriecamp-i-tingbjerg-efteraarsferien" target="_blank">Læs mere</a></p>
+<p><strong>Barselscafé i Rytterskolen</strong><br/>Rytterskolen · Kl. 10.00–12.00<br/>Barselscafé i Rytterskolen for forældre og de helt små.<br/><a href="https://broek.kk.dk/kalender/barselscafe-i-rytterskolen" target="_blank">Læs mere</a></p>
+<p><strong>Café Mors Varme Hænder</strong><br/>Tingbjerg Bibliotek &amp; Kulturhus · Kl. 10.00–14.00<br/>Caféen i Tingbjerg Bibliotek &amp; Kulturhus har åbent om fredagen.<br/><a href="https://tingbjerg-bydel.dk/assets/dokumenter/Beboerbladet-Tingbjerg-oktober-2026.pdf" target="_blank">Se Beboerbladet</a></p>
+<p><strong>Teatermagi: Peter Plys (3–8 år)</strong><br/>Brønshøj Bibliotek · Kl. 10.00–11.00 · Udsolgt<br/>Dukke- og teaterforestilling om venskab, bygget på historierne om Peter Plys.<br/><a href="https://kulturogfritidn.kk.dk/det-sker/udsolgt-teatermagi-peter-plys-3-8-aar" target="_blank">Læs mere</a></p>
+<p><strong>1-2-3-nU… (0–4 år)</strong><br/>BRØK, Brønshøj Kulturhus · Kl. 10.00–10.35 · Udsolgt<br/>Musikalsk og interaktiv forestilling for de mindste, hvor en kæmpe pop op-bog folder sig ud.<br/><a href="https://broek.kk.dk/kalender/1-2-3-nu-0-4-aar" target="_blank">Læs mere</a></p>
+<p><strong>Ungebase i Tingbjerg: fodboldturnering (13–17 år)</strong><br/>EnergiCenter Voldparken · Kl. 16.00–20.00 · Gratis, ingen tilmelding<br/>Fodboldturnering for alle niveauer – kom med et hold, eller bliv sat på et på dagen.<br/><a href="https://feriecamp.kk.dk/programmer/ungebase-i-tingbjerg-efteraarsferien" target="_blank">Læs mere</a></p></div>
+</details>
+<details class="story" id="todoweekend1014-loerdag"><summary>Lørdag 17. oktober</summary>
+<div class="story-body">
+<p><strong>Hoppeloppen – selvbetjent legestue (1–5 år)</strong><br/>BRØK, Brønshøj Kulturhus · Kl. 09.00–17.00 · Gratis, ingen tilmelding<br/>Tumle-, balance- og legeredskaber indendørs for de mindste – kom og gå, som det passer.<br/><a href="https://broek.kk.dk/kalender/hoppeloppen-selvbetjent-legestue-for-1-5-aar" target="_blank">Læs mere</a></p>
+<p><strong>Grafik for begyndere og let øvede: Puslespilsmetoden</strong><br/>BRØK, Brønshøj Kulturhus · Kl. 10.00–16.00 · 325 kr. inkl. materialer<br/>Lær at skære linoleumssnit med puslespilsmetoden og tryk på bogtrykpresse.<br/><a href="https://broek.kk.dk/kalender/grafik-for-begyndere-og-let-oevede-puslespilsmetoden" target="_blank">Læs mere</a></p>
+<p><strong>PØLSE! (3–7 år)</strong><br/>BRØK, Brønshøj Kulturhus · Kl. 11.15–11.45 · 40 kr.<br/>Sjovt teater med sange, dukketeater og en rengøringsassistent, der bliver venner med hunden Pølse, som bare vil lege.<br/><a href="https://broek.kk.dk/kalender/poelse-3-7-aar" target="_blank">Læs mere</a></p>
+<p><strong>FIX herrer – Olympiakos København</strong><br/>Pilesvinget/Brønshøj Kirkevej · Kl. 12.00<br/>FIX herrer tager imod Olympiakos København i Serie 2.<br/><a href="https://www.dbukoebenhavn.dk/resultater/hold/21307_496313/kampprogram" target="_blank">Læs mere</a></p>
+<p><strong>Halfdans ABC (4–7 år)</strong><br/>Husum Bibliotek · Kl. 12.00–12.40 · Gratis billet<br/>Teater AstaBasta giver Halfdan Rasmussens ABC liv med dukker, sange og musik.<br/><a href="https://kulturogfritidn.kk.dk/det-sker/halfdans-abc-4-7-aar" target="_blank">Læs mere</a></p>
+<p><strong>Brønshøj – Ringsted IF</strong><br/>Tingbjerg Idrætspark · Kl. 14.00<br/>Brønshøj Boldklub spiller hjemme mod Ringsted IF i 3. division.<br/><a href="https://gokoebenhavn.dk/kulturkalender/event/fodboldkamp-campobet-3-division-grundspil-2026-27-bronshoj-mod-ringsted-if/" target="_blank">Læs mere</a></p>
+<p><strong>FIX damer – Viking/RIK</strong><br/>Pilesvinget/Brønshøj Kirkevej · Kl. 14.00<br/>FIX damer spiller hjemme mod Viking/RIK.<br/><a href="https://www.dbukoebenhavn.dk/resultater/hold/216040_496307/kampprogram" target="_blank">Læs mere</a></p></div>
+</details>
+<details class="story" id="todoweekend1014-soendag"><summary>Søndag 18. oktober</summary>
+<div class="story-body">
+<p><strong>Eksistentiel samtale om fordomme</strong><br/>Husumvold Kirke, Gadelandet 25 · Kl. 11.30–13.00 · Ingen tilmelding<br/>Sognepræst Bertram Eiriksson lægger ud med en kort refleksion over fordomme, og derefter er der en åben samtale, hvor alle kan være med – der er ingen rigtige eller forkerte meninger. Det slutter med et let måltid.<br/><a href="https://www.husumvoldkirke.dk/b/eksistentiel-samtale-50835812" target="_blank">Læs mere</a></p></div>
+</details>
+<p class="closing">Har vi overset noget, der sker i 2700? Smid det i kommentarerne — så hjælper I med at gøre Fælleskalenderen bedre. </p>
+</div></details>
+  </section>
+
+  <section class="fpost" id="ostfronten1014" data-total="4">
+    <div class="fhead"><img class="av" src="assets/segment-ostfronten.jpg" alt=""><div class="fname"><b>Fra djøf&#x27;sk til dansk – 2700-nyt fra Rådhuset</b><span>14. oktober 2026</span></div></div>
+    <div class="fwrap"><div class="strip" tabindex="0" aria-label="Kort: Fra djøf&#x27;sk til dansk – 2700-nyt fra Rådhuset"><div class="card k-img" aria-label="Slide 1 af 4: Fra djøf&#x27;sk til dansk – 2700-nyt fra Rådhuset"><img src="assets/slides/ostfronten1014/01.webp" alt="Fra djøf&#x27;sk til dansk – 2700-nyt fra Rådhuset – slide 1 af 4" width="1080" height="1350"></div><div class="card k-img" aria-label="Slide 2 af 4: Fra djøf&#x27;sk til dansk – 2700-nyt fra Rådhuset"><img src="assets/slides/ostfronten1014/02.webp" alt="Fra djøf&#x27;sk til dansk – 2700-nyt fra Rådhuset – slide 2 af 4" width="1080" height="1350" loading="lazy"></div><div class="card k-img" aria-label="Slide 3 af 4: Fra djøf&#x27;sk til dansk – 2700-nyt fra Rådhuset"><img src="assets/slides/ostfronten1014/03.webp" alt="Fra djøf&#x27;sk til dansk – 2700-nyt fra Rådhuset – slide 3 af 4" width="1080" height="1350" loading="lazy"></div><div class="card k-img" aria-label="Slide 4 af 4: Fra djøf&#x27;sk til dansk – 2700-nyt fra Rådhuset"><img src="assets/slides/ostfronten1014/04.webp" alt="Fra djøf&#x27;sk til dansk – 2700-nyt fra Rådhuset – slide 4 af 4" width="1080" height="1350" loading="lazy"></div></div><button type="button" class="sa l" aria-label="Forrige">‹</button><button type="button" class="sa r" aria-label="Næste">›</button><span class="scount"></span></div>
+    <div class="sdots"></div>
+    <p class="fcap"><b>Fra djøf&#x27;sk til dansk – 2700-nyt fra Rådhuset</b> Natfodbold i Tingbjerg fra januar, M5-høringen er sendt af sted, og fritidsjob til unge i Tingbjerg-Husum</p>
+    <details class="all"><summary>Læs videre – alle 5 historier med kilder</summary><div class="alle">
+<p style="margin:0 0 12px">Vi har kigget på, hvad der er sket på Rådhuset siden sidste onsdag, og hvad der er på vej i den kommende uge.</p>
+<details class="story" id="ostfronten1014-natfodbold"><summary>Natfodbold i Tingbjerg fra januar</summary>
+<div class="story-body"><p><strong>Status: Vedtaget med budgettet.</strong> Udvalget tager planen til efterretning mandag 19. oktober.</p>
+<p>Fra 1. januar 2027 bliver der natfodbold i Tingbjerg hver fredag kl. 20–23, 50 fredage om året. Det er gratis, kræver ingen tilmelding og er for unge fra 13 år. Om sommeren foregår det på Tingbjerg Idrætsanlæg og om vinteren i Tingbjerg Hallen.</p>
+<p>Ud over fodbold og street-fodbold bliver der en "Chill-out Zone" med brætspil, musik og sund forplejning for dem, der ikke spiller.</p>
+<p>Kommunen har afsat 0,9 mio. kr. om året i 2027 og 2028. Den største post er projektledelse og uddannelse af unge rollemodeller (750.000 kr. om året). Materialer og forplejning får 55.000 kr., og en ekstern evaluering får 70.000 kr. om året.</p>
+<p>Kommunen regner med 20–60 unge hver fredag. Målet er, at 15–20 unge i løbet af projektet bliver knyttet til en forening eller et fast fritidstilbud. Efter to år vurderes det, om natfodbolden skal fortsætte fast.</p>
+<a href="https://www.kk.dk/dagsordener-og-referater/Besk%C3%A6ftigelses-%2C%20Integrations-%20og%20Erhvervsudvalget/m%C3%B8de-19102026/dagsorden/punkt-2" target="_blank">Læs sagen</a> · <a href="https://www.kk.dk/sites/default/files/agenda/d3c2b37a-0ce9-4740-b4e4-7b2b6cf19e68/b90745f5-d086-4e37-82d5-de5c8ed512c0-bilag-21_0.pdf" target="_blank">Læs bilaget</a></div>
+</details>
+<details class="story" id="ostfronten1014-hvem"><summary>Hvem der står for natfodbolden</summary>
+<div class="story-body"><p>Beskæftigelses-, Integrations- og Erhvervsforvaltningen er tovholder. Brønshøj Boldklub og DIF's Get2sport står for selve fodbolden, og det er Brønshøj Boldklub, der rekrutterer og uddanner de lokale unge, som skal være værter og baneledere.</p>
+<p>Desuden er Street Society, Den Sociale Helhedsplan, Brønshøj-Husum Lokaludvalg og gadeplansarbejdet med.</p>
+<a href="https://www.kk.dk/sites/default/files/agenda/d3c2b37a-0ce9-4740-b4e4-7b2b6cf19e68/b90745f5-d086-4e37-82d5-de5c8ed512c0-bilag-21_0.pdf" target="_blank">Læs bilaget</a></div>
+</details>
+<details class="story" id="ostfronten1014-fritidsjob"><summary>Fritidsjob til unge i Tingbjerg-Husum</summary>
+<div class="story-body"><p><strong>Status: I proces.</strong> På udvalgets møde mandag 19. oktober.</p>
+<p>Kommunen vil skaffe flere kommunale fritidsjob til udsatte unge. Tingbjerg-Husum er et af tre områder, sammen med Folehaven og Amager, hvor forløbet Jobkadet skal udbredes. Jobkadet er et forløb på otte uger, der forbereder unge til et fritidsjob.</p>
+<p>Målet er 40 unge om året i Jobkadet, og at 10 af dem får et fritidsjob med en mentor.</p>
+<a href="https://www.kk.dk/dagsordener-og-referater/Besk%C3%A6ftigelses-%2C%20Integrations-%20og%20Erhvervsudvalget/m%C3%B8de-19102026/dagsorden/punkt-2" target="_blank">Læs sagen</a> · <a href="https://www.kk.dk/sites/default/files/agenda/d3c2b37a-0ce9-4740-b4e4-7b2b6cf19e68/b90745f5-d086-4e37-82d5-de5c8ed512c0-bilag-17_0.pdf" target="_blank">Læs bilaget</a></div>
+</details>
+<details class="story" id="ostfronten1014-m5"><summary>M5: Rapport om tudse sendt i høring</summary>
+<div class="story-body"><p><strong>Status: I proces.</strong> 30 dages offentlig høring.</p>
+<p>Borgerrepræsentationen besluttede torsdag 8. oktober at sende en miljøkonsekvensrapport om M5 og den grønbrogede tudse i offentlig høring, sammen med et udkast til kommunale tilladelser. Tudsen er strengt beskyttet efter EU's habitatdirektiv, og rapporten handler om at gøre en undtagelse, så første etape af M5 på Amager kan bygges.</p>
+<p>Sagen gælder kun første etape og nævner ikke Brønshøj. Men M5 er den linje, som en mulig metro til Brønshøj senere kan hænge på, så vi følger den.</p>
+<a href="https://www.kk.dk/dagsordener-og-referater/Borgerrepr%C3%A6sentationen/m%C3%B8de-08102026/referat/punkt-4" target="_blank">Læs sagen</a></div>
+</details>
+<details class="story" id="ostfronten1014-aaq"><summary>Hvad Å og Q ville have undersøgt</summary>
+<div class="story-body"><p>Afstemningen om M5 endte 50–3. Alternativet og Frie Grønne stemte imod og stillede et ændringsforslag: Sagen skulle tilbage til Økonomiforvaltningen, så sagkyndige, der er uafhængige af Metroselskabet og dets rådgivere, først kunne undersøge, om der er gode nok alternativer til projektets placering og udformning.</p>
+<p>Forslaget faldt 50–3.</p>
+<a href="https://www.kk.dk/dagsordener-og-referater/Borgerrepr%C3%A6sentationen/m%C3%B8de-08102026/referat/punkt-4" target="_blank">Læs sagen</a></div>
+</details>
+<p class="closing">Vi holder øje med Rådhuset, så du ikke behøver.</p>
+</div></details>
+  </section>
+
+  <section class="fpost" id="tilbud1014" data-total="5">
+    <div class="fhead"><img class="av" src="assets/segment-tilbud.jpg" alt=""><div class="fname"><b>2700 Tilbud: Pssst... 3 gode tilbud fra gaden – uge 42</b><span>14. oktober 2026</span></div></div>
+    <div class="fwrap"><div class="strip" tabindex="0" aria-label="Kort: Pssst... 3 gode tilbud fra gaden – uge 42"><div class="card k-img" aria-label="Slide 1 af 5: Pssst... 3 gode tilbud fra gaden – uge 42"><img src="assets/slides/tilbud1014/01.webp" alt="Pssst... 3 gode tilbud fra gaden – uge 42 – slide 1 af 5" width="1080" height="1350"></div><div class="card k-img" aria-label="Slide 2 af 5: Pssst... 3 gode tilbud fra gaden – uge 42"><img src="assets/slides/tilbud1014/02.webp" alt="Pssst... 3 gode tilbud fra gaden – uge 42 – slide 2 af 5" width="1080" height="1350" loading="lazy"></div><div class="card k-img" aria-label="Slide 3 af 5: Pssst... 3 gode tilbud fra gaden – uge 42"><img src="assets/slides/tilbud1014/03.webp" alt="Pssst... 3 gode tilbud fra gaden – uge 42 – slide 3 af 5" width="1080" height="1350" loading="lazy"></div><div class="card k-img" aria-label="Slide 4 af 5: Pssst... 3 gode tilbud fra gaden – uge 42"><img src="assets/slides/tilbud1014/04.webp" alt="Pssst... 3 gode tilbud fra gaden – uge 42 – slide 4 af 5" width="1080" height="1350" loading="lazy"></div><div class="card k-img" aria-label="Slide 5 af 5: Pssst... 3 gode tilbud fra gaden – uge 42"><img src="assets/slides/tilbud1014/05.webp" alt="Pssst... 3 gode tilbud fra gaden – uge 42 – slide 5 af 5" width="1080" height="1350" loading="lazy"></div></div><button type="button" class="sa l" aria-label="Forrige">‹</button><button type="button" class="sa r" aria-label="Næste">›</button><span class="scount"></span></div>
+    <div class="sdots"></div>
+    <p class="fcap"><b>Pssst... 3 gode tilbud fra gaden – uge 42</b> Brug de lokale butikker – ellers forsvinder de. Her er ugens tilbud fra butikker og spisesteder i 2700.</p>
+    <details class="all"><summary>Læs videre – alle 4 historier med kilder</summary><div class="alle">
+<details class="story" id="tilbud1014-koengeboern"><summary>Kongebørn – efterårsferie med et nyt tilbud hver dag</summary>
+<div class="story-body"><p>Børnebutikken Kongebørn har et nyt tilbud hver dag i efterårsferien:</p>
+<p>Torsdag 15. oktober: 20 % på alle Jellycat-bamser<br/>Fredag 16. oktober: 40 % på alt legesminke<br/>Lørdag 17. oktober: 30 % på svømmebriller<br/>Hele ugen: 30 % på strømper og strømpebukser fra mp</p>
+<p>Gælder til og med lørdag 17. oktober.</p>
+<a href="https://www.instagram.com/kongeboern/" target="_blank">Kongebørn på Instagram</a></div>
+</details>
+<details class="story" id="tilbud1014-spisehuset"><summary>Spisehuset i Den Gamle Skole – Dining Week: 3 retter for 250 kr.</summary>
+<div class="story-body"><p>Forret: Flamberet laks, hvid miso, soya, syltet grønt og yuzu<br/>Hovedret: Langtidsbraiseret okseshortrib med glace, selleripuré, bøgehatte og pommes fondant<br/>Dessert: Hvid chokolademousse, syltede pærer og ingefærcrumble</p>
+<p>Vegetar- og pescetarmenu findes. Gælder til og med søndag 18. oktober. Book bord via linket på deres Instagram.</p>
+<a href="https://www.instagram.com/spisehuset_i_den_gamle_skole/" target="_blank">@spisehuset_i_den_gamle_skole</a></div>
+</details>
+<details class="story" id="tilbud1014-prikken"><summary>Prikken over i'et – puder og tasker i brokade</summary>
+<div class="story-body"><p>Puder i brokade med fyld, 50×50 eller 40×60 cm: 1 stk. 350 kr., 2 stk. 600 kr.<br/>Clutches: 1 stk. 269 kr., 2 stk. 399 kr.<br/>Net og tasker: 350, 450 og 650 kr.</p>
+<p>Syet af brokaderester fra hele verden på en familieejet systue i Indien.</p>
+<a href="https://www.instagram.com/prikkenoveriet_com/" target="_blank">@prikkenoveriet_com</a></div>
+</details>
+<details class="story" id="tilbud1014-butik"><summary>Har du en butik i 2700?</summary>
+<div class="story-body"><p>Send os ét tilbud og ét billede inden lørdag kl. 20 – på DM til @2700traaden eller på <a href="mailto:kontakt@2700tråden.dk">kontakt@2700tråden.dk</a>. Det er gratis, og du er med i næste uges 2700 Tilbud.</p>
+<a href="https://www.instagram.com/2700traaden/" target="_blank">Skriv til @2700traaden</a></div>
+</details>
+<p class="closing">Støt de lokale butikker – ellers forsvinder de. Støt dem meget, så bliver de – måske flere.</p>
+</div></details>
+  </section>
+
+  <section class="fpost" id="lu1012" data-total="5">
+    <div class="fhead"><img class="av" src="assets/segment-lokaludvalget.jpg" alt=""><div class="fname"><b>Clickbait fra Lokaludvalget</b><span>12. oktober 2026</span></div></div>
+    <div class="fwrap"><div class="strip" tabindex="0" aria-label="Kort: Clickbait fra Lokaludvalget"><div class="card k-img" aria-label="Slide 1 af 5: Clickbait fra Lokaludvalget"><img src="assets/slides/lu1012/01.webp" alt="Clickbait fra Lokaludvalget – slide 1 af 5" width="1080" height="1350"></div><div class="card k-img" aria-label="Slide 2 af 5: Clickbait fra Lokaludvalget"><img src="assets/slides/lu1012/02.webp" alt="Clickbait fra Lokaludvalget – slide 2 af 5" width="1080" height="1350" loading="lazy"></div><div class="card k-img" aria-label="Slide 3 af 5: Clickbait fra Lokaludvalget"><img src="assets/slides/lu1012/03.webp" alt="Clickbait fra Lokaludvalget – slide 3 af 5" width="1080" height="1350" loading="lazy"></div><div class="card k-img" aria-label="Slide 4 af 5: Clickbait fra Lokaludvalget"><img src="assets/slides/lu1012/04.webp" alt="Clickbait fra Lokaludvalget – slide 4 af 5" width="1080" height="1350" loading="lazy"></div><div class="card k-img" aria-label="Slide 5 af 5: Clickbait fra Lokaludvalget"><img src="assets/slides/lu1012/05.webp" alt="Clickbait fra Lokaludvalget – slide 5 af 5" width="1080" height="1350" loading="lazy"></div></div><button type="button" class="sa l" aria-label="Forrige">‹</button><button type="button" class="sa r" aria-label="Næste">›</button><span class="scount"></span></div>
+    <div class="sdots"></div>
+    <p class="fcap"><b>Clickbait fra Lokaludvalget</b> Overskrifterne overdriver. Teksten gør ikke.</p>
+    <details class="all"><summary>Læs videre – alle 4 historier med kilder</summary><div class="alle">
+<details class="story" id="lu1012-vandtaarn"><summary>UGENS DRAMA – Vandtårn-drama: Ild, reb og koncert</summary>
+<div class="story-body"><p><strong>Det skete der faktisk:</strong> Har Paven en sjov hat? Lokaludvalget har bevilget penge til et arrangement søndag 6. december, når lyset tændes i Brønshøj Vandtårn. Planen er lysoptog med ildshow fra Brønshøj Torv, bål ved spejderhuset, rappelling ned ad tårnet og koncert i tårnet.</p>
+<p>Status: BEVILGET · Tørhed: 1 af 5 citronmåner</p>
+<a href="https://www.kk.dk/dagsordener-og-referater/Br%C3%B8nsh%C3%B8j-Husum%20Lokaludvalg/m%C3%B8de-24092026/referat/punkt-10" target="_blank">Læs mere</a></div>
+</details>
+<details class="story" id="lu1012-bellahoej"><summary>UGENS TAL – 6 ønsker til Bellahøj: Du gætter aldrig nr. 2</summary>
+<div class="story-body"><p><strong>Det skete der faktisk:</strong> Boligselskabet SAB har bedt om en ny lokalplan, så de 10 højhuse på Bellahøj kan rives ned og bygges nye. SAB mener, husene har så alvorlige konstruktionsfejl, at renovering ikke kan betale sig. Lokaludvalget har seks ønsker. Nr. 2: Alle skal kunne komme op på udsigtsplatformene.</p>
+<p>Status: KUN INPUT · Tørhed: 3 af 5 citronmåner</p>
+<a href="https://www.kk.dk/dagsordener-og-referater/Br%C3%B8nsh%C3%B8j-Husum%20Lokaludvalg/m%C3%B8de-24092026/referat/punkt-13" target="_blank">Læs mere</a></div>
+</details>
+<details class="story" id="lu1012-renover"><summary>UGENS VÆR MED – Klima-topmøde: Grønt køkken og bad?</summary>
+<div class="story-body"><p><strong>Det skete der faktisk:</strong> Skal du have nyt køkken, bad, gulv, vinduer eller tag? Lokaludvalget inviterer sammen med Bispebjerg og Vanløse boligejere til en gratis aften om bæredygtig renovering på Thoravej 29: rundvisning, oplæg fra en tømrer, sandwich og rådgivere. Få pladser – tilmelding i denne uge.</p>
+<p>Status: TILMELDING · Tørhed: 3 af 5 citronmåner</p>
+<a href="https://broenshoej-husumlokaludvalg.kk.dk/renover-med-omtanke" target="_blank">Læs mere</a></div>
+</details>
+<details class="story" id="lu1012-ogsaa"><summary>Også i denne uge</summary>
+<div class="story-body"><p>Lokaludvalget spørger via Økonomiforvaltningen, hvordan Movia ser på, at man kan få en busbillet med, når man tilmelder sig et lokalt arrangement – fx gyldig fra en time før til en time efter.<br/>
+<a href="https://www.kk.dk/dagsordener-og-referater/Br%C3%B8nsh%C3%B8j-Husum%20Lokaludvalg/m%C3%B8de-24092026/referat/punkt-21" target="_blank">Læs mere</a></p>
+<p>Lokaludvalget vil være med i et fælles lysværk til Copenhagen Light Festival. Husum Torv eller Husum Bypark er foreslået som sted. Om der gives penge, besluttes på næste møde.<br/>
+<a href="https://www.kk.dk/dagsordener-og-referater/Br%C3%B8nsh%C3%B8j-Husum%20Lokaludvalg/m%C3%B8de-24092026/referat/punkt-20" target="_blank">Læs mere</a></p>
+<p>Haveprojektet Mere liv i haverne holder sit første gratis arrangement om regnvand i haven i EnergiCenter Voldparken senere på måneden. Tilmelding på mail.<br/>
+<a href="https://broenshoej-husumlokaludvalg.kk.dk/mere-liv-i-haverne-sammen-om-vand-og-biodiversitet" target="_blank">Læs mere</a></p></div>
+</details>
+<p class="closing">Det var så sidste krumme af den citronmåne. Vi sætter vand over til en ny i næste uge.</p>
+</div></details>
+  </section>
+
+  <section class="fpost tre4" id="mikrofonholderi1012" data-total="8">
+    <div class="fhead"><img class="av" src="assets/segment-mikrofonholderi.jpg" alt=""><div class="fname"><b>Mikrofonholderi</b><span>12. oktober 2026</span></div></div>
+    <div class="fwrap"><div class="strip" tabindex="0" aria-label="Kort: Mikrofonholderi #1: Rasmus Romulus Palludan fra TV Tingbjerg"><div class="card k-img" style="aspect-ratio:3/4" aria-label="Slide 1 af 8: Mikrofonholderi #1: Rasmus Romulus Palludan fra TV Tingbjerg"><img src="assets/slides/mikrofonholderi1012/01.webp" alt="Mikrofonholderi #1: Rasmus Romulus Palludan fra TV Tingbjerg – slide 1 af 8" width="1080" height="1440"></div><div class="card k-img" style="aspect-ratio:3/4" aria-label="Slide 2 af 8: Mikrofonholderi #1: Rasmus Romulus Palludan fra TV Tingbjerg"><img src="assets/slides/mikrofonholderi1012/02.webp" alt="Mikrofonholderi #1: Rasmus Romulus Palludan fra TV Tingbjerg – slide 2 af 8" width="1080" height="1440" loading="lazy"></div><div class="card k-img" style="aspect-ratio:3/4" aria-label="Slide 3 af 8: Mikrofonholderi #1: Rasmus Romulus Palludan fra TV Tingbjerg"><img src="assets/slides/mikrofonholderi1012/03.webp" alt="Mikrofonholderi #1: Rasmus Romulus Palludan fra TV Tingbjerg – slide 3 af 8" width="1080" height="1440" loading="lazy"></div><div class="card k-img" style="aspect-ratio:3/4" aria-label="Slide 4 af 8: Mikrofonholderi #1: Rasmus Romulus Palludan fra TV Tingbjerg"><img src="assets/slides/mikrofonholderi1012/04.webp" alt="Mikrofonholderi #1: Rasmus Romulus Palludan fra TV Tingbjerg – slide 4 af 8" width="1080" height="1440" loading="lazy"></div><div class="card k-img" style="aspect-ratio:3/4" aria-label="Slide 5 af 8: Mikrofonholderi #1: Rasmus Romulus Palludan fra TV Tingbjerg"><img src="assets/slides/mikrofonholderi1012/05.webp" alt="Mikrofonholderi #1: Rasmus Romulus Palludan fra TV Tingbjerg – slide 5 af 8" width="1080" height="1440" loading="lazy"></div><div class="card k-img" style="aspect-ratio:3/4" aria-label="Slide 6 af 8: Mikrofonholderi #1: Rasmus Romulus Palludan fra TV Tingbjerg"><img src="assets/slides/mikrofonholderi1012/06.webp" alt="Mikrofonholderi #1: Rasmus Romulus Palludan fra TV Tingbjerg – slide 6 af 8" width="1080" height="1440" loading="lazy"></div><div class="card k-img" style="aspect-ratio:3/4" aria-label="Slide 7 af 8: Mikrofonholderi #1: Rasmus Romulus Palludan fra TV Tingbjerg"><img src="assets/slides/mikrofonholderi1012/07.webp" alt="Mikrofonholderi #1: Rasmus Romulus Palludan fra TV Tingbjerg – slide 7 af 8" width="1080" height="1440" loading="lazy"></div><div class="card k-img" style="aspect-ratio:3/4" aria-label="Slide 8 af 8: Mikrofonholderi #1: Rasmus Romulus Palludan fra TV Tingbjerg"><img src="assets/slides/mikrofonholderi1012/08.webp" alt="Mikrofonholderi #1: Rasmus Romulus Palludan fra TV Tingbjerg – slide 8 af 8" width="1080" height="1440" loading="lazy"></div></div><button type="button" class="sa l" aria-label="Forrige">‹</button><button type="button" class="sa r" aria-label="Næste">›</button><span class="scount"></span></div>
+    <div class="sdots"></div>
+    <p class="fcap"><b>Mikrofonholderi #1: Rasmus Romulus Palludan fra TV Tingbjerg</b> Vi holder mikrofonen. Rasmus Romulus Palludan fra TV Tingbjerg fortæller selv. Ingen kritiske spørgsmål – ren mikrofonholderi.</p>
+    <details class="all"><summary>Læs hele interviewet</summary><div class="alle">
+<h3 class="mq" style="margin:20px 0 6px;font-size:18px;line-height:1.3;font-weight:400;color:var(--green)">1. Hvem er du?</h3>
+<p>”Jeg hedder Rasmus Romulus Palludan, bor i Tingbjerg og er journalist og personen bag TV Tingbjerg – et lille lokalmedie med store ambitioner og et slogan, der lyder: I øjenhøjde med virkeligheden. Vi laver videohistorier om bl.a. mennesker, natur, kultur og arkitektur.”</p>
+<h3 class="mq" style="margin:20px 0 6px;font-size:18px;line-height:1.3;font-weight:400;color:var(--green)">2. Hvordan startede det?</h3>
+<p>”Jeg syntes, at der manglede en masse i fortællingen om Tingbjerg. De landsdækkende medier virker mest interesserede i Tingbjerg, når noget går galt, eller når fællesskaber bliver sat under pres. Og jeg forstår selvfølgelig godt, hvorfor de prioriterer, som de gør. Men jeg begyndte samtidig at tænke: Hvad sker der med et sted, når undtagelsen igen og igen får medietid? Hvornår bliver undtagelsen omverdenens billede af normalen – og hvad gør det ved mennesker, der bor her?</p>
+<p>Jeg oplever Tingbjerg som et fantastisk sted at bo, og jeg føler mig super tryg i det daglige. Den forskel mellem min egen erfaring og den fortælling, jeg ofte mødte udefra, satte nogle journalistiske tanker i gang:</p>
+<p>Hvad sker der, hvis man vender det journalistiske blik mod noget af alt det andet, der også gør Tingbjerg til det unikke sted, det er? Hvis man bliver hængende længe nok til at møde de mennesker, der får fællesskaber til at opstå, bestå og måske endda vokse?</p>
+<p>Jeg tror, den form for konstruktive journalistik kan noget vigtigt i Tingbjerg. For mere generelt bekymrer jeg mig over vores medieøkosystem – ikke mindst de sociale medier – og at de alt for ofte kultiverer vores værste sider. Konflikt, vrede og sensation har nogle eminent gode vækstbetingelser. Det er problematisk for et samfund, fordi mennesker generelt træffer de bedste beslutninger, når de er i balance – ikke når de er pissed.</p>
+<p>Så… jeg kunne gå og vente på, at nogen lavede et anderledes lokalmedie i Tingbjerg. Eller jeg kunne prøve at lave det selv.”</p>
+<h3 class="mq" style="margin:20px 0 6px;font-size:18px;line-height:1.3;font-weight:400;color:var(--green)">3. Hvorfor laver du det?</h3>
+<p>”Fordi jeg tror, at den måde, vi fortæller om et sted på, også påvirker den måde, vi ser det på. TV Tingbjergs historier er et supplement til de historier, andre medier fortæller. Ikke fordi de andre historier nødvendigvis er forkerte, men fordi et sted altid er større end de historier, der normalt bliver fortalt om det.</p>
+<p>På den måde håber jeg, at TV Tingbjerg kan være med til at udvide den samlede fortælling om Tingbjerg. For her findes selvfølgelig problemer og konflikter, men også natur, kultur, foreningsliv, ildsjæle, mærkelige små historier og helt almindeligt hverdagsliv. Alt det er også virkelighed.</p>
+<p>Og så blev jeg journalist, fordi jeg elsker at møde mennesker og blive klogere på verden. Tingbjerg huser mennesker med rødder mange forskellige steder i verden, så på den måde er bydelen jo lidt af en journalistisk gave.”</p>
+<h3 class="mq" style="margin:20px 0 6px;font-size:18px;line-height:1.3;font-weight:400;color:var(--green)">4. Hvad er det fedeste, der er sket undervejs?</h3>
+<p>”At opdage, hvor mange mennesker der har noget på hjerte, hvor mange i Tingbjerg der bakker op, når man begynder at lave journalistik med et lidt andet udgangspunkt end det, de er vant til fra andre medier.</p>
+<p>I takt med at TV Tingbjerg er vokset, er jeg begyndt at få mange smil og hilsner fra mennesker, jeg ikke kender – i supermarkedet eller ude på gaden. Det betyder meget for mig. Jeg tager det som et lille tegn på, at der er mennesker herude, som føler sig set og kan genkende noget af deres egen virkelighed i TV Tingbjerg.</p>
+<p>Det betyder selvfølgelig ikke, at man skal være enig i alt, hvad TV Tingbjerg laver. Tværtimod. Men jeg håber, at man kan genkende noget af det sted, man selv bor, i den journalistik, vi laver.”</p>
+<h3 class="mq" style="margin:20px 0 6px;font-size:18px;line-height:1.3;font-weight:400;color:var(--green)">5. Hvordan kan folk i 2700 være med eller bakke op?</h3>
+<p>”Det allerbedste du kan gøre er at følge os på sociale medier og interagere med indholdet. Det er helt fantastisk, når folk gør det! (se links nederst)</p>
+<p>Derudover kan du sende os et tip til en god historie: Kender du et inspirerende menneske, et sted, en forening eller en historie, der fortjener lidt opmærksomhed, så skriv til TV Tingbjerg på <a href="mailto:tvtingbjerg@protonmail.com">tvtingbjerg@protonmail.com</a>. Det behøver ikke være sensationelt. Hos TV Tingbjerg tror vi på, at små historier kan have stor værdi.</p>
+<p>TV Tingbjerg kæmper sidst (men ikke mindst) for at blive bæredygtige økonomisk, fordi alt arbejde er frivilligt. Så skriv endelig, hvis du har idéer til fonde eller lignende, som mediet med fordel kan søge støtte gennem.”</p>
+<h3 class="mq" style="margin:20px 0 6px;font-size:18px;line-height:1.3;font-weight:400;color:var(--green)">6. Hvilket sted i 2700 holder du mest af?</h3>
+<p>”Tankerne bundfælder sig i Utterslev Mose. Og de kan faktisk også få vinger. Mosen er 2700’s kæmpestore grønne og elektriske SUPEROASE. Året rundt er mosen en kilde til skønhed. Jeg tror virkelig på, at naturen påvirker folks helbred langt mere, end vi egentlig går og er bevidste om til hverdag. Derfor er der noget helt vildt særligt – også i en europæisk storbysammenhæng – ved at have et så stort fredet naturområde så tæt på byen. Mange af de første tanker om TV Tingbjerg opstod faktisk, mens jeg løb rundt om mosen. Og nu vil jeg ikke her – ved højlys efterårsdag – instrumentalisere mosen mere end højst nødvendigt. Men jeg skal lige love for, at den bliver ved med at give. Men sjovt nok giver den mest på de ture, hvor jeg ikke går derud for at få noget ud af den – og det kan man jo tænke lidt over.”</p>
+<h3 class="mq" style="margin:20px 0 6px;font-size:18px;line-height:1.3;font-weight:400;color:var(--green)">7. Hvis du kunne lave én forbedring i 2700, hvad skulle det være?</h3>
+<p>”Flere kreative samarbejder på kryds og tværs af 2700. Tingbjerg er fuld af mennesker, foreninger, institutioner, kunstnere, ildsjæle og små fællesskaber, som hver især kender hinanden. Men det ville være gavnligt, hvis hele 2700 i højere grad blev et fællesskab. TV Tingbjerg skal først og fremmest fortælle historier om det, der sker i bydelen. Men et lokalt medie kan også noget andet: få mennesker til at opdage hinanden. Derfor er TV Tingbjerg også interessant for folk, der ikke bor i Tingbjerg – men bare i nærheden.</p>
+<p>Derudover vil jeg kattens gerne have en ny skulptur i Tingbjerg. Den kendte billedhugger Gunnar Westman har allerede givet Tingbjerg en kalkun i 1960. Det er en menneskealder siden, så nu synes jeg altså, at det er på tide, at vi får et nyt dyr. Og jeg synes, at vi mangler en kat. Måske en slags ønskekat? Tænk: Find en lille sten. Hold den i hånden og tænk på dit ønske. Læg den ved Tingbjerg-katten. Katten klarer resten. 🐈 Men hvorfor lige en kat, tænker du? Tingbjerg er fuld af katte, og jeg synes på en eller anden måde, at katten indfanger Tingbjergs sjæl, hvorfor TV Tingbjerg for nyligt lavede en reportage om emnet. For Tingbjerg er ligesom katten, der sjældent synes at passe ind i en simpel fortælling. Katten har mange sider, former og farver – den er ligesom Tingbjerg, for den er helt sin egen.”</p>
+<h3 class="mq" style="margin:20px 0 6px;font-size:18px;line-height:1.3;font-weight:400;color:var(--green)">8. Hvem skal have mikrofonen næste gang?</h3>
+<p>”Jeg sender den over til Nikolaj Noel Christensen fra foreningen Utterslev Moses Venner, som TV Tingbjerg for nyligt interviewede om efterårets fugle. Han har meget på hjerte, og jeg er sikker på, at han kan kvidre sig frem til nogle forrygende svar!”</p>
+<p>Vi siger tak for svarene og giver mikrofonen videre i næste uge. Følg 2700-Tråden, så du ikke går glip af næste portræt af lokale ildsjæle.</p>
+<p>Se indslaget om lighederne mellem Tingbjerg og katten:<br/>
+<a href="https://youtu.be/EY7BuA_De14" target="_blank">https://youtu.be/EY7BuA_De14</a></p>
+<p>Læs Rasmus’ indlæg om TV Tingbjerg i fagbladet Journalisten:<br/>
+<a href="https://journalisten.dk/maa-hverdagen-ogsaa-vaere-en-nyhed-i-tingbjerg/" target="_blank">https://journalisten.dk/maa-hverdagen-ogsaa-vaere-en-nyhed-i-tingbjerg/</a></p>
+<p>Følg TV Tingbjerg for lokal-tv i øjenhøjde med virkeligheden:<br/>
+    Hjemmeside: <a href="https://tvtingbjerg.my.canva.site" target="_blank">https://tvtingbjerg.my.canva.site</a><br/>
+    Instagram: <a href="https://www.instagram.com/tvtingbjerg2700/" target="_blank">https://www.instagram.com/tvtingbjerg2700/</a><br/>
+    Facebook: <a href="https://www.facebook.com/profile.php?id=61592027044491" target="_blank">https://www.facebook.com/profile.php?id=61592027044491</a><br/>
+    TikTok: <a href="https://www.tiktok.com/@tvtingbjerg2700" target="_blank">https://www.tiktok.com/@tvtingbjerg2700</a><br/>
+    YouTube: <a href="https://www.youtube.com/@TVTingbjerg2700" target="_blank">https://www.youtube.com/@TVTingbjerg2700</a></p>
+</div></details>
+  </section>
+
+  <section class="fpost" id="lokalsporten1011" data-total="7">
+    <div class="fhead"><img class="av" src="assets/segment-sport.jpg" alt=""><div class="fname"><b>Lokalsporten Kort</b><span>11. oktober 2026</span></div></div>
+    <div class="fwrap"><div class="strip" tabindex="0" aria-label="Kort: Lokalsporten Kort – og helt upartisk"><div class="card k-img" aria-label="Slide 1 af 7: Lokalsporten Kort – og helt upartisk"><img src="assets/slides/lokalsporten1011/01.webp" alt="Lokalsporten Kort – og helt upartisk – slide 1 af 7" width="1080" height="1350"></div><div class="card k-img" aria-label="Slide 2 af 7: Lokalsporten Kort – og helt upartisk"><img src="assets/slides/lokalsporten1011/02.webp" alt="Lokalsporten Kort – og helt upartisk – slide 2 af 7" width="1080" height="1350" loading="lazy"></div><div class="card k-img" aria-label="Slide 3 af 7: Lokalsporten Kort – og helt upartisk"><img src="assets/slides/lokalsporten1011/03.webp" alt="Lokalsporten Kort – og helt upartisk – slide 3 af 7" width="1080" height="1350" loading="lazy"></div><div class="card k-img" aria-label="Slide 4 af 7: Lokalsporten Kort – og helt upartisk"><img src="assets/slides/lokalsporten1011/04.webp" alt="Lokalsporten Kort – og helt upartisk – slide 4 af 7" width="1080" height="1350" loading="lazy"></div><div class="card k-img" aria-label="Slide 5 af 7: Lokalsporten Kort – og helt upartisk"><img src="assets/slides/lokalsporten1011/05.webp" alt="Lokalsporten Kort – og helt upartisk – slide 5 af 7" width="1080" height="1350" loading="lazy"></div><div class="card k-img" aria-label="Slide 6 af 7: Lokalsporten Kort – og helt upartisk"><img src="assets/slides/lokalsporten1011/06.webp" alt="Lokalsporten Kort – og helt upartisk – slide 6 af 7" width="1080" height="1350" loading="lazy"></div><div class="card k-img" aria-label="Slide 7 af 7: Lokalsporten Kort – og helt upartisk"><img src="assets/slides/lokalsporten1011/07.webp" alt="Lokalsporten Kort – og helt upartisk – slide 7 af 7" width="1080" height="1350" loading="lazy"></div></div><button type="button" class="sa l" aria-label="Forrige">‹</button><button type="button" class="sa r" aria-label="Næste">›</button><span class="scount"></span></div>
+    <div class="sdots"></div>
+    <p class="fcap"><b>Lokalsporten Kort – og helt upartisk</b> Brønshøj vinder 4-2 i Holstebro, Husum scorer seks, og Fix og Stadion taber på udebane</p>
+    <details class="all"><summary>Læs videre – alle 6 historier med kilder</summary><div class="alle">
+<p style="margin:0 0 12px">Tråden har hentet forstærkninger: sportsreporterne Gunnar Lige om Lidt og Svend på Tværs. I deres fælles ansøgning fremhævede de som en styrke, at de har brugt mere tid i klubhuset end på journalistskolen.</p>
+<details class="story" id="lokalsporten1011-holstebro"><summary>Holstebro – Brønshøj 2-4</summary>
+<div class="story-body"><p><strong>GUNNAR LIGE OM LIDT, Holstebro:</strong> Holstebro var foran to gange, hvilket vi naturligvis har noteret med samme omhu som alt andet. Johan Haslund, Hjalte Toftegaard, Tobias Noer og Tobias Friis rettede derefter op på forholdene, og 4-2 er efter vores uvildige vurdering i underkanten. Brønshøj er nr. 2 i 3. division, ét point efter Holbæk, der endnu ikke har kunnet ryste os af.</p>
+<a href="https://www.bronshojboldklub.dk/kampvisning?poolrowid=508657&amp;matchid=309094" target="_blank">Se kampvisning</a><br/>
+<a href="https://avisendanmark.dk/sport/se-hoejdepunkterne-fire-maal-sendte-broenshoej-hjem-med-tre-point" target="_blank">Se højdepunkterne hos Avisen Danmark</a></div>
+</details>
+<details class="story" id="lokalsporten1011-husum"><summary>Husum – B.1960 6-3</summary>
+<div class="story-body"><p><strong>GUNNAR LIGE OM LIDT, Husumparken:</strong> Husum scorede seks gange i en kamp, der i store træk gik efter planen. B.1960 scorede tre, og dem skal de have al mulig anerkendelse for, når nu de tæller med. Husum er nr. 2 i Serie 1, to point efter Føroyar, og besøger KFUM i Emdrupparken lørdag kl. 12.00.</p>
+<a href="https://www.husumboldklub.dk/kampvisning?poolrowid=496312&amp;matchid=654659" target="_blank">Se kampvisning</a></div>
+</details>
+<details class="story" id="lokalsporten1011-fix"><summary>FC Nyhavn – Fix mænd 3-2</summary>
+<div class="story-body"><p><strong>SVEND PÅ TVÆRS, Kløvermarken:</strong> Fix scorede to gange i Kløvermarken, hvor banerne som bekendt hælder mod hjemmeholdet. FC Nyhavn scorede tre, og det får stå for deres egen regning. Jeg siger det som neutral iagttager med klubkontingentet betalt: tredje halvleg vandt vi. Fix er nr. 10 i Serie 2 og tager imod Olympiakos København på Pilesvinget lørdag kl. 12.00.</p>
+<a href="https://www.boldklubbenfix.dk/kampvisning?matchid=650823&amp;poolrowid=496313" target="_blank">Se kampvisning</a></div>
+</details>
+<details class="story" id="lokalsporten1011-fixdamer"><summary>KFUM – Fix kvinder 2-1</summary>
+<div class="story-body"><p><strong>SVEND PÅ TVÆRS, Emdrupparken:</strong> Et enkelt mål skilte holdene, og i Serie-bold er et enkelt mål noget, man normalt ordner i klubhuset bagefter. Det ville KFUM ikke være med til. Fix er nr. 9 i rækken med 5 point efter seks kampe og tager imod Viking/RIK på Pilesvinget lørdag kl. 14.00.</p>
+<a href="https://www.boldklubbenfix.dk/kampvisning?matchid=726070&amp;poolrowid=496307" target="_blank">Se kampvisning</a></div>
+</details>
+<details class="story" id="lokalsporten1011-stadion"><summary>Rødovre HK – IF Stadion 31-25</summary>
+<div class="story-body"><p><strong>SVEND PÅ TVÆRS, Rødovre Stadionhal:</strong> Jeg er fodboldmand og blander mig nødig, men 25 mål ville have vundet enhver kamp, jeg har overværet. Rødovre lavede 31, og det må man tage til efterretning. Stadion er hjemme i Voldparken lørdag 24. oktober kl. 14.30 mod Team Sydhavsøerne 2.</p>
+<a href="https://danskhaandbold.dk/kampe/2550088" target="_blank">Se kampen</a></div>
+</details>
+<details class="story" id="lokalsporten1011-ringsted"><summary>Brønshøj – Ringsted, lørdag kl. 14.00</summary>
+<div class="story-body"><p><strong>GUNNAR LIGE OM LIDT, Tingbjerg:</strong> Brønshøj tager imod Ringsted i Tingbjerg Idrætspark. Brønshøj vandt 3-1 i Ringsted i september, men det tillægger vi som neutrale iagttagere ingen betydning. Vi regner blot med det samme.</p>
+<a href="https://www.bronshojboldklub.dk/kampvisning?poolrowid=508657&amp;matchid=309160" target="_blank">Se kampvisning</a></div>
+</details>
+<p class="closing">Tallene er rigtige. Vurderingerne er helt upartiske.<br/><br/>Har vi overset dit hold? Så tip Tråden </p>
+</div></details>
+  </section>
+
+  <section class="fpost" id="ugen1012" data-total="6">
+    <div class="fhead"><img class="av" src="assets/segment-todougen.jpg" alt=""><div class="fname"><b>Guide til din uge</b><span>11. oktober 2026</span></div></div>
+    <div class="fwrap"><div class="strip" tabindex="0" aria-label="Kort: Hvad skal du i ugen?"><div class="card k-img" aria-label="Slide 1 af 6: Hvad skal du i ugen?"><img src="assets/slides/ugen1012/01.webp" alt="Hvad skal du i ugen? – slide 1 af 6" width="1080" height="1350"></div><div class="card k-img" aria-label="Slide 2 af 6: Hvad skal du i ugen?"><img src="assets/slides/ugen1012/02.webp" alt="Hvad skal du i ugen? – slide 2 af 6" width="1080" height="1350" loading="lazy"></div><div class="card k-img" aria-label="Slide 3 af 6: Hvad skal du i ugen?"><img src="assets/slides/ugen1012/03.webp" alt="Hvad skal du i ugen? – slide 3 af 6" width="1080" height="1350" loading="lazy"></div><div class="card k-img" aria-label="Slide 4 af 6: Hvad skal du i ugen?"><img src="assets/slides/ugen1012/04.webp" alt="Hvad skal du i ugen? – slide 4 af 6" width="1080" height="1350" loading="lazy"></div><div class="card k-img" aria-label="Slide 5 af 6: Hvad skal du i ugen?"><img src="assets/slides/ugen1012/05.webp" alt="Hvad skal du i ugen? – slide 5 af 6" width="1080" height="1350" loading="lazy"></div><div class="card k-img" aria-label="Slide 6 af 6: Hvad skal du i ugen?"><img src="assets/slides/ugen1012/06.webp" alt="Hvad skal du i ugen? – slide 6 af 6" width="1080" height="1350" loading="lazy"></div></div><button type="button" class="sa l" aria-label="Forrige">‹</button><button type="button" class="sa r" aria-label="Næste">›</button><span class="scount"></span></div>
+    <div class="sdots"></div>
+    <p class="fcap"><b>Hvad skal du i ugen?</b> Det er efterårsferie i 2700 – med gadeteater og sofagyser til børnene, og Rusland-foredrag, jazz og gratis frokost til de voksne. Og husk, at det er Dining Week hele ugen</p>
+    <details class="all"><summary>Se hele programmet med links</summary><div class="alle">
+<details class="story" id="ugen1012-mandag"><summary>Mandag 12. oktober</summary>
+<div class="story-body">
+<p><strong>Rødhætte (3–8 år)</strong><br/>Pladsen foran Tingbjerg Bibliotek &amp; Kulturhus · Kl. 11.00–11.40 · Gratis, tilmelding via Billetto<br/>Komisk og skørt gadeteater, hvor Rødhætte og ulven mødes omkring en elevationsseng. En del af Teatermagi i efterårsferien.<br/><a href="https://kulturogfritidn.kk.dk/det-sker/roedhaette-3-8-aar" target="_blank">Læs mere</a></p>
+<p><strong>Repair Café Brønshøj</strong><br/>Bevægelsen ved BRØK, Brønshøj Kulturhus · Kl. 16.00–19.00 (kom senest 18.30) · Gratis, ingen tilmelding<br/>Tag den ødelagte lampe, legetøjet eller radioen med, og få hjælp af frivillige til at reparere den.<br/><a href="https://broek.kk.dk/kalender/repair-cafe-broenshoej" target="_blank">Læs mere</a></p></div>
+</details>
+<details class="story" id="ugen1012-tirsdag"><summary>Tirsdag 13. oktober</summary>
+<div class="story-body">
+<p><strong>PUDEMIN – en sofagyser (3–9 år)</strong><br/>BRØK, Brønshøj Kulturhus (baghaven) · Kl. 10.00–10.30 · Gratis, tilmelding nødvendig<br/>Ordløs og sjov familieforestilling om mod og nysgerrighed, når Helle får uventet besøg i sofaen. Rykker indenfor, hvis det regner.<br/><a href="https://broek.kk.dk/kalender/pudemin-en-sofagyser-3-9-aar" target="_blank">Læs mere</a></p>
+<p><strong>Cykeltur med cykelfællesskabet</strong><br/>BRØK, Brønshøj Kulturhus · Kl. 10.00–12.00 · Gratis, husk cykelhjelm<br/>Seniorer 65+ cykler en tur sammen i små hold med kaffepause.<br/><a href="https://broek.kk.dk/kalender/cykeltur-med-cykelfaellesskabet" target="_blank">Læs mere</a></p>
+<p><strong>Tysk snakkeklub</strong><br/>BRØK, Brønshøj Kulturhus · Kl. 18.00–19.15 · Gratis<br/>Øv dit tysk i uformelt selskab – alle niveauer er velkomne.<br/><a href="https://broek.kk.dk/kalender/tysk-snakkeklub-0" target="_blank">Læs mere</a></p>
+<p><strong>Strikkecafé med Brønshøj Strikkeklub</strong><br/>BRØK, Brønshøj Kulturhus · Kl. 19.00–21.00 · Gratis<br/>Åben strikkeklub for både begyndere og øvede – kom bare forbi.<br/><a href="https://broek.kk.dk/kalender/strikkecafe-med-broenshoej-strikkeklub" target="_blank">Læs mere</a></p>
+<p><strong>Unio Musica</strong><br/>Brønshøj Vandtårn · Kl. 19.00–21.00 · Gratis<br/>Musikere, sangere og nysgerrige mødes og spiller sammen i vandtårnets særlige akustik. Man må også gerne bare lytte.<br/><a href="https://broek.kk.dk/kalender/unio-musica" target="_blank">Læs mere</a></p>
+<p><strong>Fransk snakkeklub</strong><br/>BRØK, Brønshøj Kulturhus · Kl. 19.15–20.15 · Gratis<br/>Øv dit franske i uformelt selskab – alle niveauer er velkomne.<br/><a href="https://broek.kk.dk/kalender/fransk-snakkeklub" target="_blank">Læs mere</a></p>
+<p><strong>Verden set fra Rusland</strong><br/>Brønshøj Sognehus · Kl. 19.30<br/>Foredrag med ph.d.-stipendiat Niels Peter Bock Nielsen om, hvordan russerne ser verden – fra kristningen i 988 til i dag.<br/><a href="https://sogn.dk/broenshoej/kalender/event/3261711?cHash=93f1b9ce2726aa6465f24ab5123b19af" target="_blank">Læs mere</a></p></div>
+</details>
+<details class="story" id="ugen1012-onsdag"><summary>Onsdag 14. oktober</summary>
+<div class="story-body">
+<p><strong>Morgensang</strong><br/>Brønshøj Bibliotek · Kl. 09.00–09.20 · Gratis<br/>Start dagen med fire sange fra Højskolesangbogen med forsanger og pianist.<br/><a href="https://kulturogfritidn.kk.dk/det-sker/morgensang" target="_blank">Læs mere</a></p>
+<p><strong>Luk op... (1–3 år)</strong><br/>Rytterskolen · Kl. 09.00 og 10.00 · 30 kr.<br/>Sanselig teateroplevelse for de mindste med farverige kufferter, dukker, musik, rim og remser.<br/><a href="https://broek.kk.dk/kalender/luk-op-1-3-aar-0" target="_blank">Læs mere</a></p>
+<p><strong>KirkeYoga</strong><br/>Tingbjerg Kirke · Kl. 10.00 · Gratis, tilmelding – medbring måtte og tæppe<br/>Rolig og meditativ yoga i kirkerummet. Alle er velkomne.<br/><a href="https://sogn.dk/tingbjerg/kalender/event/3063671?cHash=003a2c678536a8514233f76404262668" target="_blank">Læs mere</a></p>
+<p><strong>Workshop: Sy bukser af genbrugsstof (fra 12 år)</strong><br/>BRØK, Brønshøj Kulturhus · Kl. 10.00–14.00 · 250 kr. pr. makkerpar<br/>Efterårsferie-workshop, hvor I to og to syr et par bukser af et gammelt lagen eller andet blødt stof. Husk madpakke.<br/><a href="https://broek.kk.dk/kalender/workshop-sy-bukser-af-genbrugsstof" target="_blank">Læs mere</a></p>
+<p><strong>Åbent værksted</strong><br/>Tingbjerg Bibliotek &amp; Kulturhus · Kl. 15.00–19.00 · Gratis, ingen tilmelding<br/>Prøv 3D-printer, laserskærer og træværktøj, eller tag dit eget projekt med.<br/><a href="https://kulturogfritidn.kk.dk/det-sker/aabent-vaerksted" target="_blank">Læs mere</a></p>
+<p><strong>Paradise Jazz: Hamburg Copenhagen Connection</strong><br/>BRØK, Brønshøj Kulturhus · Kl. 20.00–22.00 · 175 kr.<br/>Jesper Løvdal, Gabriel Coburger, Martin Schack og Anders Mogensen spiller Monk, Wayne Shorter og meget mere – med saxofoner og hammondorgel.<br/><a href="https://broek.kk.dk/kalender/paradise-jazz-hamburg-copenhagen-connection" target="_blank">Læs mere</a></p></div>
+</details>
+<details class="story" id="ugen1012-torsdag"><summary>Torsdag 15. oktober</summary>
+<div class="story-body">
+<p><strong>Mad til alle</strong><br/>Tingbjerg Kirke · Kl. 11.00 (morgensang kl. 10.40) · Gratis<br/>Hjemmelavet mad lavet af overskudsvarer – kom og spis med.<br/><a href="https://sogn.dk/tingbjerg/kalender/event/2977595?cHash=028121cb557abb7dfe34620905d51959" target="_blank">Læs mere</a></p></div>
+</details>
+<details class="story" id="ugen1012-diningweek"><summary>Hele ugen: Dining Week</summary>
+<div class="story-body">
+<p><strong>Husk: Dining Week i 2700</strong><br/>Det er Dining Week hele ugen, og to steder i 2700 er med.<br/><strong>BRØK, Brønshøjvej 3</strong> · 3 retter · 250 kr.<br/><strong>Bellahøjgaard, Bellahøjvej 20</strong> · 5 serveringer · 350 kr.<br/>Billet købes på diningweek.dk (plus 29 kr. i gebyr). Menuer og drikkevarer kan ses i slidesene.<br/><a href="https://diningweek.dk" target="_blank">Køb billet</a></p></div>
+</details>
+<p class="closing">Har vi overset noget, der sker i 2700? Smid det i kommentarerne — så hjælper I med at gøre Fælleskalenderen bedre.</p>
+</div></details>
+  </section>
+
+  <section class="fpost" id="guide1010" data-total="4">
+    <div class="fhead"><img class="av" src="assets/segment-guide.jpg" alt=""><div class="fname"><b>#2700 GUIDEN: Efterårsferie-skattejagt</b><span>10. oktober 2026</span></div></div>
+    <div class="fwrap"><div class="strip" tabindex="0" aria-label="Kort: Efterårsferie-skattejagt"><div class="card k-img" aria-label="Slide 1 af 4: Efterårsferie-skattejagt"><img src="assets/slides/guide1010/01.webp" alt="Efterårsferie-skattejagt – slide 1 af 4" width="1080" height="1350"></div><div class="card k-img" aria-label="Slide 2 af 4: Efterårsferie-skattejagt"><img src="assets/slides/guide1010/02.webp" alt="Efterårsferie-skattejagt – slide 2 af 4" width="1080" height="1350" loading="lazy"></div><div class="card k-img" aria-label="Slide 3 af 4: Efterårsferie-skattejagt"><img src="assets/slides/guide1010/03.webp" alt="Efterårsferie-skattejagt – slide 3 af 4" width="1080" height="1350" loading="lazy"></div><div class="card k-img" aria-label="Slide 4 af 4: Efterårsferie-skattejagt"><img src="assets/slides/guide1010/04.webp" alt="Efterårsferie-skattejagt – slide 4 af 4" width="1080" height="1350" loading="lazy"></div></div><button type="button" class="sa l" aria-label="Forrige">‹</button><button type="button" class="sa r" aria-label="Næste">›</button><span class="scount"></span></div>
+    <div class="sdots"></div>
+    <p class="fcap"><b>Efterårsferie-skattejagt</b> Skattejagt i hele 2700, 10.–18. oktober. Hent hæftet og løs opgaverne.</p>
+    <details class="all"><summary>Læs videre – alle 1 historier med kilder</summary><div class="alle">
+<details class="story" id="guide1010-skattejagt"><summary>Sådan går jagten</summary>
+<div class="story-body">
+<p><a href="https://2700traaden.dk/skattejagt/" target="_blank"><img alt="Efterårsferie-skattejagt: hæftet med navn, mail og regler" src="assets/skattejagt-billede.jpg" style="display:block;width:100%;max-width:398px;height:auto;border:1px solid var(--line)"/></a></p>
+<p>Løs de fem opgaver i løbet af dagene, og leg på legepladserne i området. Husk også at få en gratis kop kakao på Spisehuset i Den Gamle Skole (BRØK).</p>
+<p><a href="https://2700traaden.dk/skattejagt/" target="_blank">Se skattejagten</a><br/><a href="https://2700traaden.dk/skattejagt/skattejagt.pdf" target="_blank">Hent hæftet som PDF</a></p></div>
+</details>
+</div></details>
+  </section>
+
+  <section class="fpost" id="guide1009" data-total="7">
+    <div class="fhead"><img class="av" src="assets/segment-guide.jpg" alt=""><div class="fname"><b>#2700 GUIDEN: Efterårsferien</b><span>9. oktober 2026</span></div></div>
+    <div class="fwrap"><div class="strip" tabindex="0" aria-label="Kort: Efterårsferien i 2700"><div class="card k-img" aria-label="Slide 1 af 7: Efterårsferien i 2700"><img src="assets/slides/guide1009/01.webp" alt="Efterårsferien i 2700 – slide 1 af 7" width="1080" height="1350"></div><div class="card k-img" aria-label="Slide 2 af 7: Efterårsferien i 2700"><img src="assets/slides/guide1009/02.webp" alt="Efterårsferien i 2700 – slide 2 af 7" width="1080" height="1350" loading="lazy"></div><div class="card k-img" aria-label="Slide 3 af 7: Efterårsferien i 2700"><img src="assets/slides/guide1009/03.webp" alt="Efterårsferien i 2700 – slide 3 af 7" width="1080" height="1350" loading="lazy"></div><div class="card k-img" aria-label="Slide 4 af 7: Efterårsferien i 2700"><img src="assets/slides/guide1009/04.webp" alt="Efterårsferien i 2700 – slide 4 af 7" width="1080" height="1350" loading="lazy"></div><div class="card k-img" aria-label="Slide 5 af 7: Efterårsferien i 2700"><img src="assets/slides/guide1009/05.webp" alt="Efterårsferien i 2700 – slide 5 af 7" width="1080" height="1350" loading="lazy"></div><div class="card k-img" aria-label="Slide 6 af 7: Efterårsferien i 2700"><img src="assets/slides/guide1009/06.webp" alt="Efterårsferien i 2700 – slide 6 af 7" width="1080" height="1350" loading="lazy"></div><div class="card k-img" aria-label="Slide 7 af 7: Efterårsferien i 2700"><img src="assets/slides/guide1009/07.webp" alt="Efterårsferien i 2700 – slide 7 af 7" width="1080" height="1350" loading="lazy"></div></div><button type="button" class="sa l" aria-label="Forrige">‹</button><button type="button" class="sa r" aria-label="Næste">›</button><span class="scount"></span></div>
+    <div class="sdots"></div>
+    <p class="fcap"><b>Efterårsferien i 2700</b> For børn og unge i 2700. Næsten alt er gratis.</p>
+    <details class="all"><summary>Se hele programmet med links</summary><div class="alle">
+<p style="margin:0 0 12px">Uge 42, 10.–18. oktober. Find din alder. Tjekket oktober 2026 – tjek billetter og tider.</p>
+<details class="story" id="guide1009-0-3"><summary>0–3 år: Legestue og teater</summary>
+<div class="story-body">
+<p><strong>Hoppeloppen</strong><br/>BRØK · Lørdag 10. oktober kl. 9–17<br/>Selvbetjent legestue for 1–5 år.<br/><a href="https://broek.kk.dk/kalender/hoppeloppen-selvbetjent-legestue-for-1-5-aar" target="_blank">Læs mere</a></p>
+<p><strong>Luk op…</strong><br/>Rytterskolen · Onsdag 14. oktober fra kl. 9<br/>Teater for 1–3 år.<br/><a href="https://broek.kk.dk/kalender/luk-op-1-3-aar-0" target="_blank">Læs mere</a></p>
+<p><strong>1-2-3-nU…</strong><br/>BRØK · Fredag 16. oktober kl. 10<br/>Teater for 0–4 år. Udsolgt.</p></div>
+</details>
+<details class="story" id="guide1009-3-6"><summary>3–6 år: Teater</summary>
+<div class="story-body">
+<p>Gratis med billet, hvis ikke andet står.</p>
+<p><strong>To mænd og en planke</strong><br/>Tingbjerg · Lørdag 10. oktober kl. 10<br/>Stunts og slapstick udendørs.</p>
+<p><strong>Kalles bold</strong><br/>Brønshøj Bibliotek · Lørdag 10. oktober kl. 12<br/>Aben Kalle får en ny bold.</p>
+<p><strong>Rødhætte og ulven</strong><br/>Tingbjerg · Mandag 12. oktober kl. 11<br/>Skørt gadeteater for 3–8 år.</p>
+<p><strong>PUDEMIN – en sofagyser</strong><br/>BRØK · Tirsdag 13. oktober kl. 10<br/>Ordløs gyser i en sofa, 3–9 år.<br/><a href="https://broek.kk.dk/kalender/pudemin-en-sofagyser-3-9-aar" target="_blank">Læs mere</a></p>
+<p><strong>PØLSE!</strong><br/>Rytterskolen · Lørdag 17. oktober kl. 11.15 · 40 kr.<br/>Dukker, sang og en hund.<br/><a href="https://broek.kk.dk/kalender/poelse-3-7-aar" target="_blank">Læs mere</a></p>
+<p><strong>Halfdans ABC</strong><br/>Husum Bibliotek · Lørdag 17. oktober kl. 12<br/>Rim, dukker og sang.</p></div>
+</details>
+<details class="story" id="guide1009-ferielegestue"><summary>3–6 år: FerieCamp for de mindste</summary>
+<div class="story-body">
+<p>I EnergiCenter Voldparken. Gratis, ingen tilmelding. Tag en voksen med.</p>
+<p><strong>Naturkrea</strong><br/>Tirsdag–torsdag kl. 9–11<br/>Lav noget af blade og grene, og tag det med hjem.</p>
+<p><strong>Dans</strong><br/>Tirsdag–torsdag kl. 10–12<br/>Glad musik, rytmer og leg for alle.</p>
+<p><strong>Parkour</strong><br/>Onsdag 14. oktober kl. 10–12<br/>Hop, klatr og udforsk i trygge rammer.</p>
+<p><strong>Gymnastik</strong><br/>Torsdag 15. oktober kl. 10–12<br/>Rul, kravl og balancér med Krumspring.</p></div>
+</details>
+<details class="story" id="guide1009-6-12"><summary>6–12 år: FerieCamp i Tingbjerg</summary>
+<div class="story-body">
+<p>I Tingbjerg Bibliotek og Kulturhus. Gratis, mød bare op. Mandag–fredag kl. 10–15.</p>
+<p><strong>Svømning</strong><br/>Mandag–fredag kl. 10–13<br/>Fra 6 år. Mød kl. 9.30, kun 12 pladser pr. hold.</p>
+<p><strong>Gaming med Skillz</strong><br/>Mandag–torsdag kl. 13–15<br/>PlayStation og Switch i lokale 1 og 2.</p>
+<p><strong>Snobrød og bål</strong><br/>Tirsdag 13. oktober kl. 11–15<br/>Varm kakao ved bålet uden for kulturhuset.</p>
+<p><strong>Panna-fodbold</strong><br/>Onsdag–fredag kl. 13–15<br/>1 mod 1 eller 2 mod 2 med Street Society.</p>
+<p><strong>Breakdance</strong><br/>Torsdag–fredag kl. 12–14<br/>Lær moves med Dans i Nordvest.</p></div>
+</details>
+<details class="story" id="guide1009-13-17"><summary>13–17 år: Fire aftener for unge</summary>
+<div class="story-body">
+<p>Skillz og GMC by Night. Gratis, du møder bare op.</p>
+<p><strong>Bowling, dans og 2v2</strong><br/>Grøndal MultiCenter · Mandag 12. oktober kl. 17–21<br/>Også K-pop og hiphop.</p>
+<p><strong>Gaming og storskærm</strong><br/>Tingbjerg · Onsdag 14. oktober kl. 19–23<br/>PlayStation, så PSG-City på storskærm.</p>
+<p><strong>FIFA-turnering</strong><br/>Tingbjerg · Torsdag 15. oktober kl. 16–20<br/>Præmier på spil, tag vennerne med.</p>
+<p><strong>Fodboldturnering</strong><br/>EnergiCenter Voldparken · Fredag 16. oktober kl. 16–20<br/>Med hold eller alene.</p></div>
+</details>
+<p class="closing">Gem. Del. Følg @2700traaden. Guides lavet til 2700.</p>
+</div></details>
+  </section>
+
+<p class="arkivlink"><a href="arkiv/">Ældre opslag – se arkivet →</a></p>
+</main>
+<aside class="adscol" aria-label="Annoncer">
+  <div class="ad-slot">
+    <a class="adlabel" href="mailto:kontakt@2700tråden.dk">Din annonce her? kontakt@2700tråden.dk</a>
+    <a class="ad greenad ad-social ad-badge" href="https://www.instagram.com/bronshoj_memes/" target="_blank" rel="noopener">
+      <img class="ad-graphic" src="assets/ads/ad-broenshoej-memes.jpg" alt="Brønshøj Memes på Instagram">
+      <h3 class="sr-only">Brønshøj Memes på Instagram</h3>
+    </a>
+  </div>
+  <div class="ad-slot">
+    <a class="adlabel" href="mailto:kontakt@2700tråden.dk">Din annonce her? kontakt@2700tråden.dk</a>
+    <a class="ad orangead ad-social ad-badge" href="https://www.instagram.com/2700traaden/" target="_blank" rel="noopener">
+      <img class="ad-graphic" src="assets/ads/ad-2700traaden-instagram.jpg" alt="2700-Tråden på Instagram">
+      <h3 class="sr-only">2700-Tråden på Instagram</h3>
+    </a>
+  </div>
+  <div class="ad-slot">
+    <a class="adlabel" href="mailto:kontakt@2700tråden.dk">Din annonce her? kontakt@2700tråden.dk</a>
+    <a class="ad ad-social" href="https://www.instagram.com/prikkenoveriet_com/" target="_blank" rel="noopener">
+      <img class="ad-graphic" src="assets/ads/ad-prikkenoveriet.jpg" alt="Kalenderlys fra prikkenoveriet_com: sidste chance til B2B-bestilling">
+      <h3 class="sr-only">Kalenderlys fra prikkenoveriet_com</h3>
+    </a>
+  </div>
+  <div class="ad-slot">
+    <a class="adlabel" href="mailto:kontakt@2700tråden.dk">Din annonce her? kontakt@2700tråden.dk</a>
+    <a class="ad ad-social" href="https://www.instagram.com/spisehuset_i_den_gamle_skole/" target="_blank" rel="noopener">
+      <img class="ad-graphic" src="assets/ads/ad-spisehuset.jpg" alt="Dining Week på Spisehuset: sidste chance, 3 retter for kun 250 kr.">
+      <h3 class="sr-only">Dining Week på Spisehuset</h3>
+    </a>
+  </div>
+  <div class="ad-slot">
+    <a class="adlabel" href="mailto:kontakt@2700tråden.dk">Din annonce her? kontakt@2700tråden.dk</a>
+    <a class="ad ad-social" href="https://www.instagram.com/kongeboern/" target="_blank" rel="noopener">
+      <img class="ad-graphic" src="assets/ads/ad-koengeboern.jpg" alt="Køngebørn: gode tilbud hele efterårsferien">
+      <h3 class="sr-only">Køngebørn: gode tilbud hele efterårsferien</h3>
+    </a>
+  </div>
+</aside></div>
+<div class="pagefoot"><footer><svg viewBox="0 0 120 124" width="84" height="87" role="img" aria-label="2700 Zappa" style="display:block;margin:0 auto 10px" fill="none" stroke-linecap="round" stroke-linejoin="round"><g stroke="#D1803F" stroke-width="2.2"><path d="M44 34 C40 28 48 24 44 16"/><path d="M58 34 C54 28 62 24 58 12"/><path d="M72 34 C68 28 76 24 72 16"/></g><g stroke="#4D4C32" stroke-width="2.6"><path d="M28 46 V88 Q28 102 42 102 H74 Q88 102 88 88 V46" fill="#fff"/><path d="M88 56 H98 Q110 56 110 70 Q110 84 98 84 H88"/><ellipse cx="58" cy="46" rx="30" ry="7" fill="#fff"/><ellipse cx="58" cy="46.5" rx="25" ry="4.6" fill="#54341e" stroke="none"/></g><text x="58" y="75" text-anchor="middle" font-family="inherit" font-weight="700" font-size="17" fill="#D1803F" stroke="none">2700</text><text x="58" y="93" text-anchor="middle" font-family="inherit" font-weight="700" font-size="17" fill="#4D4C32" stroke="none">Zappa</text></svg>Flere Forbindelser og Mere Fællesskab</footer></div>
+<nav class="tabbar" aria-label="Menu"><a class="ri on" data-k="home" href="./" aria-current="page"><svg viewBox="0 0 40 56" width="40" height="56" aria-hidden="true"></svg><span>Overblik</span></a><a class="ri" data-k="cal" href="faelleskalender/"><svg viewBox="0 0 40 56" width="40" height="56" aria-hidden="true"></svg><span>Kalender</span></a><a class="ri" data-k="guides" href="guides/"><svg viewBox="0 0 40 56" width="40" height="56" aria-hidden="true"></svg><span>Guiden</span></a><a class="ri" data-k="kunst" href="kunst/"><svg viewBox="0 0 40 56" width="40" height="56" aria-hidden="true"></svg><span>Kunst</span></a><a class="ri" data-k="tilbud" href="tilbud/"><svg viewBox="0 0 40 56" width="40" height="56" aria-hidden="true"></svg><span>Tilbud</span></a><a class="ri" data-k="meme" href="broenshoej-memes/"><svg viewBox="0 0 40 56" width="40" height="56" aria-hidden="true"></svg><span>Memes</span></a><a class="ri" data-k="info" href="om/"><svg viewBox="0 0 40 56" width="40" height="56" aria-hidden="true"></svg><span>Om</span></a></nav>
+<script>
+(function(){
+  function fit(card){
+    var cb=card.querySelector('.cb'); if(!cb) return;
+    var fs=parseFloat(cb.dataset.fs)||5, mn=parseFloat(cb.dataset.min)||3.3;
+    cb.style.setProperty('--fs',fs);
+    var over=function(){var l=cb.lastElementChild; if(!l) return false; return (l.offsetTop+l.offsetHeight)>cb.clientHeight*0.97};
+    while(over() && fs>mn){fs-=.12; cb.style.setProperty('--fs',fs.toFixed(2));}
+    var im=cb.querySelector('.sign'), w=96; while(over() && im && w>58){w-=4; im.style.width=w+'%';}
+    var ps=cb.querySelectorAll('.bp'), trimmed=false;
+    while(over() && ps.length>1){
+      var last=[].filter.call(cb.querySelectorAll('.bp'),function(){return true}).pop();
+      if(cb.querySelectorAll('.bp').length<=1) break;
+      last.remove(); trimmed=true;
+    }
+    if(trimmed){var q=cb.querySelectorAll('.bp'); var l=q[q.length-1]; l.textContent=l.textContent.replace(/[\s.…]*$/,'')+' …';}
+  }
+  function mk(cls,txt,fn){var b=document.createElement('button');b.className=cls;b.type='button';b.textContent=txt;b.onclick=fn;return b;}
+  var V=document.createElement('div'); V.id='viewer'; V.setAttribute('role','dialog'); V.setAttribute('aria-modal','true'); V.setAttribute('aria-label','Kort');
+  var stage=document.createElement('div'); stage.className='stage';
+  var dots=document.createElement('div'); dots.className='vdots';
+  var hint=document.createElement('div'); hint.className='vhint'; hint.textContent='Swipe eller brug piletasterne. Esc lukker.';
+  var cur=null, idx=0, cards=[];
+  var bx=mk('vx','×',close); bx.setAttribute('aria-label','Luk');
+  var bl=mk('va l','‹',function(e){e.stopPropagation();go(idx-1)}); bl.setAttribute('aria-label','Forrige kort');
+  var br=mk('va r','›',function(e){e.stopPropagation();go(idx+1)}); br.setAttribute('aria-label','Næste kort');
+  var holder=document.createElement('div'); holder.className='holder';
+  holder.appendChild(stage); holder.appendChild(bl); holder.appendChild(br);
+  V.appendChild(bx); V.appendChild(holder); V.appendChild(dots); V.appendChild(hint);
+  document.body.appendChild(V);
+  function show(){
+    stage.innerHTML=''; var c=cards[idx].cloneNode(true); stage.appendChild(c); V.style.setProperty('--r',(c.style.aspectRatio||'').indexOf('3')===0?'.75':'.8');
+    bl.disabled=idx===0; br.disabled=idx===cards.length-1;
+    [].forEach.call(dots.children,function(s,j){s.classList.toggle('on',j===idx)});
+  }
+  function go(i){ if(i<0||i>=cards.length) return; idx=i; show(); }
+  function open(deck,i){
+    cards=[].slice.call(deck.children); idx=i; dots.innerHTML='';
+    cards.forEach(function(){dots.appendChild(document.createElement('span'))});
+    show(); V.classList.add('on'); document.body.classList.add('vlock');
+    history.pushState({viewer:1},''); bx.focus();
+  }
+  function close(){ if(!V.classList.contains('on')) return; V.classList.remove('on'); document.body.classList.remove('vlock'); if(history.state&&history.state.viewer) history.back(); }
+  window.addEventListener('popstate',function(){ if(V.classList.contains('on')){V.classList.remove('on');document.body.classList.remove('vlock');} });
+  V.addEventListener('click',function(e){ if(e.target===V||e.target===holder) close(); });
+  document.addEventListener('keydown',function(e){
+    if(!V.classList.contains('on')) return;
+    if(e.key==='Escape') close(); else if(e.key==='ArrowRight') go(idx+1); else if(e.key==='ArrowLeft') go(idx-1);
+  });
+  var x0=null,y0=null;
+  V.addEventListener('touchstart',function(e){x0=e.touches[0].clientX;y0=e.touches[0].clientY},{passive:true});
+  V.addEventListener('touchend',function(e){
+    if(x0===null) return; var dx=e.changedTouches[0].clientX-x0, dy=e.changedTouches[0].clientY-y0; x0=null;
+    if(Math.abs(dx)>45 && Math.abs(dx)>Math.abs(dy)*1.3) go(dx<0?idx+1:idx-1);
+  },{passive:true});
+
+  function init(){
+    [].forEach.call(document.querySelectorAll('.fpost'),function(post){
+      var strip=post.querySelector('.strip'), cs=[].slice.call(strip.children);
+      var dots=post.querySelector('.sdots'), cnt=post.querySelector('.scount');
+      var bl=post.querySelector('.sa.l'), br=post.querySelector('.sa.r');
+      cs.forEach(function(c,i){ fit(c); dots.appendChild(document.createElement('span')); c.onclick=function(){open(strip,i)}; });
+      function idx(){ var c=cs[1]||cs[0]; var step=c.getBoundingClientRect().left-cs[0].getBoundingClientRect().left; if(!step) step=cs[0].offsetWidth+10; return Math.max(0,Math.min(cs.length-1,Math.round(strip.scrollLeft/step))); }
+      function upd(){ var i=idx(); cnt.textContent=(i+1)+'/'+cs.length; [].forEach.call(dots.children,function(s,j){s.classList.toggle('on',j===i)}); bl.disabled=i===0; br.disabled=i===cs.length-1; }
+      function go(i){ var c=cs[Math.max(0,Math.min(cs.length-1,i))]; strip.scrollTo({left:c.offsetLeft-cs[0].offsetLeft,behavior:'smooth'}); }
+      strip.addEventListener('scroll',upd,{passive:true}); bl.onclick=function(){go(idx()-1)}; br.onclick=function(){go(idx()+1)}; upd();
+    });
+    [].forEach.call(document.querySelectorAll('.story[id]'),function(s){ var skip=s.hasAttribute('open'); s.addEventListener('toggle',function(){ if(skip){skip=false;return;} if(s.open) history.replaceState(null,'','#'+s.id); }); });
+    [].forEach.call(document.querySelectorAll('.fpost details.all'),function(a){ var p=a.closest('.fpost'); a.addEventListener('toggle',function(){ if(!p||!p.id) return; if(a.open){ history.replaceState(null,'','#'+p.id); } else if(location.hash==='#'+p.id){ history.replaceState(null,'',location.pathname+location.search); } }); });
+    expandFromHash();
+  }
+  function expandFromHash(){
+    if(!location.hash) return;
+    var el=document.getElementById(location.hash.slice(1));
+    if(!el){ var id=location.hash.slice(1), base=id.split('-')[0]; if(/^[a-z]+\d{4}$/.test(base)) location.replace('del/'+base+'.html'+(id!==base?'#'+id:'')); return; }
+    if(el.tagName==='DETAILS'){ el.open=true; var p=el.parentElement; while(p){ if(p.tagName==='DETAILS') p.open=true; p=p.parentElement; } }
+    else if(el.classList.contains('fpost')){ var a=el.querySelector('details.all'); if(a) a.open=true; }
+    setTimeout(function(){ el.scrollIntoView({behavior:'smooth',block:'start'}); },60);
+  }
+  window.addEventListener('hashchange',expandFromHash);
+  var go_=function(){ init(); };
+  if(document.fonts&&document.fonts.ready){ document.fonts.ready.then(go_); setTimeout(function(){},0); } else window.addEventListener('load',go_);
+})();
+</script>
+<script src="assets/menutraad.js?v=241"></script>
+<script src="assets/annoncer.js"></script>
+</body>
+</html>

@@ -1,0 +1,205 @@
+{
+ "kunstnere": [
+  {
+   "id": "ida-theodora-wolf-berendsen",
+   "navn": "Ida Theodora Wolf Berendsen",
+   "bydel": "Vandtårnskvarteret",
+   "tilfoejet": "2026-10-14",
+   "afdeling": "kunst",
+   "kategori": "Grafik & tryk",
+   "teknik": "Mixed media og monotypi",
+   "tekst": "Jeg arbejder med mixed media og monotypi. Mine motiver tager afsæt i mit engagement for ligeværd mellem mennesker og natur, og mine temaer kan være alt fra fugl til fisk.",
+   "portraet": "",
+   "kontakt": {
+    "mail": "theodorawolf@hotmail.dk",
+    "telefon": "",
+    "instagram": "",
+    "hjemmeside": "https://sites.google.com/view/theodorawolf/start"
+   },
+   "vaerker": [
+    {
+     "titel": "Rødspætte",
+     "kategori": "Grafik & tryk",
+     "teknik": "Monotypi / mixed media, inkl. ramme",
+     "maal": "50 × 50 cm",
+     "pris": "1.500 kr.",
+     "billede": "assets/kunst/ida-theodora-wolf-berendsen/roedspaette.jpg"
+    },
+    {
+     "titel": "Lyserøde fisk",
+     "kategori": "Grafik & tryk",
+     "teknik": "Monotypi / mixed media, inkl. ramme",
+     "maal": "50 × 50 cm",
+     "pris": "1.500 kr.",
+     "billede": "assets/kunst/ida-theodora-wolf-berendsen/lyseroede-fisk.jpg"
+    },
+    {
+     "titel": "Små fisk I",
+     "kategori": "Grafik & tryk",
+     "teknik": "Monotypi / mixed media, inkl. ramme",
+     "maal": "ca. 35 × 25 cm",
+     "pris": "750 kr.",
+     "billede": "assets/kunst/ida-theodora-wolf-berendsen/smaa-fisk-1.jpg"
+    },
+    {
+     "titel": "Små fisk II",
+     "kategori": "Grafik & tryk",
+     "teknik": "Monotypi / mixed media, inkl. ramme",
+     "maal": "ca. 35 × 25 cm",
+     "pris": "750 kr.",
+     "billede": "assets/kunst/ida-theodora-wolf-berendsen/smaa-fisk-2.jpg"
+    }
+   ]
+  },
+  {
+   "id": "allan-meinhardt",
+   "navn": "Allan Meinhardt",
+   "bydel": "Husum",
+   "tilfoejet": "2026-10-15",
+   "afdeling": "kunst",
+   "kategori": "Maleri",
+   "teknik": "Oliemaleri",
+   "tekst": "Jeg bor i Husum, på kanten af Vestvolden. Jeg er tidligere lærer, nu maler og tegner og jazz-violinist, og medlem af Brønshøj Gruppen siden 2016. Jeg maler plakater, portrætter, landskaber og vilde dyr, næsten altid figurativt, sjældent abstrakt men tit skørt. Jeg tager imod bestillinger.",
+   "portraet": "",
+   "kontakt": {
+    "mail": "allanmeinhardt@gmail.com",
+    "telefon": "42 74 57 25",
+    "instagram": "",
+    "hjemmeside": "https://sites.google.com/view/online-galleri/startside"
+   },
+   "vaerker": [
+    {
+     "titel": "Høne i New York",
+     "kategori": "Maleri",
+     "teknik": "Olie på lærred",
+     "maal": "40 × 50 cm",
+     "pris": "2.500 kr.",
+     "billede": "assets/kunst/allan-meinhardt/hoene-i-new-york.jpg"
+    },
+    {
+     "titel": "America 2025",
+     "kategori": "Maleri",
+     "teknik": "Olie på lærred",
+     "maal": "70 × 100 cm",
+     "pris": "12.000 kr.",
+     "billede": "assets/kunst/allan-meinhardt/america-2025.jpg"
+    },
+    {
+     "titel": "Marie Dissy på Brønshøj Torv",
+     "kategori": "Maleri",
+     "teknik": "Olie på plade",
+     "maal": "40 × 50 cm",
+     "pris": "2.500 kr.",
+     "billede": "assets/kunst/allan-meinhardt/marie-dissy.jpg"
+    },
+    {
+     "titel": "Løven Ronnie",
+     "kategori": "Maleri",
+     "teknik": "Olie på plade",
+     "maal": "38 × 75 cm",
+     "pris": "3.500 kr.",
+     "billede": "assets/kunst/allan-meinhardt/loeven-ronnie.jpg"
+    },
+    {
+     "titel": "Tiger og mus",
+     "kategori": "Maleri",
+     "teknik": "Olie på plade",
+     "maal": "38 × 75 cm",
+     "pris": "3.500 kr.",
+     "billede": "assets/kunst/allan-meinhardt/tiger-og-mus.jpg"
+    },
+    {
+     "titel": "Giraffen Willy",
+     "kategori": "Maleri",
+     "teknik": "Olie på plade",
+     "maal": "38 × 75 cm",
+     "pris": "3.500 kr.",
+     "billede": "assets/kunst/allan-meinhardt/giraffen-willy.jpg"
+    },
+    {
+     "titel": "Blomsterhytten på Brønshøj Torv",
+     "kategori": "Maleri",
+     "teknik": "Olie på plade",
+     "maal": "40 × 60 cm",
+     "pris": "2.500 kr.",
+     "billede": "assets/kunst/allan-meinhardt/blomsterhytten.jpg"
+    }
+   ]
+  },
+  {
+   "id": "stine-juul-normann",
+   "navn": "Stine Juul-Normann",
+   "bydel": "Brønshøj",
+   "afdeling": "kunst",
+   "kategori": "Maleri",
+   "teknik": "Figurativt maleri i akryl",
+   "tilfoejet": "2026-10-24",
+   "tekst": "Jeg er autodidakt kunstmaler og har malet i omkring syv år. Jeg begyndte at male, efter jeg mistede mit venstre ben for 12 år siden, og opdagede, at maleriet var min smerteterapi. Derfor fortæller mine billeder ofte en historie og bærer på et budskab – men et skjult et. Jeg maler figurativt i akryl. Til daglig er jeg indretningsstylist og blomsterdekoratør i min butik Prikken over i'et på Frederikssundsvej. Der går lidt tid mellem nye værker, men jeg er altid i gang.",
+   "portraet": "assets/kunst/stine-juul-normann/tryk-i-butikken.jpg",
+   "kontakt": {
+    "mail": "",
+    "telefon": "",
+    "instagram": "",
+    "hjemmeside": "https://www.prikkenoveriet.com",
+    "hjemmeside_tekst": "Gå til webshoppen"
+   },
+   "butik": {
+    "navn": "Prikken over i'et",
+    "adresse": "Frederikssundsvej 169, 2700 Brønshøj",
+    "aabningstider": [
+     "Mandag og tirsdag: lukket",
+     "Onsdag–fredag: 10–17.30",
+     "Lørdag: 10–14",
+     "Søndag: lukket"
+    ]
+   },
+   "vaerker": [
+    {
+     "titel": "Vintage",
+     "kategori": "Maleri",
+     "teknik": "Akryl på lærred",
+     "maal": "80 × 80 cm",
+     "pris": "4.800 kr.",
+     "billede": "assets/kunst/stine-juul-normann/vintage.jpg",
+     "forside": true,
+     "tryk": true
+    },
+    {
+     "titel": "True colors",
+     "kategori": "Maleri",
+     "teknik": "Akryl på lærred",
+     "maal": "60 × 80 cm",
+     "pris": "4.200 kr.",
+     "billede": "assets/kunst/stine-juul-normann/true-colors.jpg",
+     "tryk": true
+    },
+    {
+     "titel": "Fresh!",
+     "kategori": "Maleri",
+     "teknik": "Akryl på lærred",
+     "maal": "120 × 100 cm",
+     "pris": "7.800 kr.",
+     "billede": "assets/kunst/stine-juul-normann/fresh.jpg",
+     "tryk": true
+    },
+    {
+     "titel": "The Believer",
+     "kategori": "Maleri",
+     "teknik": "Akryl på lærred",
+     "maal": "150 × 120 cm",
+     "pris": "9.800 kr.",
+     "billede": "assets/kunst/stine-juul-normann/the-believer.jpg",
+     "tryk": true
+    }
+   ],
+   "tryk": {
+    "pris": "599 kr.",
+    "beskrivelse": "Tryk i håndlavet ramme, 25 eksemplarer",
+    "boks_overskrift": "Kunst til under 600 kr.",
+    "boks_tekst": "Alle Stines værker findes som tryk i 25 eksemplarer i håndlavede rammer – 599 kr. Se dem i Prikken over i'et på Frederikssundsvej 169 eller på webshoppen.",
+    "boks_billede": "assets/kunst/stine-juul-normann/tryk-i-butikken.jpg",
+    "link": "https://www.prikkenoveriet.com"
+   }
+  }
+ ]
+}

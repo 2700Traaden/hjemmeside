@@ -1,0 +1,482 @@
+[
+ {
+  "id": "ugen1025",
+  "dato": "2026-10-25",
+  "dato_tekst": "25. oktober 2026",
+  "titel": "Hvad skal du i ugen?",
+  "teaser": "Der sker meget i 2700 i denne uge, så vi har samlet det i seks overblik: tre ting for de voksne, tre for børn, fællesspisning, musik, krea og sport.",
+  "skilt": "<img class=\"segment-sign\" src=\"../assets/segment-todougen.jpg\" alt=\"Guide til din uge\">"
+ },
+ {
+  "id": "guide1024",
+  "dato": "2026-10-24",
+  "dato_tekst": "24. oktober 2026",
+  "titel": "5 ting til Halloween i 2700",
+  "teaser": "Fester, film, kranier og uhyggemenu. Her er, hvad der sker til Halloween i Brønshøj og Tingbjerg fra 27. til 31. oktober – og det meste er gratis.",
+  "skilt": "<img class=\"segment-sign\" src=\"../assets/segment-guide.jpg\" alt=\"#2700 GUIDEN: 5 ting til Halloween i 2700\">"
+ },
+ {
+  "id": "udland1021",
+  "dato": "2026-10-23",
+  "dato_tekst": "23. oktober 2026",
+  "titel": "Det rene københavneri",
+  "teaser": "Hakkebøf-debatten når statsministeren, Indre By lukker for nye hoteller, og en rengøringsmedarbejder sad låst inde i tre døgn.",
+  "skilt": "<img class=\"segment-sign\" src=\"../assets/segment-udland.jpg\" alt=\"Det rene københavneri\">"
+ },
+ {
+  "id": "todoweekend1021",
+  "dato": "2026-10-21",
+  "dato_tekst": "21. oktober 2026",
+  "titel": "Hvad sker der i 2700 i denne weekend?",
+  "teaser": "Skal du se Frederik Smals stille tegninger i vandtårnet eller høre Murakami-jazz i BRØK? Skal børnene gætte dyr med Emil Sanderhoff? Eller hvad med gratis korkoncert i Brønshøj Kirke og Beatles-sange søndag?",
+  "skilt": "<img class=\"segment-sign\" src=\"../assets/segment-todoweekend.jpg\" alt=\"Guide til din weekend\">"
+ },
+ {
+  "id": "ostfronten1021",
+  "dato": "2026-10-21",
+  "dato_tekst": "21. oktober 2026",
+  "titel": "Fra djøf&#x27;sk til dansk – 2700-nyt fra Rådhuset",
+  "teaser": "Penge til at planlægge Tingbjerg Stadion, hegn og lys i Husumparken, 20 høringssvar uden ændringer og toiletter i Bellahøj, der hjælper budgettet",
+  "skilt": "<img class=\"segment-sign\" src=\"../assets/segment-ostfronten.jpg\" alt=\"Fra djøf'sk til dansk – 2700-nyt fra Rådhuset\">"
+ },
+ {
+  "id": "lu1019",
+  "dato": "2026-10-19",
+  "dato_tekst": "19. oktober 2026",
+  "titel": "Clickbait fra Lokaludvalget",
+  "teaser": "Seks bud på Husums nye vartegn, 10.000 kr. til årets Bydelspris, Kulturtræf i Sognehuset – og snart taler hele 2700?",
+  "skilt": "<img class=\"segment-sign\" src=\"../assets/segment-lokaludvalget.jpg\" alt=\"Clickbait fra Lokaludvalget\">"
+ },
+ {
+  "id": "ugen1018",
+  "dato": "2026-10-18",
+  "dato_tekst": "18. oktober 2026",
+  "titel": "Hvad skal du i ugen?",
+  "teaser": "Efterårsferien er slut, og hverdagen i 2700 er fuld af fællesskab: cykel-pop-up og lydworkshop for børnene, og fuglekiggeri, kvantefysik, havfruer, jazz og kirkebio for de voksne.",
+  "skilt": "<img class=\"segment-sign\" src=\"../assets/segment-todougen.jpg\" alt=\"Guide til din uge\">"
+ },
+ {
+  "id": "lokalsporten1018",
+  "dato": "2026-10-18",
+  "dato_tekst": "18. oktober 2026",
+  "titel": "Lokalsporten Kort – og helt upartisk",
+  "teaser": "Brønshøj slår Ringsted 4-1, Husum taber i Emdrupparken, og Fix mænd vinder efter tre nederlag",
+  "skilt": "<img class=\"segment-sign\" src=\"../assets/segment-sport.jpg\" alt=\"Lokalsporten Kort\">"
+ },
+ {
+  "id": "leder1018",
+  "dato": "2026-10-18",
+  "dato_tekst": "18. oktober 2026",
+  "titel": "Leder #1: Vi leder stadig",
+  "teaser": "”Vi” har i et halvt års tid ledt efter formatet – og vi leder fortsat. Her er lidt mere om, hvad 2700Tråden er, og hvorfor vi har brug for dig.",
+  "skilt": "<img class=\"segment-sign\" src=\"../assets/segment-leder.jpg\" alt=\"Leder\">"
+ },
+ {
+  "id": "udland1014",
+  "dato": "2026-10-14",
+  "dato_tekst": "14. oktober 2026",
+  "titel": "Det rene københavneri",
+  "teaser": "Nyheder fra resten af byen: Siddique skal ikke politianmeldes, Parken vil måske sælge FCK, og Rigshospitalet sender overlæger hjem.",
+  "skilt": "<img class=\"segment-sign\" src=\"../assets/segment-udland.jpg\" alt=\"Det rene københavneri\">"
+ },
+ {
+  "id": "todoweekend1014",
+  "dato": "2026-10-14",
+  "dato_tekst": "14. oktober 2026",
+  "titel": "Hvad sker der i 2700 i denne weekend?",
+  "teaser": "Har I nået Trådens skattejagt, før den slutter søndag? Skal du ud og spise Dining Week-menu i BRØK eller på Bellahøjgaard? Skal børnene se PØLSE! eller Halfdans ABC? Eller hvad med Brønshøj mod Ringsted i Tingbjerg?",
+  "skilt": "<img class=\"segment-sign\" src=\"../assets/segment-todoweekend.jpg\" alt=\"Guide til din weekend\">"
+ },
+ {
+  "id": "tilbud1014",
+  "dato": "2026-10-14",
+  "dato_tekst": "14. oktober 2026",
+  "titel": "Pssst... 3 gode tilbud fra gaden – uge 42",
+  "teaser": "Brug de lokale butikker – ellers forsvinder de. Her er ugens tilbud fra butikker og spisesteder i 2700.",
+  "skilt": "<img class=\"segment-sign\" src=\"../assets/segment-tilbud.jpg\" alt=\"2700 Tilbud: Pssst... 3 gode tilbud fra gaden – uge 42\">"
+ },
+ {
+  "id": "ostfronten1014",
+  "dato": "2026-10-14",
+  "dato_tekst": "14. oktober 2026",
+  "titel": "Fra djøf&#x27;sk til dansk – 2700-nyt fra Rådhuset",
+  "teaser": "Natfodbold i Tingbjerg fra januar, M5-høringen er sendt af sted, og fritidsjob til unge i Tingbjerg-Husum",
+  "skilt": "<img class=\"segment-sign\" src=\"../assets/segment-ostfronten.jpg\" alt=\"Fra djøf'sk til dansk – 2700-nyt fra Rådhuset\">"
+ },
+ {
+  "id": "mikrofonholderi1012",
+  "dato": "2026-10-12",
+  "dato_tekst": "12. oktober 2026",
+  "titel": "Mikrofonholderi #1: Rasmus Romulus Palludan fra TV Tingbjerg",
+  "teaser": "Vi holder mikrofonen. Rasmus Romulus Palludan fra TV Tingbjerg fortæller selv. Ingen kritiske spørgsmål – ren mikrofonholderi.",
+  "skilt": "<img class=\"segment-sign\" src=\"../assets/segment-mikrofonholderi.jpg\" alt=\"Mikrofonholderi\">"
+ },
+ {
+  "id": "lu1012",
+  "dato": "2026-10-12",
+  "dato_tekst": "12. oktober 2026",
+  "titel": "Clickbait fra Lokaludvalget",
+  "teaser": "Overskrifterne overdriver. Teksten gør ikke.",
+  "skilt": "<img class=\"segment-sign\" src=\"../assets/segment-lokaludvalget.jpg\" alt=\"Clickbait fra Lokaludvalget\">"
+ },
+ {
+  "id": "ugen1012",
+  "dato": "2026-10-11",
+  "dato_tekst": "11. oktober 2026",
+  "titel": "Hvad skal du i ugen?",
+  "teaser": "Det er efterårsferie i 2700 – med gadeteater og sofagyser til børnene, og Rusland-foredrag, jazz og gratis frokost til de voksne. Og husk, at det er Dining Week hele ugen",
+  "skilt": "<img class=\"segment-sign\" src=\"../assets/segment-todougen.jpg\" alt=\"Guide til din uge\">"
+ },
+ {
+  "id": "lokalsporten1011",
+  "dato": "2026-10-11",
+  "dato_tekst": "11. oktober 2026",
+  "titel": "Lokalsporten Kort – og helt upartisk",
+  "teaser": "Brønshøj vinder 4-2 i Holstebro, Husum scorer seks, og Fix og Stadion taber på udebane",
+  "skilt": "<img class=\"segment-sign\" src=\"../assets/segment-sport.jpg\" alt=\"Lokalsporten Kort\">"
+ },
+ {
+  "id": "guide1010",
+  "dato": "2026-10-10",
+  "dato_tekst": "10. oktober 2026",
+  "titel": "Efterårsferie-skattejagt",
+  "teaser": "Skattejagt i hele 2700, 10.–18. oktober. Hent hæftet og løs opgaverne.",
+  "skilt": "<img class=\"segment-sign\" src=\"../assets/segment-guide.jpg\" alt=\"#2700 GUIDEN: Efterårsferie-skattejagt\">"
+ },
+ {
+  "id": "udland1007",
+  "dato": "2026-10-09",
+  "dato_tekst": "9. oktober 2026",
+  "titel": "Udland: Ren Københavneri",
+  "teaser": "Her er de største nyheder fra den anden side hækken.",
+  "skilt": "<img class=\"segment-sign\" src=\"../assets/segment-udland.jpg\" alt=\"Udland: Ren Københavneri\">"
+ },
+ {
+  "id": "guide1009",
+  "dato": "2026-10-09",
+  "dato_tekst": "9. oktober 2026",
+  "titel": "Efterårsferien i 2700",
+  "teaser": "For børn og unge i 2700. Næsten alt er gratis.",
+  "skilt": "<img class=\"segment-sign\" src=\"../assets/segment-guide.jpg\" alt=\"#2700 GUIDEN: Efterårsferien\">"
+ },
+ {
+  "id": "todoweekend1008",
+  "dato": "2026-10-08",
+  "dato_tekst": "8. oktober 2026",
+  "titel": "Hvad sker der i 2700 i denne weekend?",
+  "teaser": "Skal du løse et mysterium i vandtårnet på Kulturnatten eller møde en ægte havfrue i Tingbjerg? Eller hvad med svensk jazz i BRØK og fredagsfodbold i Husumparken?",
+  "skilt": "<img class=\"segment-sign\" src=\"../assets/segment-todoweekend.jpg\" alt=\"Guide til weekenden\">"
+ },
+ {
+  "id": "ostfronten1007",
+  "dato": "2026-10-07",
+  "dato_tekst": "7. oktober 2026",
+  "titel": "2700-nyt fra Rådhuset",
+  "teaser": "Budget 2027 er vedtaget med penge til Korsager Skole, Frederikssundsvej og Ruten – og Husum Vænge er i spil som Senior Plus-område",
+  "skilt": "<img class=\"segment-sign\" src=\"../assets/segment-ostfronten.jpg\" alt=\"2700-nyt fra Rådhuset\">"
+ },
+ {
+  "id": "sport1005",
+  "dato": "2026-10-05",
+  "dato_tekst": "5. oktober 2026",
+  "titel": "Lokalsporten Kort – 2700 i spil",
+  "teaser": "Uafgjort i københavneropgøret, Husum mister førstepladsen, og Fix taber igen på Pilesvinget",
+  "skilt": "<img class=\"segment-sign\" src=\"../assets/segment-sport.jpg\" alt=\"Lokalsporten Kort\">"
+ },
+ {
+  "id": "lu1005",
+  "dato": "2026-10-05",
+  "dato_tekst": "5. oktober 2026",
+  "titel": "Clickbait fra Lokaludvalget",
+  "teaser": "Overskrifterne overdriver. Teksten gør ikke.",
+  "skilt": "<img class=\"segment-sign\" src=\"../assets/segment-lokaludvalget.jpg\" alt=\"Clickbait fra Lokaludvalget\">"
+ },
+ {
+  "id": "ugen1004",
+  "dato": "2026-10-04",
+  "dato_tekst": "4. oktober 2026",
+  "titel": "Hvad skal du i ugen?",
+  "teaser": "Mandag til torsdag er der igen godt gang i 2700 – fra stærk teater og skrivekurser til snakkeklubber, blues, jazz og en livestream med Zadie Smith",
+  "skilt": "<img class=\"segment-sign\" src=\"../assets/segment-todougen.jpg\" alt=\"Guide til din uge\">"
+ },
+ {
+  "id": "guide1004",
+  "dato": "2026-10-04",
+  "dato_tekst": "4. oktober 2026",
+  "titel": "Indkøb efter kl. 22",
+  "teaser": "Klokken er over 22, og madpakkerne mangler. Her er butikkerne, der har åbent.",
+  "skilt": "<img class=\"segment-sign\" src=\"../assets/segment-guide1004.webp\" alt=\"#2700 GUIDEN: Indkøb efter kl. 22\">"
+ },
+ {
+  "id": "memes1003",
+  "dato": "2026-10-03",
+  "dato_tekst": "3. oktober 2026",
+  "titel": "Kampdag: Brønshøj Boldklub mod Boldklubben FREM",
+  "teaser": "Et ægte københavner-derby på Tingbjerg Ground, når to af byens stolteste traditionsklubber tørner sammen.",
+  "skilt": "<img class=\"segment-sign\" src=\"../assets/segment-memes.jpg\" alt=\"Brønshøj Memes\">"
+ },
+ {
+  "id": "udland1001",
+  "dato": "2026-10-01",
+  "dato_tekst": "1. oktober 2026",
+  "titel": "Udland: Ren Københavneri",
+  "teaser": "Her er de største nyheder fra den anden side hækken.",
+  "skilt": "<img class=\"segment-sign\" src=\"../assets/segment-udland.jpg\" alt=\"Udland: Ren Københavneri\">"
+ },
+ {
+  "id": "todoweekend1002",
+  "dato": "2026-09-30",
+  "dato_tekst": "30. september 2026",
+  "titel": "Hvad sker der i 2700 denne weekend?",
+  "teaser": "Skal du til Brønshøj–Frem i Tingbjerg eller på edderkoppejagt i Utterslev Mose? Eller hvad med loppemarked på torvet og flamenco i BRØK?",
+  "skilt": "<img class=\"segment-sign\" src=\"../assets/segment-todoweekend.jpg\" alt=\"Guide til weekenden\">"
+ },
+ {
+  "id": "ostfronten0930",
+  "dato": "2026-09-30",
+  "dato_tekst": "30. september 2026",
+  "titel": "Alt nyt fra Østfronten: 2700-nyt fra Rådhuset",
+  "teaser": "138 træer i Tingbjerg, Tingbjerg-planen forsinket til 2032 – og torsdag vedtages budget 2027",
+  "skilt": "<img class=\"segment-sign\" src=\"../assets/segment-ostfronten.jpg\" alt=\"Alt nyt fra Østfronten: 2700-nyt fra Rådhuset\">"
+ },
+ {
+  "id": "lu0929",
+  "dato": "2026-09-29",
+  "dato_tekst": "29. september 2026",
+  "titel": "Kedeligt nyt fra Lokaludvalget",
+  "teaser": "Her kommer denne uges citronmåne af et overblik",
+  "skilt": "<img class=\"segment-sign\" src=\"../assets/segment-lokaludvalget.jpg\" alt=\"Kedeligt nyt fra Lokaludvalget\">"
+ },
+ {
+  "id": "sport0928",
+  "dato": "2026-09-28",
+  "dato_tekst": "28. september 2026",
+  "titel": "Lokalsporten Kort – 2700 i spil",
+  "teaser": "Pointdeling i Vanløse, Husums sejrsstime brudt, og Fix taber hjemme",
+  "skilt": "<img class=\"segment-sign\" src=\"../assets/segment-sport.jpg\" alt=\"Lokalsporten Kort\">"
+ },
+ {
+  "id": "ugen0927",
+  "dato": "2026-09-27",
+  "dato_tekst": "27. september 2026",
+  "titel": "Hvad skal du i ugen?",
+  "teaser": "Mandag til torsdag er der igen godt gang i 2700 – fra reparationscafé og kreativ skrivning til fællesspisning, jazz, musik, åbent værksted og en tur ud i Utterslev Mose",
+  "skilt": "<img class=\"segment-sign\" src=\"../assets/segment-todougen.jpg\" alt=\"Guide til din uge\">"
+ },
+ {
+  "id": "oprustning0927",
+  "dato": "2026-09-27",
+  "dato_tekst": "27. september 2026",
+  "titel": "Åndelig Oprustning",
+  "teaser": "2 værker af Arne Simonsen, der i øjeblikket udstiller på BRØK sammen med Brønshøj-gruppen",
+  "skilt": "<img class=\"segment-sign\" src=\"../assets/segment-oprustning.jpg\" alt=\"Åndelig Oprustning\">"
+ },
+ {
+  "id": "scrapbog0926",
+  "dato": "2026-09-26",
+  "dato_tekst": "26. september 2026",
+  "titel": "Scrapbog: En god historie",
+  "teaser": "Et lille tilbageblik på nogle af de ting, der satte liv i 2700",
+  "skilt": "<img class=\"segment-sign\" src=\"../assets/segment-scrapbog.jpg\" alt=\"Scrapbog: En god historie\">"
+ },
+ {
+  "id": "weekend0925",
+  "dato": "2026-09-25",
+  "dato_tekst": "25. september 2026",
+  "titel": "Hvad skal du i weekenden?",
+  "teaser": "Denne weekend er der især masser af garn og kreativitet i BRØK — men også fugleture, børneaktiviteter, dans, fællesspisning, musik og en tur op i Brønshøj Vandtårn",
+  "skilt": "<img class=\"segment-sign\" src=\"../assets/segment-todoweekend.jpg\" alt=\"Guide til weekenden\">"
+ },
+ {
+  "id": "udland0925",
+  "dato": "2026-09-25",
+  "dato_tekst": "25. september 2026",
+  "titel": "Udland: Ren Københavneri",
+  "teaser": "Her er de største nyheder fra den anden side hækken.",
+  "skilt": "<img class=\"segment-sign\" src=\"../assets/segment-udland.jpg\" alt=\"Udland: 2700-nyt fra Borgerrepræsentationen\">"
+ },
+ {
+  "id": "udland0923",
+  "dato": "2026-09-23",
+  "dato_tekst": "23. september 2026",
+  "titel": "Alt nyt fra Østfronten: 2700-nyt fra Rådhuset",
+  "teaser": "Vi har lavet lidt formatændring — nu kigger vi på, hvad der er sket på Rådhuset siden sidste onsdag, og hvad der er på vej den kommende uge",
+  "skilt": "<img class=\"segment-sign\" src=\"../assets/segment-ostfronten.jpg\" alt=\"Alt nyt fra Østfronten: 2700-nyt fra Rådhuset\">"
+ },
+ {
+  "id": "andedammen0922",
+  "dato": "2026-09-22",
+  "dato_tekst": "22. september 2026",
+  "titel": "Røre i Andedammen",
+  "teaser": "80 år som konservativ, vand i vandhanerne og et lokaludvalgsmøde med 25 punkter på torsdag",
+  "skilt": "<img class=\"segment-sign\" src=\"../assets/segment-andedammen.jpg\" alt=\"Røre i Andedammen: Kedeligt nyt fra Lokaludvalget\">"
+ },
+ {
+  "id": "sport0921",
+  "dato": "2026-09-21",
+  "dato_tekst": "21. september 2026",
+  "titel": "Lokalsporten Kort – 2700 i spil",
+  "teaser": "Husum vinder for femte gang i træk, og Brønshøj smadrer ASA 5-1",
+  "skilt": "<img class=\"segment-sign\" src=\"../assets/segment-sport.jpg\" alt=\"Lokalsporten Kort\">"
+ },
+ {
+  "id": "ugen0919",
+  "dato": "2026-09-19",
+  "dato_tekst": "19. september 2026",
+  "titel": "Hvad skal du i ugen?",
+  "teaser": "Mandag til torsdag i 2700 byder på strik, reparationer, cykling, kreativitet, musik, litteratur, yoga og lokal demokrati",
+  "skilt": "<img class=\"segment-sign\" src=\"../assets/segment-todougen.jpg\" alt=\"Guide til din uge\">"
+ },
+ {
+  "id": "oprustning0918",
+  "dato": "2026-09-18",
+  "dato_tekst": "18. september 2026",
+  "titel": "Åndelig Oprustning",
+  "teaser": "\"I disse tider\" — et ikke-digt af Dirch, Tage og Thor",
+  "skilt": "<img class=\"segment-sign\" src=\"../assets/segment-oprustning.jpg\" alt=\"Åndelig Oprustning\">"
+ },
+ {
+  "id": "weekend0917",
+  "dato": "2026-09-17",
+  "dato_tekst": "17. september 2026",
+  "titel": "Hvad sker der i 2700 i denne weekend?",
+  "teaser": "Skal du med til Kim Larsen eller på skovtur? Eller hvad med gårdmarked og søndagsjazz?",
+  "skilt": "<img class=\"segment-sign\" src=\"../assets/segment-todoweekend.jpg\" alt=\"Guide til weekenden\">"
+ },
+ {
+  "id": "udland0916",
+  "dato": "2026-09-16",
+  "dato_tekst": "16. september 2026",
+  "titel": "Udland: Hvad sker der på Rådhuset?",
+  "teaser": "Bellahøj-trafikforsøg, Humlevænget-renovering og plejeboliger i Bystævneparken på torsdagens dagsorden",
+  "skilt": "<img class=\"segment-sign\" src=\"../assets/segment-udland.jpg\" alt=\"Udland: 2700-nyt fra Borgerrepræsentationen\">"
+ },
+ {
+  "id": "lu0913",
+  "dato": "2026-09-15",
+  "dato_tekst": "15. september 2026",
+  "titel": "Kedeligt nyt fra Lokaludvalget",
+  "teaser": "Bydelspulje, Kulturtræf og afstemning om årets frivillige",
+  "skilt": "<img class=\"segment-sign\" src=\"../assets/segment-lokaludvalget.jpg\" alt=\"Kedeligt nyt fra Lokaludvalget\">"
+ },
+ {
+  "id": "sport0914",
+  "dato": "2026-09-14",
+  "dato_tekst": "14. september 2026",
+  "titel": "Lokalsporten Kort",
+  "teaser": "Ugens korte overblik over sporten i 2700",
+  "skilt": "<img class=\"segment-sign\" src=\"../assets/segment-sport.jpg\" alt=\"Lokalsporten Kort\">"
+ },
+ {
+  "id": "ugen0913",
+  "dato": "2026-09-13",
+  "dato_tekst": "13. september 2026",
+  "titel": "Hvad sker der i 2700 i denne uge?",
+  "teaser": "Fra film og fællesskab til musik, motion, sprog og kreativitet",
+  "skilt": "<img class=\"segment-sign\" src=\"../assets/segment-todougen.jpg\" alt=\"Guide til din uge\">"
+ },
+ {
+  "id": "oprustning0912",
+  "dato": "2026-09-12",
+  "dato_tekst": "12. september 2026",
+  "titel": "Åndelig Oprustning",
+  "teaser": "To tryk af Ida Theodora Wolf Berendsen, der udstiller på BRØK",
+  "skilt": "<img class=\"segment-sign\" src=\"../assets/segment-oprustning.jpg\" alt=\"Åndelig Oprustning\">"
+ },
+ {
+  "id": "memes0911",
+  "dato": "2026-09-11",
+  "dato_tekst": "11. september 2026",
+  "titel": "Tøffe med i ugens billige grin",
+  "teaser": "Bo Henriksen har ikke meget til overs for Tøftings anke",
+  "skilt": "<img class=\"segment-sign\" src=\"../assets/segment-memes.jpg\" alt=\"Brønshøj Memes\">"
+ },
+ {
+  "id": "weekend0910",
+  "dato": "2026-09-10",
+  "dato_tekst": "10. september 2026",
+  "titel": "Hvad sker der i 2700 i weekenden?",
+  "teaser": "Fra film og børneleg til fodbold, musik, natur og kreative workshops",
+  "skilt": "<img class=\"segment-sign\" src=\"../assets/segment-todoweekend.jpg\" alt=\"Guide til weekenden\">"
+ },
+ {
+  "id": "udland0909",
+  "dato": "2026-09-09",
+  "dato_tekst": "9. september 2026",
+  "titel": "Udland: 2700-nyt fra Borgerrepræsentationen",
+  "teaser": "Penge til 2700 fra kommunens budget 2027",
+  "skilt": "<img class=\"segment-sign\" src=\"../assets/segment-udland.jpg\" alt=\"Udland: 2700-nyt fra Borgerrepræsentationen\">"
+ },
+ {
+  "id": "lu0906",
+  "dato": "2026-09-08",
+  "dato_tekst": "8. september 2026",
+  "titel": "Kedeligt nyt fra Lokaludvalget",
+  "teaser": "Så er der nyt fra nærdemokratiet",
+  "skilt": "<img class=\"segment-sign\" src=\"../assets/segment-lokaludvalget.jpg\" alt=\"Kedeligt nyt fra Lokaludvalget\">"
+ },
+ {
+  "id": "sport0905",
+  "dato": "2026-09-07",
+  "dato_tekst": "7. september 2026",
+  "titel": "Lokalsporten Kort",
+  "teaser": "Ugens korte overblik over sporten i 2700",
+  "skilt": "<img class=\"segment-sign\" src=\"../assets/segment-sport.jpg\" alt=\"Lokalsporten Kort\">"
+ },
+ {
+  "id": "ugen0905",
+  "dato": "2026-09-05",
+  "dato_tekst": "5. september 2026",
+  "titel": "Guide til ugen",
+  "teaser": "Cykelture, snakkeklubber og engelsk dronekor i Vandtårnet",
+  "skilt": "<img class=\"segment-sign\" src=\"../assets/segment-todougen.jpg\" alt=\"Guide til din uge\">"
+ },
+ {
+  "id": "scrapbog0905",
+  "dato": "2026-09-05",
+  "dato_tekst": "5. september 2026",
+  "titel": "Scrapbog: En god historie",
+  "teaser": "Et lille tilbageblik på nogle af de arrangementer, der satte liv i 2700",
+  "skilt": "<img class=\"segment-sign\" src=\"../assets/segment-scrapbog.jpg\" alt=\"Scrapbog: En god historie\">"
+ },
+ {
+  "id": "memes0904",
+  "dato": "2026-09-04",
+  "dato_tekst": "4. september 2026",
+  "titel": "Billige grin af dig selv og alle os andre",
+  "teaser": "Ugens grin fra Brønshøj Memes – bl.a. Özlem Cekics fuldemandsnak",
+  "skilt": "<img class=\"segment-sign\" src=\"../assets/segment-memes.jpg\" alt=\"Brønshøj Memes\">"
+ },
+ {
+  "id": "weekend0903",
+  "dato": "2026-09-03",
+  "dato_tekst": "3. september 2026",
+  "titel": "Guide til weekenden",
+  "teaser": "Fra oplæg om Matador til fernisering på BRØK og Debut Festival",
+  "skilt": "<img class=\"segment-sign\" src=\"../assets/segment-todoweekend.jpg\" alt=\"Guide til weekenden\">"
+ },
+ {
+  "id": "udland0902",
+  "dato": "2026-09-02",
+  "dato_tekst": "2. september 2026",
+  "titel": "Udland: 2700-nyt fra Borgerrepræsentationen",
+  "teaser": "Nyt om metro-udvidelsen til Brønshøj og en mulig ny multiarena",
+  "skilt": "<img class=\"segment-sign\" src=\"../assets/segment-udland.jpg\" alt=\"Udland: 2700-nyt fra Borgerrepræsentationen\">"
+ },
+ {
+  "id": "lu0901",
+  "dato": "2026-09-01",
+  "dato_tekst": "1. september 2026",
+  "titel": "Kedeligt nyt fra Lokaludvalget",
+  "teaser": "Så er der mere kaffe på den lokalkommunale kande",
+  "skilt": "<img class=\"segment-sign\" src=\"../assets/segment-lokaludvalget.jpg\" alt=\"Kedeligt nyt fra Lokaludvalget\">"
+ },
+ {
+  "id": "sport0831",
+  "dato": "2026-08-31",
+  "dato_tekst": "31. august 2026",
+  "titel": "Lokalsporten Kort",
+  "teaser": "Ugens korte overblik over sporten i 2700",
+  "skilt": "<img class=\"segment-sign\" src=\"../assets/segment-sport.jpg\" alt=\"Lokalsporten Kort\">"
+ }
+]

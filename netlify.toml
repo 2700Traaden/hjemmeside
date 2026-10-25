@@ -1,0 +1,23 @@
+# Primært domæne er 2700traaden.dk (rent ASCII), så adresselinjen i browsere
+# (Safari, Chrome, DuckDuckGo, Facebooks interne browser m.fl.) aldrig viser
+# den tekniske punycode-stavemåde af å-domænet 2700tråden.dk. Å-domænet sendes
+# nu videre til ASCII-domænet i stedet for omvendt.
+[[redirects]]
+  from = "https://xn--2700trden-b3a.dk/*"
+  to = "https://2700traaden.dk/:splat"
+  status = 301
+  force = true
+
+# Samme for www-udgaven af å-domænet og for Netlifys egen adresse, så Google
+# kun ser siden ét sted.
+[[redirects]]
+  from = "https://www.xn--2700trden-b3a.dk/*"
+  to = "https://2700traaden.dk/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://2700-traaden.netlify.app/*"
+  to = "https://2700traaden.dk/:splat"
+  status = 301
+  force = true
