@@ -19,6 +19,9 @@ Spørg ikke om tekniske valg. Tag selv det mest almindelige valg, og sig kort, h
 - Får du en zip med en ny version: pak den ud uden ekstra mappe og uden `__MACOSX`/`.DS_Store`,
   og erstat filerne i roden. Behold `CNAME`, `.nojekyll` og `CLAUDE.md`.
 
+## Fastgjort opslag
+- "Julen i 2700" (jul2026) skal ligge øverst på Overblik og i arkivet frem til jul. Nye opslag sættes ind lige under den, efter dato.
+
 ## Når du er færdig
 - Tjek efter et par minutter, at https://2700traaden.dk viser ændringen.
 - Fortæl Kristoffer kort, hvad du har ændret, og om det er live.
