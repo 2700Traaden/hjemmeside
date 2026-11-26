@@ -20,7 +20,7 @@ Spørg ikke om tekniske valg. Tag selv det mest almindelige valg, og sig kort, h
   og erstat filerne i roden. Behold `CNAME`, `.nojekyll` og `CLAUDE.md`.
 
 ## Fastgjort opslag
-- "Julen i 2700" (jul2026) skal ligge øverst på Overblik og i arkivet frem til jul. Nye opslag sættes ind lige under den, efter dato.
+- "Julen i 2700" (jul2026) skal ligge højt på Overblik og i arkivet frem til jul. Lige nu ligger den under Det rene københavneri (udland1125). Nye opslag sættes ind efter dato som normalt.
 
 ## Når du er færdig
 - Tjek efter et par minutter, at https://2700traaden.dk viser ændringen.
